@@ -290,6 +290,7 @@ public class PlayerMotion : MonoBehaviour
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                     Destroy(GetComponent<Rigidbody>());
+                    Destroy(GetComponent<Collider>());
                     GetComponent<Animator>().enabled = false;
                     foreach (Collider collider in GetComponentsInChildren<Collider>())
                     {
@@ -344,11 +345,8 @@ public class PlayerMotion : MonoBehaviour
                             }
                             else
                             {
-                                sword.gameObject.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                                jointParent.parent = collider.transform;
                                 Physics.IgnoreLayerCollision(3, 8, false);
-                                collider.GetComponent<Rigidbody>().gameObject.AddComponent<FixedJoint>();
-                                collider.GetComponent<Rigidbody>().GetComponent<FixedJoint>().connectedBody = sword.GetComponent<Rigidbody>();
-                                collider.GetComponent<Rigidbody>().GetComponent<FixedJoint>().massScale = 0.1f;
                             }
                         }
                     }
@@ -408,6 +406,7 @@ public class PlayerMotion : MonoBehaviour
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                         Destroy(GetComponent<Rigidbody>());
+                        Destroy(GetComponent<Collider>());
                         GetComponent<Animator>().enabled = false;
                         foreach (Collider collider in GetComponentsInChildren<Collider>())
                         {
@@ -462,11 +461,8 @@ public class PlayerMotion : MonoBehaviour
                                 }
                                 else
                                 {
-                                    sword.gameObject.AddComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                                    jointParent.parent = collider.transform;
                                     Physics.IgnoreLayerCollision(3, 8, false);
-                                    collider.GetComponent<Rigidbody>().gameObject.AddComponent<FixedJoint>();
-                                    collider.GetComponent<Rigidbody>().GetComponent<FixedJoint>().connectedBody = sword.GetComponent<Rigidbody>();
-                                    collider.GetComponent<Rigidbody>().GetComponent<FixedJoint>().massScale = 0.1f;
                                 }
                             }
                         }
