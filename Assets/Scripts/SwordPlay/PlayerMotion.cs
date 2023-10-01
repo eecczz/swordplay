@@ -356,6 +356,7 @@ public class PlayerMotion : MonoBehaviour
                     foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                         xw.MaxFrame = 0;
                     GetComponent<LegsAnimator>().enabled = false;
+                    EnemyMotion.player = null;
                     Camera.main.transform.parent = null;
                     anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                     transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
@@ -473,6 +474,7 @@ public class PlayerMotion : MonoBehaviour
                         foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                             xw.MaxFrame = 0;
                         GetComponent<LegsAnimator>().enabled = false;
+                        EnemyMotion.player = null;
                         Camera.main.transform.parent = null;
                         anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                         transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);

@@ -10,7 +10,7 @@ public class EnemyMotion : MonoBehaviour
 {
     Animator anim;
     NavMeshAgent nav;
-    Transform player;
+    public static Transform player;
     public Transform jointParent, joint;
     public static Transform ejoint;
     Collider sword;
