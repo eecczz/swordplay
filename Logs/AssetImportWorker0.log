@@ -1,0 +1,136 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.3448; Version 2009; 64bit' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Public/Documents/swordplay
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62123
+Successfully changed project path to: C:/Users/Public/Documents/swordplay
+C:/Users/Public/Documents/swordplay
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 51.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Public/Documents/swordplay/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   
+    VRAM:     3949 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001481 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 52.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.846 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003504 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2072 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.8 MB.
+System memory in use after: 188.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2536.
+Total: 2.437900 ms (FindLiveObjects: 0.175000 ms CreateObjectMapping: 0.073400 ms MarkObjects: 2.003800 ms  DeleteObjects: 0.184900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE
+  artifactKey: Guid(52b8eba9f71d6d4499c232c5b801c083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE using Guid(52b8eba9f71d6d4499c232c5b801c083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0ea4ddb7327cefe085afb6cb0ea1f7') in 0.007942 seconds
+  Import took 0.010954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE/Platformer Music Pack LITE 16X9.png
+  artifactKey: Guid(bf87c24fc04125f47b6aea49c98b2956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE/Platformer Music Pack LITE 16X9.png using Guid(bf87c24fc04125f47b6aea49c98b2956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7be33a36b8472f42bfe3a2ab03a2768') in 0.119010 seconds
+  Import took 0.121646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE/Platformer Music Pack LITE Square.png
+  artifactKey: Guid(b50f24c89042f6847ae6cdff130ed1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE/Platformer Music Pack LITE Square.png using Guid(b50f24c89042f6847ae6cdff130ed1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e842dbd0a668cdf24475967882fe2c40') in 0.016047 seconds
+  Import took 0.019344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE
+  artifactKey: Guid(9432a2954de93be4191ac983807f1e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE using Guid(9432a2954de93be4191ac983807f1e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3723bd73d43324d45d14685c673e1a7e') in 0.001627 seconds
+  Import took 0.005151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/BGM/VOiD1 Gaming
+  artifactKey: Guid(9b7d657295dda024795a8991b7b40394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming using Guid(9b7d657295dda024795a8991b7b40394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27bb7b1dbcc885136858ebc67f67378') in 0.006259 seconds
+  Import took 0.010259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.357034 seconds.
+  path: Assets/BGM/VOiD1 Gaming
+  artifactKey: Guid(2f799c442c4a24a4fb725577dbc53172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming using Guid(2f799c442c4a24a4fb725577dbc53172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4c833327e130837df281c988e48c1a') in 0.002484 seconds
+  Import took 0.010561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.117329 seconds.
+  path: Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE/7. Cinematic
+  artifactKey: Guid(a5ea117e5a34c714d94ef6b18d2259e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGM/VOiD1 Gaming/Platformer Music Pak LITE/Platformer Music Pak LITE/7. Cinematic using Guid(a5ea117e5a34c714d94ef6b18d2259e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5901dac61a1df28c18632bfb387f9cbe') in 0.007044 seconds
+  Import took 0.011440 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.0 MB.
+System memory in use after: 148.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2544.
+Total: 3.309700 ms (FindLiveObjects: 0.218800 ms CreateObjectMapping: 0.095900 ms MarkObjects: 2.901800 ms  DeleteObjects: 0.092300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
