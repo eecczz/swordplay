@@ -107,9 +107,11 @@ public class PlayerMotion : MonoBehaviour
                 guard = 0;
             }
             joint.localRotation = Quaternion.Euler(new Vector3(-ty, 0, 0));
-            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1)));
-            joint.RotateAround(joint.position, sword.transform.up, tx);
-            joint.RotateAround(joint.position, transform.forward, -tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1) * Mathf.Clamp((75 - ty) / 75, 0, 1));
+            joint.localPosition = new Vector3(0, 2, 0.5f);
+            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 60));
+            Vector3 v2 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1.25f;
+            joint.RotateAround(joint.position + v2, sword.transform.up, tx * 1.25f);
+            sword.transform.localPosition = new Vector3(0, -1.25f, (180 - Mathf.Abs(tx)) / 60);
         }
         else if (health > -1)
         {
@@ -119,10 +121,11 @@ public class PlayerMotion : MonoBehaviour
                 SoundManager.Instance.SFXPlay("Shield", clips[1]);
             }
             joint.localRotation = Quaternion.Euler(new Vector3(-ty, 0, 0));
-            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1)));
-            joint.RotateAround(joint.position, sword.transform.up, tx);
-            joint.RotateAround(joint.position, transform.forward, -tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1) * Mathf.Clamp((75 - ty) / 75, 0, 1));
-            sword.transform.localPosition = new Vector3(0, -1.25f, 1.5f);
+            joint.localPosition = new Vector3(0, 2, 0.5f);
+            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 60));
+            Vector3 v2 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1.25f;
+            joint.RotateAround(joint.position + v2, sword.transform.up, tx * 1.25f);
+            sword.transform.localPosition = new Vector3(0, -1.25f, (180 - Mathf.Abs(tx)) / 60);
             sword.transform.position = transform.position + transform.up * 2 + transform.forward * 1.5f + transform.right * -tx / 90 + transform.up * -ty / 100;
         }
         //animation parameter settings
