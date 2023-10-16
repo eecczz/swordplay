@@ -94,10 +94,13 @@ public class EnemyMotion : MonoBehaviour
                 sword.transform.localPosition = new Vector3(0, -1.25f, 1.5f);
                 guard = 0;
             }
-            joint.localRotation = Quaternion.Euler(new Vector3(-ty, 0, 0));
-            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1)));
-            joint.RotateAround(joint.position, sword.transform.up, tx);
-            joint.RotateAround(joint.position, transform.forward, -tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1) * Mathf.Clamp((75 - ty) / 75, 0, 1));
+            joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            joint.localPosition = new Vector3(0, 1.5f, 0);
+            joint.RotateAround(joint.position + transform.up * 1, transform.right, -ty);
+            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 150, -1, 1)));
+            Vector3 v2 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1;
+            joint.RotateAround(joint.position + v2, sword.transform.up, tx);
+            sword.transform.localPosition = new Vector3(0, -0.5f, 1.5f);
         }
         if (PlayerMotion.ent != null)
         {
@@ -158,10 +161,13 @@ public class EnemyMotion : MonoBehaviour
                         sword.transform.localPosition = new Vector3(0, -1.25f, 1.5f);
                         guard = 0;
                     }
-                    joint.localRotation = Quaternion.Euler(new Vector3(-ty, 0, 0));
-                    sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1)));
-                    joint.RotateAround(joint.position, sword.transform.up, tx);
-                    joint.RotateAround(joint.position, transform.forward, -tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1) * Mathf.Clamp((75 - ty) / 75, 0, 1));
+                    joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                    joint.localPosition = new Vector3(0, 1.5f, 0);
+                    joint.RotateAround(joint.position + transform.up * 1, transform.right, -ty);
+                    sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 150, -1, 1)));
+                    Vector3 v2 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1;
+                    joint.RotateAround(joint.position + v2, sword.transform.up, tx);
+                    sword.transform.localPosition = new Vector3(0, -0.5f, 1.5f);
                 }
                 else if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
                 {
@@ -185,11 +191,13 @@ public class EnemyMotion : MonoBehaviour
                     rty = Random.Range(-60, 90);
                     guard = 1;
                 }
-                joint.localRotation = Quaternion.Euler(new Vector3(-ty, 0, 0));
-                sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1)));
-                joint.RotateAround(joint.position, sword.transform.up, tx);
-                joint.RotateAround(joint.position, transform.forward, -tx * Mathf.Clamp((new Vector2(tx, ty + 60).magnitude - 75) / 75, 0, 1) * Mathf.Clamp((75 - ty) / 75, 0, 1));
-                sword.transform.localPosition = new Vector3(0, -1.25f, 1.5f);
+                joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                joint.localPosition = new Vector3(0, 1.5f, 0);
+                joint.RotateAround(joint.position + transform.up * 1, transform.right, -ty);
+                sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 150, -1, 1)));
+                Vector3 v2 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1;
+                joint.RotateAround(joint.position + v2, sword.transform.up, tx);
+                sword.transform.localPosition = new Vector3(0, -0.5f, 1.5f);
                 sword.transform.position = transform.position + transform.up * 2 + transform.forward * 1.5f + transform.right * -tx / 90 + transform.up * -ty / 100;
             }
             if (guardTime == 0)
