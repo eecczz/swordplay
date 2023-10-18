@@ -96,11 +96,11 @@ public class EnemyMotion : MonoBehaviour
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             joint.localPosition = new Vector3(0, 1.5f, 0);
-            joint.RotateAround(joint.position + transform.up * 1, transform.right, -ty);
-            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 135, -1, 1)));
-            Vector3 v3 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1 * Mathf.Clamp(Mathf.Abs(tx) / 135, 0, 1);
+            joint.RotateAround(joint.position + transform.up * 1.25f, transform.right, -ty);
+            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 120, -1, 1)));
+            Vector3 v3 = Quaternion.AngleAxis(-ty * Mathf.Clamp(tx / 120, -1, 1), transform.forward) * transform.up * 1.25f;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
-            sword.transform.localPosition = new Vector3(0, -0.5f, 1.5f);
+            sword.transform.localPosition = new Vector3(0, 0, 1.5f);
         }
         if (PlayerMotion.ent != null)
         {
@@ -163,11 +163,11 @@ public class EnemyMotion : MonoBehaviour
                     }
                     joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                     joint.localPosition = new Vector3(0, 1.5f, 0);
-                    joint.RotateAround(joint.position + transform.up * 1, transform.right, -ty);
-                    sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 135, -1, 1)));
-                    Vector3 v3 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1 * Mathf.Clamp(Mathf.Abs(tx) / 135, 0, 1);
+                    joint.RotateAround(joint.position + transform.up * 1.25f, transform.right, -ty);
+                    sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 120, -1, 1)));
+                    Vector3 v3 = Quaternion.AngleAxis(-ty * Mathf.Clamp(tx / 120, -1, 1), transform.forward) * transform.up * 1.25f;
                     joint.RotateAround(joint.position + v3, sword.transform.up, tx);
-                    sword.transform.localPosition = new Vector3(0, -0.5f, 1.5f);
+                    sword.transform.localPosition = new Vector3(0, 0, 1.5f);
                 }
                 else if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
                 {
@@ -193,11 +193,11 @@ public class EnemyMotion : MonoBehaviour
                 }
                 joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 joint.localPosition = new Vector3(0, 1.5f, 0);
-                joint.RotateAround(joint.position + transform.up * 1, transform.right, -ty);
-                sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 135, -1, 1)));
-                Vector3 v3 = Quaternion.AngleAxis(-tx, transform.forward) * transform.up * 1 * Mathf.Clamp(Mathf.Abs(tx) / 135, 0, 1);
+                joint.RotateAround(joint.position + transform.up * 1.25f, transform.right, -ty);
+                sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * Mathf.Clamp(tx / 120, -1, 1)));
+                Vector3 v3 = Quaternion.AngleAxis(-ty * Mathf.Clamp(tx / 120, -1, 1), transform.forward) * transform.up * 1.25f;
                 joint.RotateAround(joint.position + v3, sword.transform.up, tx);
-                sword.transform.localPosition = new Vector3(0, -0.5f, 1.5f);
+                sword.transform.localPosition = new Vector3(0, 0, 1.5f);
                 sword.transform.position = transform.position + transform.up * 2 + transform.forward * 1.5f + transform.right * -tx / 90 + transform.up * -ty / 100;
             }
             if (guardTime == 0)
@@ -211,8 +211,7 @@ public class EnemyMotion : MonoBehaviour
     private void FixedUpdate()
     { //everything is explained in PlayerMotion.cs
         if (player != null && health > -1)
-            if ((transform.position - player.transform.position).magnitude <= 5 && !anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
-                transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, Quaternion.LookRotation(player.position - transform.position).eulerAngles.y, transform.rotation.eulerAngles.z));
+            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, Quaternion.LookRotation(player.position - transform.position).eulerAngles.y, transform.rotation.eulerAngles.z));
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && player != null && player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
             GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
@@ -239,32 +238,14 @@ public class EnemyMotion : MonoBehaviour
         }
         else if(health >-1)
         {
-            Vector3 poslleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position;
-            Vector3 posrleg = anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position;
-            Quaternion rotlleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).rotation;
-            Quaternion rotrleg = anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).rotation;
-            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.5f)
-                transform.position += knockBack * anim.GetCurrentAnimatorStateInfo(0).normalizedTime * 0.1f;
-            anim.GetBoneTransform(HumanBodyBones.Hips).rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
-            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime <=0.5f)
-                anim.GetBoneTransform(HumanBodyBones.Hips).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, Quaternion.Euler(transform.rotation.eulerAngles) * vec, 30);
-            else
-                anim.GetBoneTransform(HumanBodyBones.Hips).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, Quaternion.Euler(transform.rotation.eulerAngles) * vec, 60 * (1 - anim.GetCurrentAnimatorStateInfo(0).normalizedTime));
-            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).rotation = rotlleg;
-            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).rotation = rotrleg;
-            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position = poslleg;
-            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position = posrleg;
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.1f)
+                transform.position += knockBack * 0.1f;
         }
         //manual parenting
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
+        if (health > -1)
         {
             jointParent.position = transform.position;
             jointParent.rotation = transform.rotation;
-        }
-        else
-        {
-            jointParent.position = anim.GetBoneTransform(HumanBodyBones.Head).position - transform.up * 2.866453f;
-            jointParent.rotation = anim.GetBoneTransform(HumanBodyBones.Head).rotation;
         }
     }
 

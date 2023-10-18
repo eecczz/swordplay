@@ -110,7 +110,7 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\LegsA.Leg.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA.AutoFinding.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_HeightStabilizer.cs" />
-    <Compile Include="Assets\Scripts\SwordPlay\DragRigidbody.cs" />
+    <Compile Include="Assets\Scripts\SwordPlay\Balance.cs" />
     <Compile Include="Assets\Nephilite Studios\Shield Animation Set\Demo\Scripts\ResetAnimatorBool.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Core\RagdollAnimator.User.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\Glueing Helpers\LegsA.Glue.Attachement.cs" />

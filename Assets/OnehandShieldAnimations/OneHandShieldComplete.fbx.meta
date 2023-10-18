@@ -6813,8 +6813,8 @@ ModelImporter:
       name: GetHitFront
       takeName: GetHitFront
       internalID: 0
-      firstFrame: -1
-      lastFrame: 38
+      firstFrame: 0
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
