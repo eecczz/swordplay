@@ -91,12 +91,12 @@ public class PlayerMotion : MonoBehaviour
             if (guard == 0)
             {
                 tx = Mathf.Clamp(tx, -180, 180);
-                ty = Mathf.Clamp(ty, -60, 150);
+                ty = Mathf.Clamp(ty, -30, 150);
             }
             else
             {
                 tx = Mathf.Clamp(tx, -90, 90);
-                ty = Mathf.Clamp(ty, -60, 90);
+                ty = Mathf.Clamp(ty, -30, 90);
             }
         }
         if (!Input.GetMouseButton(1) && health > -1)

@@ -75,12 +75,12 @@ public class EnemyMotion : MonoBehaviour
                 if (guard == 0)
                 {
                     rtx = Random.Range(-180, 180);
-                    rty = Random.Range(-60, 150);
+                    rty = Random.Range(-30, 150);
                 }
                 else
                 {
                     rtx = Random.Range(-90, 90);
-                    rty = Random.Range(-60, 90);
+                    rty = Random.Range(-30, 90);
                 }
             }
         }
@@ -123,7 +123,7 @@ public class EnemyMotion : MonoBehaviour
                         rtx = -tx;
                         rty = -ty;
                         rtx = Mathf.Clamp(rtx, -90, 90);
-                        rty = Mathf.Clamp(rty, -60, 150);
+                        rty = Mathf.Clamp(rty, -30, 150);
                     }
                 }
                 else if (health > -1 && r == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
@@ -138,7 +138,7 @@ public class EnemyMotion : MonoBehaviour
                         rtx = -tx;
                         rty = -ty;
                         rtx = Mathf.Clamp(rtx, -90, 90);
-                        rty = Mathf.Clamp(rty, -60, 150);
+                        rty = Mathf.Clamp(rty, -30, 150);
                     }
                 }
                 else if(r==0)
@@ -184,9 +184,9 @@ public class EnemyMotion : MonoBehaviour
                 if (guard == 0)
                 {
                     tx = Mathf.Clamp(tx, -90, 90);
-                    ty = Mathf.Clamp(ty, -60, 90);
+                    ty = Mathf.Clamp(ty, -30, 90);
                     rtx = Random.Range(-90, 90);
-                    rty = Random.Range(-60, 90);
+                    rty = Random.Range(-30, 90);
                     guard = 1;
                 }
                 joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
