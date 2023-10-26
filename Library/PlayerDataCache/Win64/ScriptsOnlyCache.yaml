@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Balance
     - EnemyMotion
     - FIMSpace.FProceduralAnimation.LAM_InsectLegsHelper
     - FIMSpace.FProceduralAnimation.LAM_RotationStability
@@ -79,41 +78,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1670}
+      Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1676}
+      Script: {instanceID: 1678}
     - Class: 114
-      Script: {instanceID: 1988}
+      Script: {instanceID: 1990}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2512}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 3870}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 4036}
+      Script: {instanceID: 4450}
     - Class: 114
-      Script: {instanceID: 4448}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 4530}
+      Script: {instanceID: 4600}
     - Class: 114
-      Script: {instanceID: 4598}
+      Script: {instanceID: 5000}
     - Class: 114
-      Script: {instanceID: 4998}
+      Script: {instanceID: 5284}
     - Class: 114
-      Script: {instanceID: 5282}
+      Script: {instanceID: 5668}
     - Class: 114
-      Script: {instanceID: 5666}
-    - Class: 114
-      Script: {instanceID: 5688}
+      Script: {instanceID: 5690}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -121,8 +118,6 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 137
-      Script: {instanceID: 0}
-    - Class: 153
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -615,7 +610,7 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: d8418ff8668d9d319558313c5609513c
+      Hash: a0eadaaba5bf2b1cd452d1ecd11e8f43
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IK

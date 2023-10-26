@@ -11,15 +11,14 @@ public class IK : MonoBehaviour
     public Transform rightHand1;
     public Transform hintLeft;
     public Transform hintRight;
-    public Transform sword;
-    public Transform cam;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    
+
     private void OnAnimatorIK(int layerIndex)
     {
         anim.SetIKPosition(AvatarIKGoal.LeftHand, leftHand.position);
@@ -42,9 +41,6 @@ public class IK : MonoBehaviour
 
     void LateUpdate()
     {
-        cam.rotation = Quaternion.Euler(new Vector3((540-Input.mousePosition.y)/45, 0, 0));
-        anim.SetFloat("X", (Input.mousePosition).x);
-        anim.SetFloat("Y", (Input.mousePosition).y);
         leftHand1.position = leftHand.position;
         rightHand1.position = rightHand.position;
     }
