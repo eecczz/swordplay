@@ -205,6 +205,7 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Setup Settings\LegsA.MainSetup.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Hips Algorithms\LegsA.Hips.Helpers.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_RotationStability.cs" />
+    <Compile Include="Assets\Scripts\SwordPlay\DragRigidbody.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CBG\FPSMeshTool\Shaders\InvisibleNoShadow.shader" />
