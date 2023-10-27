@@ -90,7 +90,7 @@ public class PlayerMotion : MonoBehaviour
             }
             if (guard == 0)
             {
-                tx = Mathf.Clamp(tx, -180, 180);
+                tx = Mathf.Clamp(tx, -270, 270);
                 ty = Mathf.Clamp(ty, -30, 150);
             }
             else
@@ -109,7 +109,7 @@ public class PlayerMotion : MonoBehaviour
             joint.localPosition = new Vector3(0, 1.25f, 0);
             sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135));
             Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135, transform.forward) * transform.up * 1.25f;
-            joint.RotateAround(joint.position + v3, sword.transform.up, tx / Mathf.Clamp(ty, 60, 150) * 60);
+            joint.RotateAround(joint.position + v3, sword.transform.up, tx / Mathf.Clamp(ty, 60, 150) * 52.5f);
             joint.RotateAround(joint.position + transform.up * 1.25f, transform.right, -ty);
             sword.transform.localPosition = new Vector3(0, 0, 1.75f);
         }
@@ -124,7 +124,7 @@ public class PlayerMotion : MonoBehaviour
             joint.localPosition = new Vector3(0, 1.25f, 0);
             sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135));
             Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135, transform.forward) * transform.up * 1.25f;
-            joint.RotateAround(joint.position + v3, sword.transform.up, tx / Mathf.Clamp(ty, 60, 150) * 60);
+            joint.RotateAround(joint.position + v3, sword.transform.up, tx / Mathf.Clamp(ty, 60, 150) * 52.5f);
             joint.RotateAround(joint.position + transform.up * 1.25f, transform.right, -ty);
             sword.transform.localPosition = new Vector3(0, 0, 1.75f);
             sword.transform.position = transform.position + transform.up * 2 + transform.forward * 1.5f + transform.right * -tx / 90 + transform.up * -ty / 100;

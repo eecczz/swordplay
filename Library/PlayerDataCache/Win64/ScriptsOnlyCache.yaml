@@ -78,17 +78,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1672}
+      Script: {instanceID: 1670}
     - Class: 114
-      Script: {instanceID: 1678}
+      Script: {instanceID: 1676}
     - Class: 114
-      Script: {instanceID: 1990}
+      Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 2222}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2280}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 2514}
+      Script: {instanceID: 2512}
     - Class: 114
       Script: {instanceID: 2750}
     - Class: 114
@@ -368,6 +368,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: EnumerableTestState
+  - hash:
+      serializedVersion: 2
+      Hash: b2d7eabdeb1968f3a75642d846fa3af7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragRigidbody
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -1106,12 +1112,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
-  - hash:
-      serializedVersion: 2
-      Hash: b2d7eabdeb1968f3a75642d846fa3af7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DragRigidbody
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
