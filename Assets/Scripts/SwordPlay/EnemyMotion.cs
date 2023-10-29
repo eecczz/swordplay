@@ -96,7 +96,7 @@ public class EnemyMotion : MonoBehaviour
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             joint.localPosition = new Vector3(0, 1.25f, 0);
             sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
-            Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up * 1.25f;
+            Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
             joint.RotateAround(joint.position + transform.up * 1.5f, transform.right, -ty);
             sword.transform.localPosition = new Vector3(0, 0, 1.75f);
@@ -162,7 +162,7 @@ public class EnemyMotion : MonoBehaviour
                     joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                     joint.localPosition = new Vector3(0, 1.25f, 0);
                     sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
-                    Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up * 1.25f;
+                    Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
                     joint.RotateAround(joint.position + v3, sword.transform.up, tx);
                     joint.RotateAround(joint.position + transform.up * 1.5f, transform.right, -ty);
                     sword.transform.localPosition = new Vector3(0, 0, 1.75f);
@@ -192,7 +192,7 @@ public class EnemyMotion : MonoBehaviour
                 joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 joint.localPosition = new Vector3(0, 1.25f, 0);
                 sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
-                Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up * 1.25f;
+                Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
                 joint.RotateAround(joint.position + v3, sword.transform.up, tx);
                 joint.RotateAround(joint.position + transform.up * 1.5f, transform.right, -ty);
                 sword.transform.localPosition = new Vector3(0, 0, 1.75f);
