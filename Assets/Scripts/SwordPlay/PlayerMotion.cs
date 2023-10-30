@@ -216,11 +216,6 @@ public class PlayerMotion : MonoBehaviour
             anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position = poslleg;
             anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position = posrleg;
         }
-        else if (health > -1)
-        {
-            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.1f)
-                transform.position += knockBack * 0.1f;
-        }
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponentInChildren<Rig>().weight = 1;

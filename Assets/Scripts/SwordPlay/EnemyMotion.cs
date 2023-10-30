@@ -234,11 +234,6 @@ public class EnemyMotion : MonoBehaviour
             anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position = poslleg;
             anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position = posrleg;
         }
-        else if(health >-1)
-        {
-            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.1f)
-                transform.position += knockBack * 0.1f;
-        }
         //manual parenting
         if (health > -1)
         {

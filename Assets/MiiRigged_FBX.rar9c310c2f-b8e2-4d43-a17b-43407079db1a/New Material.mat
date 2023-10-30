@@ -105,7 +105,7 @@ Material:
     - _EnvironmentReflections: 1
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
-    - _GlossMapScale: 0.5
+    - _GlossMapScale: 0.25
     - _Glossiness: 0.5
     - _GlossyReflections: 0
     - _Metallic: 1
