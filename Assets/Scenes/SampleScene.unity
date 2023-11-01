@@ -903,7 +903,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 0
@@ -2355,7 +2355,6 @@ GameObject:
   - component: {fileID: 546131687}
   - component: {fileID: 546131693}
   - component: {fileID: 546131694}
-  - component: {fileID: 546131695}
   m_Layer: 7
   m_Name: Mii Enemy
   m_TagString: Enemy
@@ -2948,7 +2947,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 1
@@ -2987,36 +2986,6 @@ MonoBehaviour:
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
   _Editor_LegHelperModule: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
---- !u!114 &546131695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546131686}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c24372c344df49b827766c51b99e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreMass: 1
-  PositionDrive:
-    Spring: 1000
-    Damper: 50
-    ForceLimit: Infinity
-    EnableAxes:
-      X: 0
-      Y: 0
-      Z: 0
-  RotationDrive:
-    Spring: 100
-    Damper: 50
-    ForceLimit: Infinity
-    EnableAxes:
-      X: 1
-      Y: 1
-      Z: 1
-  Target: {fileID: 2062608567}
 --- !u!1 &589148873
 GameObject:
   m_ObjectHideFlags: 0
