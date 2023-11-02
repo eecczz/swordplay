@@ -8,7 +8,7 @@ using XftWeapon;
 
 public class PlayerMotion : MonoBehaviour
 {
-    public Transform jointParent, joint;
+    public Transform jointParent, joint, body;
     Collider sword;
     Animator anim;
     NavMeshAgent nav;
@@ -190,11 +190,15 @@ public class PlayerMotion : MonoBehaviour
 
     private void FixedUpdate()
     {
+        GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, Mathf.Clamp(GetComponent<Rigidbody>().velocity.y, -Mathf.Infinity, 0), GetComponent<Rigidbody>().velocity.z);
         GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * Mathf.Clamp(GetComponent<Rigidbody>().velocity.magnitude, 0, 5);
-        /*if (ent != null && health > -1)
-            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, Quaternion.LookRotation(ent.transform.position - transform.position).eulerAngles.y, transform.rotation.eulerAngles.z));
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && ent != null && ent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
-            GetComponent<Rigidbody>().velocity = Vector3.zero;*/
+        float angle = Quaternion.Angle(GetComponent<Rigidbody>().rotation, body.rotation);
+        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f)
+        {
+            GetComponent<Animator>().applyRootMotion = true;
+            GetComponent<NavMeshAgent>().enabled = true;
+            GetComponent<RigBuilder>().enabled = true;
+        }
     }
 
     private void LateUpdate()

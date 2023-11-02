@@ -5,13 +5,14 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations.Rigging;
 using XftWeapon;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyMotion : MonoBehaviour
 {
     Animator anim;
     NavMeshAgent nav;
     public static Transform player;
-    public Transform jointParent, joint;
+    public Transform jointParent, joint, body;
     public static Transform ejoint;
     Collider sword;
     float sensitivity = 0.01f;
@@ -208,11 +209,15 @@ public class EnemyMotion : MonoBehaviour
 
     private void FixedUpdate()
     { //everything is explained in PlayerMotion.cs
+        GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, Mathf.Clamp(GetComponent<Rigidbody>().velocity.y, -Mathf.Infinity, 0), GetComponent<Rigidbody>().velocity.z);
         GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * Mathf.Clamp(GetComponent<Rigidbody>().velocity.magnitude, 0, 5);
-        /*if (player != null && health > -1)
-            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, Quaternion.LookRotation(player.position - transform.position).eulerAngles.y, transform.rotation.eulerAngles.z));
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && player != null && player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
-            GetComponent<Rigidbody>().velocity = Vector3.zero;*/
+        float angle = Quaternion.Angle(GetComponent<Rigidbody>().rotation, body.rotation);
+        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f)
+        {
+            GetComponent<Animator>().applyRootMotion = true;
+            GetComponent<NavMeshAgent>().enabled = true;
+            GetComponent<RigBuilder>().enabled = true;
+        }
     }
 
     private void LateUpdate()

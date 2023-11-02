@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 106917028}
   - component: {fileID: 106917034}
   - component: {fileID: 106917035}
-  - component: {fileID: 106917036}
+  - component: {fileID: 106917037}
   m_Layer: 6
   m_Name: Mii Player
   m_TagString: Untagged
@@ -349,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jointParent: {fileID: 1374272082}
   joint: {fileID: 1117039416}
+  body: {fileID: 1815750455}
   sensitivity: 5
   canSwing: 1
   clips:
@@ -403,8 +404,8 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2cf18568e778b594bac0a62631fb4893, type: 3}
   m_Controller: {fileID: 9100000, guid: ca4b33691f21b5e479d30696c6f75308, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
+  m_CullingMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -891,7 +892,7 @@ MonoBehaviour:
   GlueFadeInSpeed: 0.85
   AllowGlueBelowFoot: 0.2
   GlueFadeOutSpeed: 0.5
-  UnglueOn: 90
+  UnglueOn: 30
   AllowGlueDrag: 0.7
   GlueMode: 2
   SmoothSuddenSteps: 0.85
@@ -904,7 +905,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 0
@@ -943,36 +944,102 @@ MonoBehaviour:
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
   _Editor_LegHelperModule: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
---- !u!114 &106917036
-MonoBehaviour:
+--- !u!153 &106917037
+ConfigurableJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106917027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c24372c344df49b827766c51b99e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreMass: 0
-  PositionDrive:
-    Spring: 1000
-    Damper: 50
-    ForceLimit: Infinity
-    EnableAxes:
-      X: 0
-      Y: 0
-      Z: 0
-  RotationDrive:
-    Spring: 100
-    Damper: 50
-    ForceLimit: Infinity
-    EnableAxes:
-      X: 1
-      Y: 1
-      Z: 1
-  Target: {fileID: 1815750455}
+  m_ConnectedBody: {fileID: 1815750457}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_SecondaryAxis: {x: 0, y: 1, z: 0}
+  m_XMotion: 2
+  m_YMotion: 2
+  m_ZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 2
+  m_AngularZMotion: 1
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: -60
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 60
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 60
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_YDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 3
+    positionSpring: 100
+    positionDamper: 50
+    maximumForce: 3.4028233e+38
+  m_AngularYZDrive:
+    serializedVersion: 3
+    positionSpring: 100
+    positionDamper: 50
+    maximumForce: 3.4028233e+38
+  m_SlerpDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ProjectionMode: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1001 &131813029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2385,7 +2452,7 @@ GameObject:
   - component: {fileID: 546131696}
   - component: {fileID: 546131693}
   - component: {fileID: 546131694}
-  - component: {fileID: 546131687}
+  - component: {fileID: 546131695}
   m_Layer: 7
   m_Name: Mii Enemy
   m_TagString: Enemy
@@ -2393,36 +2460,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &546131687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546131686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c24372c344df49b827766c51b99e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreMass: 0
-  PositionDrive:
-    Spring: 1000
-    Damper: 50
-    ForceLimit: Infinity
-    EnableAxes:
-      X: 0
-      Y: 0
-      Z: 0
-  RotationDrive:
-    Spring: 100
-    Damper: 50
-    ForceLimit: Infinity
-    EnableAxes:
-      X: 1
-      Y: 1
-      Z: 1
-  Target: {fileID: 2011324565}
 --- !u!195 &546131688
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2488,8 +2525,8 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2cf18568e778b594bac0a62631fb4893, type: 3}
   m_Controller: {fileID: 9100000, guid: ca4b33691f21b5e479d30696c6f75308, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
+  m_CullingMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -2976,7 +3013,7 @@ MonoBehaviour:
   GlueFadeInSpeed: 0.85
   AllowGlueBelowFoot: 0.2
   GlueFadeOutSpeed: 0.5
-  UnglueOn: 90
+  UnglueOn: 30
   AllowGlueDrag: 0.7
   GlueMode: 2
   SmoothSuddenSteps: 0.85
@@ -2989,7 +3026,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 1
@@ -3028,6 +3065,102 @@ MonoBehaviour:
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
   _Editor_LegHelperModule: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
+--- !u!153 &546131695
+ConfigurableJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546131686}
+  m_ConnectedBody: {fileID: 2011324567}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_SecondaryAxis: {x: 0, y: 1, z: 0}
+  m_XMotion: 2
+  m_YMotion: 2
+  m_ZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 2
+  m_AngularZMotion: 1
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: -60
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 60
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 60
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_YDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 3
+    positionSpring: 100
+    positionDamper: 50
+    maximumForce: 3.4028233e+38
+  m_AngularYZDrive:
+    serializedVersion: 3
+    positionSpring: 100
+    positionDamper: 50
+    maximumForce: 3.4028233e+38
+  m_SlerpDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ProjectionMode: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!114 &546131696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3042,6 +3175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jointParent: {fileID: 2062608567}
   joint: {fileID: 714484950}
+  body: {fileID: 2011324565}
   clips:
   - {fileID: 8300000, guid: 6a9ec6b89b35c43a49c72f32b9958908, type: 3}
   - {fileID: 8300000, guid: 67dd73a8fb8b99e4d8c8d793c86c4324, type: 3}
@@ -6664,6 +6798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1815750455}
   - component: {fileID: 1815750456}
+  - component: {fileID: 1815750457}
   m_Layer: 6
   m_Name: Balance
   m_TagString: Untagged
@@ -6698,6 +6833,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 546131692}
+--- !u!54 &1815750457
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815750454}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1863119019
 GameObject:
   m_ObjectHideFlags: 0
@@ -7090,6 +7241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2011324565}
   - component: {fileID: 2011324566}
+  - component: {fileID: 2011324567}
   m_Layer: 7
   m_Name: Balance
   m_TagString: Untagged
@@ -7124,6 +7276,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 106917033}
+--- !u!54 &2011324567
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011324564}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2014677672
 GameObject:
   m_ObjectHideFlags: 0

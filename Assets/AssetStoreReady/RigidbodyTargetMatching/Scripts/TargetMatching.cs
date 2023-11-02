@@ -15,16 +15,4 @@ public class TargetMatching : RigidbodyMatchingBase
 
         base.FixedUpdate();
     }
-
-    protected override void UpdateRotation()
-    {
-        base.UpdateRotation();
-        float angle = Quaternion.Angle(GetComponent<Rigidbody>().rotation, Target.rotation);
-        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f && (GetComponent<EnemyMotion>()!=null || GetComponent<PlayerMotion>() != null))
-        {
-            GetComponent<Animator>().applyRootMotion = true;
-            GetComponent<NavMeshAgent>().enabled = true;
-            GetComponent<RigBuilder>().enabled = true;
-        }
-    }
 }
