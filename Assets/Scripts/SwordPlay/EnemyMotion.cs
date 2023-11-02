@@ -208,10 +208,11 @@ public class EnemyMotion : MonoBehaviour
 
     private void FixedUpdate()
     { //everything is explained in PlayerMotion.cs
-        if (player != null && health > -1)
+        GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * Mathf.Clamp(GetComponent<Rigidbody>().velocity.magnitude, 0, 5);
+        /*if (player != null && health > -1)
             transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, Quaternion.LookRotation(player.position - transform.position).eulerAngles.y, transform.rotation.eulerAngles.z));
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && player != null && player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().velocity = Vector3.zero;*/
     }
 
     private void LateUpdate()
@@ -250,8 +251,11 @@ public class EnemyMotion : MonoBehaviour
             {
                 if (health > 0)
                 {
-                    health--;
-                    anim.CrossFade("Hurted", 0, 0);
+                    //health--;
+                    //anim.CrossFade("Hurted", 0, 0);
+                    anim.applyRootMotion = false;
+                    nav.enabled = false;
+                    GetComponent<RigBuilder>().enabled = false;
                     GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                     Destroy(hit, 0.3f);
                     if ((hit.transform.position - anim.GetBoneTransform(HumanBodyBones.LeftShoulder).position).magnitude > (hit.transform.position - anim.GetBoneTransform(HumanBodyBones.RightShoulder).position).magnitude)
@@ -261,8 +265,8 @@ public class EnemyMotion : MonoBehaviour
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                     SoundManager.Instance.SFXPlay("Hit", clips[0]);
-                    Physics.IgnoreLayerCollision(6, 9, true);
-                    Physics.IgnoreLayerCollision(7, 8, true);
+                    //Physics.IgnoreLayerCollision(6, 9, true);
+                    //Physics.IgnoreLayerCollision(7, 8, true);
                 }
                 else
                 {
@@ -363,8 +367,11 @@ public class EnemyMotion : MonoBehaviour
                 {
                     if (health > 0)
                     {
-                        health--;
-                        anim.CrossFade("Hurted", 0, 0);
+                        //health--;
+                        //anim.CrossFade("Hurted", 0, 0);
+                        anim.applyRootMotion = false;
+                        nav.enabled = false;
+                        GetComponent<RigBuilder>().enabled = false;
                         GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                         Destroy(hit, 0.3f);
                         if ((hit.transform.position - anim.GetBoneTransform(HumanBodyBones.LeftShoulder).position).magnitude > (hit.transform.position - anim.GetBoneTransform(HumanBodyBones.RightShoulder).position).magnitude)
@@ -374,8 +381,8 @@ public class EnemyMotion : MonoBehaviour
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                         SoundManager.Instance.SFXPlay("Hit", clips[0]);
-                        Physics.IgnoreLayerCollision(6, 9, true);
-                        Physics.IgnoreLayerCollision(7, 8, true);
+                        //Physics.IgnoreLayerCollision(6, 9, true);
+                        //Physics.IgnoreLayerCollision(7, 8, true);
                     }
                     else
                     {
@@ -480,8 +487,8 @@ public class EnemyMotion : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        //GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        //GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
     public Material dissolve;

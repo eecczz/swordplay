@@ -6,8 +6,8 @@ using UnityEngine;
 public class Balance : MonoBehaviour
 {
     public Transform body;
-    private void Update()
+    private void FixedUpdate()
     {
-        transform.position = body.position;
+        transform.rotation = Quaternion.Euler(new Vector3(0, Quaternion.LookRotation(body.position - transform.position).eulerAngles.y, 0));
     }
 }

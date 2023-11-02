@@ -122,6 +122,12 @@ public abstract class RigidbodyMatchingBase : MonoBehaviour
         deltaRot.ToAngleAxis(out float angle, out Vector3 axis);
         Vector3 angleDelta = axis * angle * Mathf.Deg2Rad;
 
+        // 계산된 각도 차이가 180도 이상이면 반대 방향으로 회전하도록 설정
+        if (angle > 180f)
+        {
+            angle -= 360f;
+        }
+
         Vector3 springForce = angleDelta * RotationDrive.Spring;
         Vector3 damperForce = _rigidbody.angularVelocity * RotationDrive.Damper;
 
