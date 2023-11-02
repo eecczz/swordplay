@@ -332,7 +332,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 7.5
-  m_BaseOffset: -0.46
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &106917029
@@ -428,7 +428,7 @@ Transform:
   - {fileID: 914814926}
   - {fileID: 1815750455}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &106917034
 CapsuleCollider:
@@ -469,7 +469,7 @@ MonoBehaviour:
   RagdolledParameter: 
   SwingHelper: 0
   GluingFloorLevel: 0.05
-  GluingFloorLevelUseOnMoving: 1
+  GluingFloorLevelUseOnMoving: 0
   GluingFloorLevelOnMoving: 0
   StepPointsOverlapRadius: 0
   UseStepPointsOverlapRadiusOnMoving: 0
@@ -487,7 +487,7 @@ MonoBehaviour:
   StepInfoReceiver: {fileID: 0}
   ExtraPelvisOffset: {x: 0, y: 0, z: 0}
   ReposeGluingAfter: 0
-  GlueOnlyOnIdle: 0
+  GlueOnlyOnIdle: 1
   LocalWorldUp: 1
   DisableCustomModules: 0
   CustomModules:
@@ -612,7 +612,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 1
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -888,28 +888,28 @@ MonoBehaviour:
       m_RotationOrder: 4
   UseGluing: 1
   MainGlueBlend: 1
-  GlueRangeThreshold: 0.375
-  GlueFadeInSpeed: 0.85
+  GlueRangeThreshold: 1
+  GlueFadeInSpeed: 1
   AllowGlueBelowFoot: 0.2
-  GlueFadeOutSpeed: 0.5
-  UnglueOn: 30
+  GlueFadeOutSpeed: 1
+  UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
   SmoothSuddenSteps: 0.85
-  LegElevateBlend: 0.7
+  LegElevateBlend: 2
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
-  FootAlignRapidity: 0.75
+  FootAlignRapidity: 1
   AnimateFeet: 1
-  LimitFeetYaw: 30
+  LimitFeetYaw: 90
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
-  _EditorSetupCategory: 0
-  _EditorMotionCategory: 2
+  _EditorSetupCategory: 1
+  _EditorMotionCategory: 0
   _EditorExtraCategory: 0
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -923,7 +923,7 @@ MonoBehaviour:
   customScaleReferenceValue: 0.5
   DelayedInitialization: 0
   Calibrate: 1
-  AnimatePhysics: 0
+  AnimatePhysics: 1
   DisableIfInvisible: {fileID: 0}
   FadeOffAtDistance: 0
   GroundMask:
@@ -937,8 +937,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -2479,7 +2479,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 7.5
-  m_BaseOffset: -0.46
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &546131689
@@ -2590,7 +2590,7 @@ MonoBehaviour:
   RagdolledParameter: 
   SwingHelper: 0
   GluingFloorLevel: 0.05
-  GluingFloorLevelUseOnMoving: 1
+  GluingFloorLevelUseOnMoving: 0
   GluingFloorLevelOnMoving: 0
   StepPointsOverlapRadius: 0
   UseStepPointsOverlapRadiusOnMoving: 0
@@ -2608,7 +2608,7 @@ MonoBehaviour:
   StepInfoReceiver: {fileID: 0}
   ExtraPelvisOffset: {x: 0, y: 0, z: 0}
   ReposeGluingAfter: 0
-  GlueOnlyOnIdle: 0
+  GlueOnlyOnIdle: 1
   LocalWorldUp: 1
   DisableCustomModules: 0
   CustomModules:
@@ -2733,7 +2733,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 1
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -3009,20 +3009,20 @@ MonoBehaviour:
       m_RotationOrder: 4
   UseGluing: 1
   MainGlueBlend: 1
-  GlueRangeThreshold: 0.375
-  GlueFadeInSpeed: 0.85
+  GlueRangeThreshold: 1
+  GlueFadeInSpeed: 1
   AllowGlueBelowFoot: 0.2
-  GlueFadeOutSpeed: 0.5
-  UnglueOn: 30
+  GlueFadeOutSpeed: 1
+  UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
   SmoothSuddenSteps: 0.85
-  LegElevateBlend: 0.7
+  LegElevateBlend: 2
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
-  FootAlignRapidity: 0.75
+  FootAlignRapidity: 1
   AnimateFeet: 1
-  LimitFeetYaw: 30
+  LimitFeetYaw: 90
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
@@ -3030,7 +3030,7 @@ MonoBehaviour:
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 1
-  _EditorMotionCategory: 2
+  _EditorMotionCategory: 0
   _EditorExtraCategory: 0
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -3058,8 +3058,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -4214,13 +4214,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873597798}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: 33.2, y: 4.4040003, z: -38.542}
+  m_LocalPosition: {x: 33.2, y: 4.404, z: -38.542}
   m_LocalScale: {x: 40060004, y: 1, z: 1}
   m_Children:
   - {fileID: 1566494961}
   - {fileID: 2120389326}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!1 &877731736
 GameObject:

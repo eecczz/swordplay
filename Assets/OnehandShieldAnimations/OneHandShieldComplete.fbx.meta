@@ -3095,7 +3095,7 @@ ModelImporter:
       name: BlockShieldHit
       takeName: BlockShieldHit
       internalID: 0
-      firstFrame: 0
+      firstFrame: 6.9
       lastFrame: 35
       wrapMode: 0
       orientationOffsetY: 0
@@ -4382,7 +4382,7 @@ ModelImporter:
       name: DeflectStagger
       takeName: DeflectStagger
       internalID: 0
-      firstFrame: -1
+      firstFrame: 11
       lastFrame: 49
       wrapMode: 0
       orientationOffsetY: -7
@@ -6813,7 +6813,7 @@ ModelImporter:
       name: GetHitFront
       takeName: GetHitFront
       internalID: 0
-      firstFrame: 0
+      firstFrame: 5
       lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0

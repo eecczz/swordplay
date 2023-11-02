@@ -198,6 +198,7 @@ public class PlayerMotion : MonoBehaviour
             GetComponent<Animator>().applyRootMotion = true;
             GetComponent<NavMeshAgent>().enabled = true;
             GetComponent<RigBuilder>().enabled = true;
+            anim.SetLayerWeight(1, 0);
         }
     }
 
@@ -209,7 +210,7 @@ public class PlayerMotion : MonoBehaviour
             Vector3 posrleg = anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position;
             Quaternion rotlleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).rotation;
             Quaternion rotrleg = anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).rotation;
-            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") || anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted"))
                 anim.GetBoneTransform(HumanBodyBones.Hips).localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             //Head IK fix
             if (ent != null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
@@ -248,7 +249,8 @@ public class PlayerMotion : MonoBehaviour
                 if (health > 0)
                 {
                     //health--;
-                    //anim.CrossFade("Hurted", 0, 0);
+                    anim.CrossFade("Hurted", 0, 1);
+                    anim.SetLayerWeight(1, 1);
                     anim.applyRootMotion = false;
                     nav.enabled = false;
                     GetComponent<RigBuilder>().enabled = false;
@@ -367,7 +369,8 @@ public class PlayerMotion : MonoBehaviour
                     if (health > 0)
                     {
                         //health--;
-                        //anim.CrossFade("Hurted", 0, 0);
+                        anim.CrossFade("Hurted", 0, 1);
+                        anim.SetLayerWeight(1, 1);
                         anim.applyRootMotion = false;
                         nav.enabled = false;
                         GetComponent<RigBuilder>().enabled = false;

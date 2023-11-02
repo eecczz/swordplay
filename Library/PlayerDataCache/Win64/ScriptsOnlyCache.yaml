@@ -27,8 +27,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -123,6 +125,8 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 153
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -279,7 +283,7 @@ ScriptsOnlyBuild:
     className: XWeaponTrailDemo
   - hash:
       serializedVersion: 2
-      Hash: 75412ef45733e907e12db6ebb6d4607b
+      Hash: 22abd67050bb17e04715f5305cb9b576
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyMotion
@@ -669,7 +673,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 38f81ca35cded6c1752b9c7e9755c0fb
+      Hash: 95018730d4461d6665ad5413f8ed830d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotion
