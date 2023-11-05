@@ -27,6 +27,7 @@ public class PlayerMotion : MonoBehaviour
     int health = 2;
     RigBuilder rb;
     public MultiAimConstraint ma;
+    public Material mat1, mat2;
 
     private void Start()
     {
@@ -71,10 +72,22 @@ public class PlayerMotion : MonoBehaviour
 
     private void Update()
     {
-        if (anim.enabled && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && health > -1)
-            GetComponent<LegsAnimator>().UseGluing = true;
+        if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
+        {
+            GetComponentInChildren<Renderer>().material = mat1;
+        }
         else
-            GetComponent<LegsAnimator>().UseGluing = false;
+        {
+            GetComponentInChildren<Renderer>().material = mat2;
+        }
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
+        {
+            GetComponentInChildren<Rig>().weight = 1;
+        }
+        else
+        {
+            GetComponentInChildren<Rig>().weight = 0;
+        }
         if (health > -1)
         {
             //sword movement
@@ -193,8 +206,11 @@ public class PlayerMotion : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, Mathf.Clamp(GetComponent<Rigidbody>().velocity.y, -Mathf.Infinity, 0), GetComponent<Rigidbody>().velocity.z);
         GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * Mathf.Clamp(GetComponent<Rigidbody>().velocity.magnitude, 0, 5);
         float angle = Quaternion.Angle(GetComponent<Rigidbody>().rotation, body.rotation);
-        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f)
+        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f && anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
         {
+            anim.CrossFade("Idle", 0, 1);
+            anim.CrossFade("Idle", 0, 0);
+            anim.SetLayerWeight(1, 0);
             GetComponent<Animator>().applyRootMotion = true;
             GetComponent<NavMeshAgent>().enabled = true;
             GetComponent<RigBuilder>().enabled = true;
@@ -204,6 +220,13 @@ public class PlayerMotion : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
+        {
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
+        }
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
         {
             Vector3 poslleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position;
@@ -222,14 +245,6 @@ public class PlayerMotion : MonoBehaviour
             anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position = poslleg;
             anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position = posrleg;
         }
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
-        {
-            GetComponentInChildren<Rig>().weight = 1;
-        }
-        else
-        {
-            GetComponentInChildren<Rig>().weight = 0;
-        }
         //manual parenting
         if (health>-1)
         {
@@ -244,13 +259,14 @@ public class PlayerMotion : MonoBehaviour
     {
         if (collision.gameObject.layer == 9 && ent != null && !ent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            if (guard == 0 && !anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted"))
+            if (guard == 0 && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
             {
                 if (health > 0)
                 {
                     //health--;
                     anim.CrossFade("Hurted", 0, 1);
-                    anim.SetLayerWeight(1, 1);
+                    anim.CrossFade("Hurted", 0, 0);
+                    anim.SetLayerWeight(1, 0.5f);
                     anim.applyRootMotion = false;
                     nav.enabled = false;
                     GetComponent<RigBuilder>().enabled = false;
@@ -262,7 +278,7 @@ public class PlayerMotion : MonoBehaviour
                         anim.SetBool("leftHit", false);
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                    SoundManager.Instance.SFXPlay("Hit", clips[0]);
+                    SoundManager.Instance.SFXPlay("Hit", clips[2]);
                     //Physics.IgnoreLayerCollision(6, 9, true);
                     //Physics.IgnoreLayerCollision(7, 8, true);
                 }
@@ -370,7 +386,8 @@ public class PlayerMotion : MonoBehaviour
                     {
                         //health--;
                         anim.CrossFade("Hurted", 0, 1);
-                        anim.SetLayerWeight(1, 1);
+                        anim.CrossFade("Hurted", 0, 0);
+                        anim.SetLayerWeight(1, 0.5f);
                         anim.applyRootMotion = false;
                         nav.enabled = false;
                         GetComponent<RigBuilder>().enabled = false;
@@ -382,7 +399,7 @@ public class PlayerMotion : MonoBehaviour
                             anim.SetBool("leftHit", false);
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                        SoundManager.Instance.SFXPlay("Hit", clips[0]);
+                        SoundManager.Instance.SFXPlay("Hit", clips[2]);
                         //Physics.IgnoreLayerCollision(6, 9, true);
                         //Physics.IgnoreLayerCollision(7, 8, true);
                     }

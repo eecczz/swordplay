@@ -673,7 +673,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 95018730d4461d6665ad5413f8ed830d
+      Hash: fe3889d447403485bee3850fa2cb349b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotion

@@ -50,10 +50,6 @@ public class EnemyMotion : MonoBehaviour
         {
             GetComponentInChildren<Rig>().weight = 0;
         }
-        if (anim.enabled && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && health > -1)
-            GetComponent<LegsAnimator>().UseGluing = true;
-        else
-            GetComponent<LegsAnimator>().UseGluing = false;
         anim.SetBool("leftStep", PlayerMotion.lr);
         if (player != null)
             anim.SetFloat("dis", (player.position - transform.position).magnitude);
@@ -172,7 +168,6 @@ public class EnemyMotion : MonoBehaviour
                 {
                     if (swing == 1)
                     {
-                        GetComponent<LegsAnimator>().UseGluing = true;
                         //sword movement
                         cool = Random.Range(100, 500);
                         swing = 0;
@@ -212,8 +207,11 @@ public class EnemyMotion : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, Mathf.Clamp(GetComponent<Rigidbody>().velocity.y, -Mathf.Infinity, 0), GetComponent<Rigidbody>().velocity.z);
         GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * Mathf.Clamp(GetComponent<Rigidbody>().velocity.magnitude, 0, 5);
         float angle = Quaternion.Angle(GetComponent<Rigidbody>().rotation, body.rotation);
-        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f)
+        if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f && anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
         {
+            anim.CrossFade("Idle", 0, 1);
+            anim.CrossFade("Idle", 0, 0);
+            anim.SetLayerWeight(1, 0);
             GetComponent<Animator>().applyRootMotion = true;
             GetComponent<NavMeshAgent>().enabled = true;
             GetComponent<RigBuilder>().enabled = true;
@@ -223,6 +221,13 @@ public class EnemyMotion : MonoBehaviour
 
     private void LateUpdate()
     {
+        if(anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
+        {
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
+        }
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
         {
             Vector3 poslleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position;
@@ -253,13 +258,14 @@ public class EnemyMotion : MonoBehaviour
     {
         if (collision.gameObject.layer == 8 && player!=null&&!player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            if (guard == 0 && !anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted"))
+            if (guard == 0 && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
             {
                 if (health > 0)
                 {
                     //health--;
                     anim.CrossFade("Hurted", 0, 1);
-                    anim.SetLayerWeight(1, 1);
+                    anim.CrossFade("Hurted", 0, 0);
+                    anim.SetLayerWeight(1, 0.5f);
                     anim.applyRootMotion = false;
                     nav.enabled = false;
                     GetComponent<RigBuilder>().enabled = false;
@@ -376,7 +382,8 @@ public class EnemyMotion : MonoBehaviour
                     {
                         //health--;
                         anim.CrossFade("Hurted", 0, 1);
-                        anim.SetLayerWeight(1, 1);
+                        anim.CrossFade("Hurted", 0, 0);
+                        anim.SetLayerWeight(1, 0.5f);
                         anim.applyRootMotion = false;
                         nav.enabled = false;
                         GetComponent<RigBuilder>().enabled = false;
