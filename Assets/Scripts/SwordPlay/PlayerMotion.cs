@@ -83,10 +83,12 @@ public class PlayerMotion : MonoBehaviour
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponentInChildren<Rig>().weight = 1;
+            GetComponent<LegsAnimator>().UseGluing = false;
         }
         else
         {
             GetComponentInChildren<Rig>().weight = 0;
+            GetComponent<LegsAnimator>().UseGluing = true;
         }
         if (health > -1)
         {

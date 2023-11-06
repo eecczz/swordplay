@@ -888,7 +888,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  UseGluing: 0
+  UseGluing: 1
   MainGlueBlend: 1
   GlueRangeThreshold: 0.375
   GlueFadeInSpeed: 0.85
@@ -2904,7 +2904,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  UseGluing: 0
+  UseGluing: 1
   MainGlueBlend: 1
   GlueRangeThreshold: 0.375
   GlueFadeInSpeed: 0.85
