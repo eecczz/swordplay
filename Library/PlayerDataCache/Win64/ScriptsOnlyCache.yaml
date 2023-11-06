@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Balance
     - EnemyMotion
     - FIMSpace.FProceduralAnimation.LAM_InsectLegsHelper
     - FIMSpace.FProceduralAnimation.LAM_RotationStability
@@ -93,8 +92,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 3200}
-    - Class: 114
       Script: {instanceID: 3872}
     - Class: 114
       Script: {instanceID: 4028}
@@ -115,8 +112,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5690}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 134
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}

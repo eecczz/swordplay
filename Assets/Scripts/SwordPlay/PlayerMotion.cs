@@ -33,7 +33,7 @@ public class PlayerMotion : MonoBehaviour
     {
         Cursor.visible = false;
         anim = GetComponent<Animator>();
-        nav = GetComponent<NavMeshAgent>();
+        nav = body.GetComponent<NavMeshAgent>();
         sword = jointParent.GetComponentInChildren<Collider>();
         rb = GetComponent<RigBuilder>();
     }
@@ -72,23 +72,16 @@ public class PlayerMotion : MonoBehaviour
 
     private void Update()
     {
-        if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
+        nav.Warp(transform.position);
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponentInChildren<Renderer>().material = mat1;
+            GetComponentInChildren<Rig>().weight = 1;
         }
         else
         {
             GetComponentInChildren<Renderer>().material = mat2;
-        }
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
-        {
-            GetComponentInChildren<Rig>().weight = 1;
-            GetComponent<LegsAnimator>().UseGluing = false;
-        }
-        else
-        {
             GetComponentInChildren<Rig>().weight = 0;
-            GetComponent<LegsAnimator>().UseGluing = true;
         }
         if (health > -1)
         {
@@ -214,9 +207,7 @@ public class PlayerMotion : MonoBehaviour
             anim.CrossFade("Idle", 0, 0);
             anim.SetLayerWeight(1, 0);
             GetComponent<Animator>().applyRootMotion = true;
-            GetComponent<NavMeshAgent>().enabled = true;
             GetComponent<RigBuilder>().enabled = true;
-            anim.SetLayerWeight(1, 0);
         }
     }
 
@@ -224,6 +215,8 @@ public class PlayerMotion : MonoBehaviour
     {
         if (anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
         {
+            anim.GetBoneTransform(HumanBodyBones.Head).RotateAround(anim.GetBoneTransform(HumanBodyBones.Neck).position, anim.GetBoneTransform(HumanBodyBones.Head).forward, transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.Head).RotateAround(anim.GetBoneTransform(HumanBodyBones.Neck).position, anim.GetBoneTransform(HumanBodyBones.Head).right, -transform.rotation.eulerAngles.x);
             anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
             anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
             anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
@@ -239,7 +232,7 @@ public class PlayerMotion : MonoBehaviour
                 anim.GetBoneTransform(HumanBodyBones.Hips).localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             //Head IK fix
             if (ent != null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(anim.GetBoneTransform(HumanBodyBones.Head).rotation.eulerAngles.x, anim.GetBoneTransform(HumanBodyBones.Head).rotation.eulerAngles.y, transform.rotation.eulerAngles.z));
+                anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(Quaternion.LookRotation(ent.GetComponent<Animator>().GetBoneTransform(HumanBodyBones.Head).position - anim.GetBoneTransform(HumanBodyBones.Head).position).eulerAngles.x, Quaternion.LookRotation(ent.GetComponent<Animator>().GetBoneTransform(HumanBodyBones.Head).position - anim.GetBoneTransform(HumanBodyBones.Head).position).eulerAngles.y, 0));
             else
                 anim.GetBoneTransform(HumanBodyBones.Head).rotation = transform.rotation;
             anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).rotation = rotlleg;
@@ -270,7 +263,6 @@ public class PlayerMotion : MonoBehaviour
                     anim.CrossFade("Hurted", 0, 0);
                     anim.SetLayerWeight(1, 0.5f);
                     anim.applyRootMotion = false;
-                    nav.enabled = false;
                     GetComponent<RigBuilder>().enabled = false;
                     GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                     Destroy(hit, 0.3f);
@@ -290,7 +282,6 @@ public class PlayerMotion : MonoBehaviour
                     anim.SetBool("died", true);
                     GetComponentInChildren<Rig>().weight = 0;
                     GetComponentInChildren<Collider>().transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
-                    nav.enabled = false;
                     GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                     Destroy(hit, 0.3f);
                     if (hit.transform.position.y > anim.GetBoneTransform(HumanBodyBones.Neck).position.y)
@@ -391,7 +382,6 @@ public class PlayerMotion : MonoBehaviour
                         anim.CrossFade("Hurted", 0, 0);
                         anim.SetLayerWeight(1, 0.5f);
                         anim.applyRootMotion = false;
-                        nav.enabled = false;
                         GetComponent<RigBuilder>().enabled = false;
                         GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                         Destroy(hit, 0.3f);
@@ -411,7 +401,6 @@ public class PlayerMotion : MonoBehaviour
                         anim.SetBool("died", true);
                         GetComponentInChildren<Rig>().weight = 0;
                         GetComponentInChildren<Collider>().transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
-                        nav.enabled = false;
                         GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                         Destroy(hit, 0.3f);
                         if (hit.transform.position.y > anim.GetBoneTransform(HumanBodyBones.Neck).position.y)
