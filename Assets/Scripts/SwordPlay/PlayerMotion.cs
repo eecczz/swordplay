@@ -73,14 +73,17 @@ public class PlayerMotion : MonoBehaviour
     private void Update()
     {
         nav.Warp(transform.position);
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
+        if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
+            GetComponent<LegsAnimator>().UseGluing = true;
             GetComponentInChildren<Renderer>().material = mat1;
-            GetComponentInChildren<Rig>().weight = 1;
+            GetComponentInChildren<Rig>().weight = Mathf.Lerp(GetComponentInChildren<Rig>().weight, 1, 0.01f);
         }
         else
         {
-            GetComponentInChildren<Renderer>().material = mat2;
+            GetComponent<LegsAnimator>().UseGluing = false;
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                GetComponentInChildren<Renderer>().material = mat2;
             GetComponentInChildren<Rig>().weight = 0;
         }
         if (health > -1)
@@ -143,15 +146,19 @@ public class PlayerMotion : MonoBehaviour
             anim.SetFloat("dis", 1000);
         else
             anim.SetFloat("dis", (ent.transform.position - transform.position).magnitude);
-        if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
+        if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
         {
+            if (ent != null)
+                body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
             anim.SetBool("leftStep", lr);
             anim.CrossFade("Attack", 0, 0);
             lr = false;
             SoundManager.Instance.SFXPlay("Swing", clips[0]);
         }
-        else if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
+        else if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
         {
+            if (ent != null)
+                body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
             anim.SetBool("leftStep", lr);
             anim.CrossFade("Attack", 0, 0);
             lr = true;
@@ -188,7 +195,7 @@ public class PlayerMotion : MonoBehaviour
             }
             if (ent != null)
             {
-                if (nav.enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && swing == 0)
+                if (nav.enabled && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && swing == 0)
                     nav.SetDestination(ent.transform.position);
                 if (ent.tag == "Untagged")
                     onTarget = false;
@@ -204,8 +211,6 @@ public class PlayerMotion : MonoBehaviour
         if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f && anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
         {
             anim.CrossFade("Idle", 0, 1);
-            anim.CrossFade("Idle", 0, 0);
-            anim.SetLayerWeight(1, 0);
             GetComponent<Animator>().applyRootMotion = true;
             GetComponent<RigBuilder>().enabled = true;
         }
@@ -222,23 +227,22 @@ public class PlayerMotion : MonoBehaviour
             anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
             anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
         }
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
+        if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && health > -1)
         {
-            Vector3 poslleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position;
-            Vector3 posrleg = anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position;
-            Quaternion rotlleg = anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).rotation;
-            Quaternion rotrleg = anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).rotation;
-            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") || anim.GetCurrentAnimatorStateInfo(0).IsName("Hurted"))
-                anim.GetBoneTransform(HumanBodyBones.Hips).localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             //Head IK fix
             if (ent != null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(Quaternion.LookRotation(ent.GetComponent<Animator>().GetBoneTransform(HumanBodyBones.Head).position - anim.GetBoneTransform(HumanBodyBones.Head).position).eulerAngles.x, Quaternion.LookRotation(ent.GetComponent<Animator>().GetBoneTransform(HumanBodyBones.Head).position - anim.GetBoneTransform(HumanBodyBones.Head).position).eulerAngles.y, 0));
+                anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(anim.GetBoneTransform(HumanBodyBones.Head).rotation.eulerAngles.x, anim.GetBoneTransform(HumanBodyBones.Head).rotation.eulerAngles.y, 0));
+            else if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            {
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.z);
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, -anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).up, transform.rotation.eulerAngles.y - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.y);
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x + anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.x);
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.z);
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, -anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).up, transform.rotation.eulerAngles.y - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.y);
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x + anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.x);
+            }
             else
                 anim.GetBoneTransform(HumanBodyBones.Head).rotation = transform.rotation;
-            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).rotation = rotlleg;
-            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).rotation = rotrleg;
-            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).position = poslleg;
-            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).position = posrleg;
         }
         //manual parenting
         if (health>-1)
@@ -254,14 +258,12 @@ public class PlayerMotion : MonoBehaviour
     {
         if (collision.gameObject.layer == 9 && ent != null && !ent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            if (guard == 0 && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
+            if (guard == 0)
             {
                 if (health > 0)
                 {
                     //health--;
                     anim.CrossFade("Hurted", 0, 1);
-                    anim.CrossFade("Hurted", 0, 0);
-                    anim.SetLayerWeight(1, 0.5f);
                     anim.applyRootMotion = false;
                     GetComponent<RigBuilder>().enabled = false;
                     GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
@@ -379,8 +381,6 @@ public class PlayerMotion : MonoBehaviour
                     {
                         //health--;
                         anim.CrossFade("Hurted", 0, 1);
-                        anim.CrossFade("Hurted", 0, 0);
-                        anim.SetLayerWeight(1, 0.5f);
                         anim.applyRootMotion = false;
                         GetComponent<RigBuilder>().enabled = false;
                         GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
