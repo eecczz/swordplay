@@ -114,7 +114,7 @@ public class EnemyMotion : MonoBehaviour
                 if (r == 0 && anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
                 {
                     r = -1;
-                    cool1 = 100;
+                    cool = Random.Range(100, 500);
                 }
                 if (health > -1 && r == 0 && lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 {
