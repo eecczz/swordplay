@@ -19,6 +19,7 @@ public class PlayerMotion : MonoBehaviour
     public static bool lr;
     public AudioClip[] clips;
     public GameObject hitVFX, shieldVFX;
+    public PhysicMaterial pmat;
     public static GameObject ent;
     bool onTarget;
     int sign;
@@ -211,6 +212,7 @@ public class PlayerMotion : MonoBehaviour
             anim.CrossFade("Idle", 0, 1);
             GetComponent<Animator>().applyRootMotion = true;
             GetComponent<RigBuilder>().enabled = true;
+            GetComponent<Collider>().material = pmat;
         }
     }
 
@@ -227,15 +229,6 @@ public class PlayerMotion : MonoBehaviour
         }
         if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && health > -1)
         {
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-            {
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.z);
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, -anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).up, transform.rotation.eulerAngles.y - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.y);
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x + anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.x);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.z);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, -anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).up, transform.rotation.eulerAngles.y - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.y);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x + anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.x);
-            }
             //Head IK fix
             if (ent == null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
@@ -264,6 +257,7 @@ public class PlayerMotion : MonoBehaviour
                     anim.CrossFade("Hurted", 0, 1);
                     anim.applyRootMotion = false;
                     GetComponent<RigBuilder>().enabled = false;
+                    GetComponent<Collider>().material = null;
                     GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                     Destroy(hit, 0.3f);
                     if ((hit.transform.position - anim.GetBoneTransform(HumanBodyBones.LeftShoulder).position).magnitude > (hit.transform.position - anim.GetBoneTransform(HumanBodyBones.RightShoulder).position).magnitude)
@@ -381,6 +375,7 @@ public class PlayerMotion : MonoBehaviour
                         anim.CrossFade("Hurted", 0, 1);
                         anim.applyRootMotion = false;
                         GetComponent<RigBuilder>().enabled = false;
+                        GetComponent<Collider>().material = null;
                         GameObject hit = Instantiate(hitVFX, collision.contacts[0].point, Quaternion.LookRotation(anim.GetBoneTransform(HumanBodyBones.Neck).position - collision.contacts[0].point));
                         Destroy(hit, 0.3f);
                         if ((hit.transform.position - anim.GetBoneTransform(HumanBodyBones.LeftShoulder).position).magnitude > (hit.transform.position - anim.GetBoneTransform(HumanBodyBones.RightShoulder).position).magnitude)
