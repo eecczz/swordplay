@@ -247,7 +247,7 @@ public class PlayerMotion : MonoBehaviour
         {
             jointParent.position = transform.position;
             jointParent.rotation = transform.rotation;
-            Camera.main.transform.position = transform.position + Vector3.up * 4.404f - Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0)) * Vector3.forward * 4.542f;
+            Camera.main.transform.position = transform.position + Vector3.up * 4.004f - Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0)) * Vector3.forward * 3.542f;
             Camera.main.transform.rotation = Quaternion.Euler(new Vector3(20, transform.rotation.eulerAngles.y, 0));
         }
     }
