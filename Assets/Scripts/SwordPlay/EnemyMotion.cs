@@ -48,12 +48,10 @@ public class EnemyMotion : MonoBehaviour
             body.rotation = Quaternion.LookRotation(player.position - body.position);
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            GetComponent<LegsAnimator>().UseGluing = true;
             GetComponentInChildren<Rig>().weight = Mathf.Lerp(GetComponentInChildren<Rig>().weight, 1, 0.01f);
         }
         else
         {
-            GetComponent<LegsAnimator>().UseGluing = false;
             GetComponentInChildren<Rig>().weight = 0;
         }
         anim.SetBool("leftStep", PlayerMotion.lr);

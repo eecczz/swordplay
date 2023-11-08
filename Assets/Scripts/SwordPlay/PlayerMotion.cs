@@ -78,13 +78,11 @@ public class PlayerMotion : MonoBehaviour
             body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            GetComponent<LegsAnimator>().UseGluing = true;
             GetComponentInChildren<Renderer>().material = mat1;
             GetComponentInChildren<Rig>().weight = Mathf.Lerp(GetComponentInChildren<Rig>().weight, 1, 0.01f);
         }
         else
         {
-            GetComponent<LegsAnimator>().UseGluing = false;
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 GetComponentInChildren<Renderer>().material = mat2;
             GetComponentInChildren<Rig>().weight = 0;
