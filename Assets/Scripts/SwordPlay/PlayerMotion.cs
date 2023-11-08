@@ -73,6 +73,8 @@ public class PlayerMotion : MonoBehaviour
     private void Update()
     {
         nav.Warp(transform.position);
+        if (ent != null)
+            body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponent<LegsAnimator>().UseGluing = true;
@@ -117,7 +119,7 @@ public class PlayerMotion : MonoBehaviour
                 guard = 0;
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            joint.localPosition = new Vector3(0, 1.25f, 0);
+            joint.localPosition = new Vector3(0, 1.5f, 0);
             sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
             Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
@@ -132,7 +134,7 @@ public class PlayerMotion : MonoBehaviour
                 SoundManager.Instance.SFXPlay("Shield", clips[1]);
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            joint.localPosition = new Vector3(0, 1.25f, 0);
+            joint.localPosition = new Vector3(0, 1.5f, 0);
             sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
             Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
@@ -148,8 +150,6 @@ public class PlayerMotion : MonoBehaviour
             anim.SetFloat("dis", (ent.transform.position - transform.position).magnitude);
         if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
         {
-            if (ent != null)
-                body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
             anim.SetBool("leftStep", lr);
             anim.CrossFade("Attack", 0, 0);
             lr = false;
@@ -157,8 +157,6 @@ public class PlayerMotion : MonoBehaviour
         }
         else if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
         {
-            if (ent != null)
-                body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
             anim.SetBool("leftStep", lr);
             anim.CrossFade("Attack", 0, 0);
             lr = true;

@@ -43,6 +43,8 @@ public class EnemyMotion : MonoBehaviour
     void Update()
     {
         nav.Warp(transform.position);
+        if (player != null)
+            body.rotation = Quaternion.LookRotation(player.position - body.position);
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponent<LegsAnimator>().UseGluing = true;
@@ -94,7 +96,7 @@ public class EnemyMotion : MonoBehaviour
                 guard = 0;
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            joint.localPosition = new Vector3(0, 1.25f, 0);
+            joint.localPosition = new Vector3(0, 1.5f, 0);
             sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
             Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
@@ -120,8 +122,6 @@ public class EnemyMotion : MonoBehaviour
                 {
                     if (PlayerMotion.ent.transform == transform)
                     {
-                        if (player != null)
-                            body.rotation = Quaternion.LookRotation(player.position - body.position);
                         anim.CrossFade("Attack", 0, 0);
                         swing = 1;
                         Physics.IgnoreLayerCollision(6, 9, false);
@@ -137,8 +137,6 @@ public class EnemyMotion : MonoBehaviour
                 {
                     if (PlayerMotion.ent.transform == transform)
                     {
-                        if (player != null)
-                            body.rotation = Quaternion.LookRotation(player.position - body.position);
                         anim.CrossFade("Attack", 0, 0);
                         swing = 1;
                         Physics.IgnoreLayerCollision(6, 9, false);
@@ -169,7 +167,7 @@ public class EnemyMotion : MonoBehaviour
                         guard = 0;
                     }
                     joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-                    joint.localPosition = new Vector3(0, 1.25f, 0);
+                    joint.localPosition = new Vector3(0, 1.5f, 0);
                     sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
                     Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
                     joint.RotateAround(joint.position + v3, sword.transform.up, tx);
@@ -198,7 +196,7 @@ public class EnemyMotion : MonoBehaviour
                     guard = 1;
                 }
                 joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-                joint.localPosition = new Vector3(0, 1.25f, 0);
+                joint.localPosition = new Vector3(0, 1.5f, 0);
                 sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
                 Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
                 joint.RotateAround(joint.position + v3, sword.transform.up, tx);
