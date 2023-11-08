@@ -238,10 +238,7 @@ public class EnemyMotion : MonoBehaviour
         }
         if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && health > -1)
         {
-            //Head IK fix
-            if (player != null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(anim.GetBoneTransform(HumanBodyBones.Head).rotation.eulerAngles.x, anim.GetBoneTransform(HumanBodyBones.Head).rotation.eulerAngles.y, 0));
-            else if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
                 anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.z);
                 anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, -anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).up, transform.rotation.eulerAngles.y - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.y);
@@ -250,7 +247,10 @@ public class EnemyMotion : MonoBehaviour
                 anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, -anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).up, transform.rotation.eulerAngles.y - anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.y);
                 anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x + anim.GetBoneTransform(HumanBodyBones.Hips).rotation.eulerAngles.x);
             }
-            else
+            //Head IK fix
+            if (player == null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 anim.GetBoneTransform(HumanBodyBones.Head).rotation = transform.rotation;
         }
         //manual parenting
