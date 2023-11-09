@@ -10,7 +10,6 @@ ScriptsOnlyBuild:
     - TargetMatching
     - XftWeapon.XWeaponTrail
     Unity.Animation.Rigging.dll:
-    - UnityEngine.Animations.Rigging.ChainIKConstraint
     - UnityEngine.Animations.Rigging.MultiAimConstraint
     - UnityEngine.Animations.Rigging.MultiParentConstraint
     - UnityEngine.Animations.Rigging.Rig
@@ -96,8 +95,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2754}
     - Class: 114
       Script: {instanceID: 3876}
-    - Class: 114
-      Script: {instanceID: 4032}
     - Class: 114
       Script: {instanceID: 4042}
     - Class: 114
