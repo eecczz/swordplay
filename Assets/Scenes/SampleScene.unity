@@ -337,7 +337,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 67dd73a8fb8b99e4d8c8d793c86c4324, type: 3}
   hitVFX: {fileID: 1092808340257719351, guid: f95ad15c97744c14eadbd1f477804712, type: 3}
   shieldVFX: {fileID: 1092808340257719351, guid: 639dc3c1f2b5d6b46a91a79477f699dd, type: 3}
-  pmat: {fileID: 0}
   ma: {fileID: 2093368463}
   mat1: {fileID: 2100000, guid: 90bc630baf1ea234fae02963b0e1dfe6, type: 2}
   mat2: {fileID: 2100000, guid: c37d6343060be4d4a969e777e431b1be, type: 2}
@@ -886,7 +885,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 0
@@ -957,11 +956,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -90
+    limit: 0
     bounciness: 1
     contactDistance: 30
   m_HighAngularXLimit:
-    limit: 90
+    limit: 0
     bounciness: 1
     contactDistance: 30
   m_AngularYZLimitSpring:
@@ -972,7 +971,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 90
+    limit: 0
     bounciness: 0
     contactDistance: 30
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -3055,11 +3054,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -90
+    limit: 0
     bounciness: 1
     contactDistance: 30
   m_HighAngularXLimit:
-    limit: 90
+    limit: 0
     bounciness: 1
     contactDistance: 30
   m_AngularYZLimitSpring:
@@ -3070,7 +3069,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 90
+    limit: 0
     bounciness: 0
     contactDistance: 30
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -3139,7 +3138,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 67dd73a8fb8b99e4d8c8d793c86c4324, type: 3}
   hitVFX: {fileID: 1092808340257719351, guid: 6fc32fac418bfae46906a4dc2841fb4c, type: 3}
   shieldVFX: {fileID: 1092808340257719351, guid: 639dc3c1f2b5d6b46a91a79477f699dd, type: 3}
-  pmat: {fileID: 0}
   dissolve: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &589148873
 GameObject:
@@ -3306,10 +3304,10 @@ MonoBehaviour:
         transform: {fileID: 0}
         weight: 0
     m_Offset: {x: 0, y: 0, z: 0}
-    m_MinLimit: -15
-    m_MaxLimit: 15
+    m_MinLimit: -20
+    m_MaxLimit: 20
     m_AimAxis: 2
-    m_UpAxis: 2
+    m_UpAxis: 4
     m_WorldUpType: 0
     m_WorldUpObject: {fileID: 0}
     m_WorldUpAxis: 2
@@ -3765,7 +3763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c430f382484144e925c097c2d33cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 1
+  m_Weight: 0.2
   m_Data:
     m_ConstrainedObject: {fileID: 2105925233}
     m_SourceObjects:
@@ -3795,8 +3793,8 @@ MonoBehaviour:
         transform: {fileID: 0}
         weight: 0
     m_Offset: {x: 0, y: 0, z: 0}
-    m_MinLimit: -15
-    m_MaxLimit: 15
+    m_MinLimit: -180
+    m_MaxLimit: 180
     m_AimAxis: 4
     m_UpAxis: 2
     m_WorldUpType: 0
@@ -5412,7 +5410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c430f382484144e925c097c2d33cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Weight: 1
+  m_Weight: 0.2
   m_Data:
     m_ConstrainedObject: {fileID: 2105925233}
     m_SourceObjects:
@@ -5442,10 +5440,10 @@ MonoBehaviour:
         transform: {fileID: 0}
         weight: 0
     m_Offset: {x: 0, y: 0, z: 0}
-    m_MinLimit: -15
-    m_MaxLimit: 15
+    m_MinLimit: -180
+    m_MaxLimit: 180
     m_AimAxis: 2
-    m_UpAxis: 2
+    m_UpAxis: 4
     m_WorldUpType: 0
     m_WorldUpObject: {fileID: 0}
     m_WorldUpAxis: 2
@@ -7158,8 +7156,8 @@ MonoBehaviour:
         transform: {fileID: 0}
         weight: 0
     m_Offset: {x: 0, y: 0, z: 0}
-    m_MinLimit: -15
-    m_MaxLimit: 15
+    m_MinLimit: -20
+    m_MaxLimit: 20
     m_AimAxis: 4
     m_UpAxis: 2
     m_WorldUpType: 0
