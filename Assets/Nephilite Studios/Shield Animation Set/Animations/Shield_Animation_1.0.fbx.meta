@@ -2641,8 +2641,8 @@ ModelImporter:
       name: shield_th_charged_attack_01_release
       takeName: shield_th_charged_attack_01_release
       internalID: 0
-      firstFrame: 2
-      lastFrame: 13
+      firstFrame: 0
+      lastFrame: 6
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

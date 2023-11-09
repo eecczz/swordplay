@@ -175,6 +175,7 @@ public class PlayerMotion : MonoBehaviour
             if (swing == 0)
             {
                 swing = 1;
+                GetComponent<LegsAnimator>().UseGluing = false;
                 Physics.IgnoreLayerCollision(7, 8, false);
             }
         }
@@ -183,6 +184,7 @@ public class PlayerMotion : MonoBehaviour
             if (swing == 1)
             {
                 swing = 0;
+                GetComponent<LegsAnimator>().UseGluing = true;
                 Physics.IgnoreLayerCollision(7, 8, true);
             }
         }
@@ -234,13 +236,10 @@ public class PlayerMotion : MonoBehaviour
         }
         if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && health > -1)
         {
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-            {
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
-            }
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
             //Head IK fix
             if (ent == null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
@@ -252,7 +251,7 @@ public class PlayerMotion : MonoBehaviour
         {
             jointParent.position = transform.position;
             jointParent.rotation = transform.rotation;
-            Camera.main.transform.position = transform.position + Vector3.up * 4.004f - Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0)) * Vector3.forward * 3.542f;
+            Camera.main.transform.position = transform.position + Vector3.up * 4.404f - Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0)) * Vector3.forward * 4.542f;
             Camera.main.transform.rotation = Quaternion.Euler(new Vector3(20, transform.rotation.eulerAngles.y, 0));
         }
     }
@@ -288,8 +287,7 @@ public class PlayerMotion : MonoBehaviour
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                     SoundManager.Instance.SFXPlay("Hit", clips[2]);
-                    //Physics.IgnoreLayerCollision(6, 9, true);
-                    //Physics.IgnoreLayerCollision(7, 8, true);
+                    Physics.IgnoreLayerCollision(6, 9, true);
                 }
                 else
                 {
@@ -415,8 +413,7 @@ public class PlayerMotion : MonoBehaviour
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                         SoundManager.Instance.SFXPlay("Hit", clips[2]);
-                        //Physics.IgnoreLayerCollision(6, 9, true);
-                        //Physics.IgnoreLayerCollision(7, 8, true);
+                        Physics.IgnoreLayerCollision(6, 9, true);
                     }
                     else
                     {

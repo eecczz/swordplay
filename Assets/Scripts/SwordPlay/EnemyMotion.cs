@@ -131,6 +131,7 @@ public class EnemyMotion : MonoBehaviour
                     {
                         anim.CrossFade("Attack", 0, 0);
                         swing = 1;
+                        GetComponent<LegsAnimator>().UseGluing = false;
                         Physics.IgnoreLayerCollision(6, 9, false);
                         //sword movement
                         cool1 = 100;
@@ -146,6 +147,7 @@ public class EnemyMotion : MonoBehaviour
                     {
                         anim.CrossFade("Attack", 0, 0);
                         swing = 1;
+                        GetComponent<LegsAnimator>().UseGluing = false;
                         Physics.IgnoreLayerCollision(6, 9, false);
                         //sword movement
                         cool1 = 100;
@@ -185,6 +187,7 @@ public class EnemyMotion : MonoBehaviour
                 {
                     if (swing == 1)
                     {
+                        GetComponent<LegsAnimator>().UseGluing = true;
                         //sword movement
                         cool = Random.Range(100, 500);
                         swing = 0;
@@ -244,13 +247,10 @@ public class EnemyMotion : MonoBehaviour
         }
         if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && health > -1)
         {
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-            {
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
-                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
-                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
-            }
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
+            anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
             //Head IK fix
             if (player == null && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 anim.GetBoneTransform(HumanBodyBones.Head).rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
@@ -296,8 +296,7 @@ public class EnemyMotion : MonoBehaviour
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                     SoundManager.Instance.SFXPlay("Hit", clips[0]);
-                    //Physics.IgnoreLayerCollision(6, 9, true);
-                    //Physics.IgnoreLayerCollision(7, 8, true);
+                    Physics.IgnoreLayerCollision(7, 8, true);
                 }
                 else
                 {
@@ -420,8 +419,7 @@ public class EnemyMotion : MonoBehaviour
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
                         SoundManager.Instance.SFXPlay("Hit", clips[0]);
-                        //Physics.IgnoreLayerCollision(6, 9, true);
-                        //Physics.IgnoreLayerCollision(7, 8, true);
+                        Physics.IgnoreLayerCollision(7, 8, true);
                     }
                     else
                     {
