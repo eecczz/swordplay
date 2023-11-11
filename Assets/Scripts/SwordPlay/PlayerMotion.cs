@@ -26,7 +26,7 @@ public class PlayerMotion : MonoBehaviour
     Rigidbody rigid;
     int health = 2;
     RigBuilder rb;
-    public MultiAimConstraint ma;
+    public MultiAimConstraint ma, hips1, hips2;
     public Material mat1, mat2;
 
     private void Start()
@@ -75,6 +75,16 @@ public class PlayerMotion : MonoBehaviour
         nav.Warp(transform.position);
         if (ent != null)
             body.rotation = Quaternion.LookRotation(ent.transform.position - body.position);
+        if (guard == 0)
+        {
+            hips1.weight = Mathf.Lerp(hips1.weight, 1, 0.01f);
+            hips2.weight = Mathf.Lerp(hips2.weight, 1, 0.01f);
+        }
+        else
+        {
+            hips1.weight = Mathf.Lerp(hips1.weight, 0, 0.01f);
+            hips2.weight = Mathf.Lerp(hips2.weight, 0, 0.01f);
+        }
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponentInChildren<Renderer>().material = mat1;
@@ -148,7 +158,7 @@ public class PlayerMotion : MonoBehaviour
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
             joint.RotateAround(joint.position + transform.up * 1.5f, transform.right, -ty);
             sword.transform.localPosition = new Vector3(0, 0, 1.75f);
-            sword.transform.position = transform.position + transform.up * 2 + transform.forward * 1.5f + transform.right * -tx / 90 + transform.up * -ty / 100;
+            sword.transform.position = transform.position + transform.up * 3 + transform.forward * 1.75f + transform.right * -tx / 90 + transform.up * -ty / 100;
         }
         //animation parameter settings
         anim.SetBool("leftStep", lr);
