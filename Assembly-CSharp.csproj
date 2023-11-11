@@ -167,7 +167,6 @@
     <Compile Include="Assets\Nephilite Studios\Shield Animation Set\Demo\Scripts\ShieldControllerDemoScript.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_ImpulsesOnStopAndOnLand.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Shared\Procedural\FElasticTransform.cs" />
-    <Compile Include="Assets\AssetStoreReady\RigidbodyTargetMatching\Scripts\TargetMatching.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\LegsA.Glue.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Shared\Procedural\FMuscles.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Setup Settings\LegsA.Raycasting.cs" />
@@ -182,7 +181,6 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\Bases\LegsAnimatorControlModuleBase.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Core\RagdollIndicatorHelper.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Forwarding\LegsA.Leg.Helpers.cs" />
-    <Compile Include="Assets\AssetStoreReady\RigidbodyTargetMatching\Scripts\RigidbodyMatchingBase.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_InsectBodyElevateHelper.cs" />
     <Compile Include="Assets\FImpossible Creations\Shared Tools\Editor Tools\Property Attributes\FPD_LayersAttribute.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_StabilizePoseOnIdle.cs" />
@@ -202,7 +200,6 @@
     <Compile Include="Assets\LaserSword\Data\Script\LaserSword.cs" />
     <Compile Include="Assets\Simple Spin Blur\Scripts\SimpleSpinBlur.cs" />
     <Compile Include="Assets\Scripts\BeatSaber\Spawner2.cs" />
-    <Compile Include="Assets\AssetStoreReady\RigidbodyTargetMatching\Scripts\PlacementMatching.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Setup Settings\LegsA.MainSetup.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Hips Algorithms\LegsA.Hips.Helpers.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_RotationStability.cs" />
@@ -222,7 +219,6 @@
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Presets Directory\Leg Impulses Presets\dummy.txt" />
     <None Include="Assets\XWeaponTrail\Shader\xft_displacement_screen.shader" />
     <None Include="Assets\DissolveEmissionShader\DissolveEmission.shader" />
-    <None Include="Assets\AssetStoreReady\RigidbodyTargetMatching\Readme.txt" />
     <None Include="Assets\XWeaponTrail\readme.txt" />
     <None Include="Assets\CBG\FPSMeshTool\Shaders\InvisibleShadowCaster.shader" />
     <None Include="Assets\CBG\FPSMeshTool\Shaders\URPInvisibleShadowCaster.shader" />

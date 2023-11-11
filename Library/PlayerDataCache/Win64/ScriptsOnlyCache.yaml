@@ -7,7 +7,6 @@ ScriptsOnlyBuild:
     - FIMSpace.FProceduralAnimation.LegsAnimator
     - PlayerMotion
     - SoundManager
-    - TargetMatching
     - XftWeapon.XWeaponTrail
     Unity.Animation.Rigging.dll:
     - UnityEngine.Animations.Rigging.MultiAimConstraint
@@ -26,10 +25,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -101,8 +98,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4040}
     - Class: 114
       Script: {instanceID: 4452}
-    - Class: 114
-      Script: {instanceID: 4534}
     - Class: 114
       Script: {instanceID: 4602}
     - Class: 114
@@ -848,12 +843,6 @@ ScriptsOnlyBuild:
     className: LAM_ImpulsesOnStopAndOnLand
   - hash:
       serializedVersion: 2
-      Hash: 3210488db607a7ba1084813a2ce50b42
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TargetMatching
-  - hash:
-      serializedVersion: 2
       Hash: 1044ace98a2a158d7b3c2af5a9bdab28
     assemblyName: Assembly-CSharp.dll
     namespaceName: FIMSpace.FProceduralAnimation
@@ -1074,12 +1063,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 5a8ca983d0a1243a6085e3865197e63d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlacementMatching
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
