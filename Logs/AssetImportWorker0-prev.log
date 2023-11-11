@@ -15,11 +15,11 @@ C:/Users/Public/Documents/swordplay-clone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53875
+64242
 Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
 C:/Users/Public/Documents/swordplay-clone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 228.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 57.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -35,207 +35,222 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002521 seconds.
+Registered in 0.001662 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 88.20 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 76.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.643 seconds
+- Completed reload, in  1.095 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006114 seconds.
+Registered in 0.004684 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.485 seconds
+- Completed reload, in  1.533 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2073 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 102.4 MB.
 System memory in use after: 99.6 MB.
 
-Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 2490.
-Total: 4.898000 ms (FindLiveObjects: 0.488300 ms CreateObjectMapping: 0.225900 ms MarkObjects: 2.608100 ms  DeleteObjects: 1.573400 ms)
+Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 2491.
+Total: 4.140500 ms (FindLiveObjects: 0.452000 ms CreateObjectMapping: 0.150100 ms MarkObjects: 2.260200 ms  DeleteObjects: 1.276700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/SampleScene/NavMesh.asset
-  artifactKey: Guid(9c72e26ddeccfc94daba41d5ef1a3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh.asset using Guid(9c72e26ddeccfc94daba41d5ef1a3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ea21181eadd96661140c1bed7d6319') in 0.059468 seconds
-  Import took 0.064656 seconds .
+  path: Assets/Plugins/Android
+  artifactKey: Guid(ee1191a566ccb0149920c95b41b0c0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Android using Guid(ee1191a566ccb0149920c95b41b0c0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9ecf92ae9556d23eda68726edddf10') in 0.017980 seconds
+  Import took 0.026100 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Effect Profile 1.asset
-  artifactKey: Guid(04fc99d90e52f574394914f40871f528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Effect Profile 1.asset using Guid(04fc99d90e52f574394914f40871f528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275cc176c9793d97a9f9afe661a74a89') in 0.015020 seconds
-  Import took 0.019448 seconds .
+  Time since last request: 3.759380 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Social/Conversation/BasicMotions@Talk01.fbx
+  artifactKey: Guid(d42c5615ec78fc34cbcaf031b2975360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Social/Conversation/BasicMotions@Talk01.fbx using Guid(d42c5615ec78fc34cbcaf031b2975360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7acb230c19c716aefa32288808d7989d') in 0.079984 seconds
+  Import took 0.084257 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Effect Profile.asset
-  artifactKey: Guid(3b6dd047dbed0a34a87b2ced7992a4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Effect Profile.asset using Guid(3b6dd047dbed0a34a87b2ced7992a4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357987b285be5aa527dafa968cc89dab') in 0.013137 seconds
-  Import took 0.017849 seconds .
+  Time since last request: 0.000270 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx
+  artifactKey: Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx using Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4fd1c55d1f5b75674c57d2c2ac7c49') in 0.098901 seconds
+  Import took 0.103823 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Scenes/SwordMasterScene/NavMesh.asset
-  artifactKey: Guid(d34e13565f4b1da4d8fbe5efd7b9cd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SwordMasterScene/NavMesh.asset using Guid(d34e13565f4b1da4d8fbe5efd7b9cd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95dd9ae707244813b504c3e32b5bb14') in 0.056301 seconds
-  Import took 0.061965 seconds .
+  Time since last request: 0.000191 seconds.
+  path: Assets/Evil Spirit Katana/3DModel/Evil_spirit_katana.fbx
+  artifactKey: Guid(ca16d61f3abd75249a271e79e229c6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Evil Spirit Katana/3DModel/Evil_spirit_katana.fbx using Guid(ca16d61f3abd75249a271e79e229c6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731a7782234eb440960a02fcef6e4e0a') in 0.254346 seconds
+  Import took 0.335728 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Scenes/SampleScene_Profiles
-  artifactKey: Guid(df12fa0ab25d952438dc65643ac21f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles using Guid(df12fa0ab25d952438dc65643ac21f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c5a5aced96dce2cfcc53a7ebf1fc52') in 0.013971 seconds
-  Import took 0.018781 seconds .
+  Time since last request: 0.225629 seconds.
+  path: Assets/Plugins/Wolf3D/RPM Avatar Pack/Models/FBX/Female/Female_01/V01/Female_01_V01.fbx
+  artifactKey: Guid(88ba486d780efc948a81f5bd24144a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Wolf3D/RPM Avatar Pack/Models/FBX/Female/Female_01/V01/Female_01_V01.fbx using Guid(88ba486d780efc948a81f5bd24144a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957ee105feecbb43c303fec9468b0b45') in 0.303706 seconds
+  Import took 0.309435 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 35.787973 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbef991299ababda417a06c39411d486') in 0.010512 seconds
-  Import took 0.016220 seconds .
+  Time since last request: 0.000196 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Jump_Start_Root.FBX
+  artifactKey: Guid(92d30f35ed0ad3745905cb4c04274a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Jump_Start_Root.FBX using Guid(92d30f35ed0ad3745905cb4c04274a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73744b4673d7644cf286c8b154ba6b7c') in 0.025006 seconds
+  Import took 0.029824 seconds .
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 59.1 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2490.
-Total: 5.619000 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.145200 ms MarkObjects: 3.682200 ms  DeleteObjects: 1.530500 ms)
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Slide_Start_Root.FBX
+  artifactKey: Guid(7d69cf46195c28745a4e06028662ce57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Slide_Start_Root.FBX using Guid(7d69cf46195c28745a4e06028662ce57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f56d4ee3017bec440f2b7a151954cfe') in 0.023767 seconds
+  Import took 0.029224 seconds .
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.00 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 59.1 MB.
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_R_Start_Root.FBX
+  artifactKey: Guid(4cec03c9a68e5274d80725da594c69b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_R_Start_Root.FBX using Guid(4cec03c9a68e5274d80725da594c69b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5993a3a36011be4e869bfbcdd99f8760') in 0.026352 seconds
+  Import took 0.032055 seconds .
 
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2490.
-Total: 7.139900 ms (FindLiveObjects: 0.426100 ms CreateObjectMapping: 0.244200 ms MarkObjects: 4.160700 ms  DeleteObjects: 2.307000 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Slide_Start_Root.FBX
+  artifactKey: Guid(7d69cf46195c28745a4e06028662ce57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Slide_Start_Root.FBX using Guid(7d69cf46195c28745a4e06028662ce57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f56d4ee3017bec440f2b7a151954cfe') in 0.006925 seconds
+  Import took 0.011809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Run_F_Start_Root.FBX
+  artifactKey: Guid(769eee3d1b5297748b4882cad40f2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Run_F_Start_Root.FBX using Guid(769eee3d1b5297748b4882cad40f2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e370e4e2f4ae1b893ae04a54ffe71a') in 0.026629 seconds
+  Import took 0.032332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_B_Start_Root.FBX
+  artifactKey: Guid(7f4a30db80e42f343a23fdf786326bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_B_Start_Root.FBX using Guid(7f4a30db80e42f343a23fdf786326bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45cdd2a1009bc19c784cf020d41a0502') in 0.086766 seconds
+  Import took 0.092496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Run_F_Start_Root.FBX
+  artifactKey: Guid(769eee3d1b5297748b4882cad40f2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Run_F_Start_Root.FBX using Guid(769eee3d1b5297748b4882cad40f2a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e370e4e2f4ae1b893ae04a54ffe71a') in 0.010418 seconds
+  Import took 0.016283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_F_Start_Root.FBX
+  artifactKey: Guid(7177ed3209e9f3b4f9ea145af8f54d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_F_Start_Root.FBX using Guid(7177ed3209e9f3b4f9ea145af8f54d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e4b6498573301c223314926186b619') in 0.026887 seconds
+  Import took 0.033578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_L_Start_Root.FBX
+  artifactKey: Guid(0f7d2267f025edf4293c485af2b4bc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_L_Start_Root.FBX using Guid(0f7d2267f025edf4293c485af2b4bc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca9549e664d247d894733b77091aa89') in 0.078899 seconds
+  Import took 0.084617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_F_Start_Root.FBX
+  artifactKey: Guid(7177ed3209e9f3b4f9ea145af8f54d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_F_Start_Root.FBX using Guid(7177ed3209e9f3b4f9ea145af8f54d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e4b6498573301c223314926186b619') in 0.010867 seconds
+  Import took 0.016044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_L_Start_Root.FBX
+  artifactKey: Guid(0f7d2267f025edf4293c485af2b4bc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GhostSamurai_Animset/Animation/katana/APose/Movement/Root/GhostSamurai_APose_Strafe_Walk_L_Start_Root.FBX using Guid(0f7d2267f025edf4293c485af2b4bc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca9549e664d247d894733b77091aa89') in 0.008350 seconds
+  Import took 0.013423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.018220 seconds.
+  path: Assets/AssetStoreReady/RigidbodyTargetMatching/Scripts/TargetMatching.cs
+  artifactKey: Guid(017c24372c344df49b827766c51b99e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreReady/RigidbodyTargetMatching/Scripts/TargetMatching.cs using Guid(017c24372c344df49b827766c51b99e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d84d5ceea6c9809af5dbadd2be6a37') in 0.020381 seconds
+  Import took 0.024470 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008907 seconds.
+Registered in 0.064889 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.296 seconds
+- Completed reload, in  1.086 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2067 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 99.3 MB.
+Unloading 2064 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.9 MB.
+System memory in use after: 103.0 MB.
 
-Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 2493.
-Total: 5.276500 ms (FindLiveObjects: 0.286700 ms CreateObjectMapping: 0.125500 ms MarkObjects: 2.964500 ms  DeleteObjects: 1.898300 ms)
+Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 2502.
+Total: 3.635600 ms (FindLiveObjects: 0.214700 ms CreateObjectMapping: 0.098300 ms MarkObjects: 2.068800 ms  DeleteObjects: 1.252700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.021205 seconds.
+Registered in 0.004966 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.487 seconds
+- Completed reload, in  4.247 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2067 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.1 MB.
-System memory in use after: 99.4 MB.
+Unloading 2064 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.9 MB.
+System memory in use after: 103.1 MB.
 
-Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 2496.
-Total: 5.599500 ms (FindLiveObjects: 0.249400 ms CreateObjectMapping: 0.111700 ms MarkObjects: 2.899000 ms  DeleteObjects: 2.337500 ms)
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 2505.
+Total: 4.158900 ms (FindLiveObjects: 0.231200 ms CreateObjectMapping: 0.119700 ms MarkObjects: 2.416600 ms  DeleteObjects: 1.389900 ms)
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 7.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 6.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.1 MB.
-System memory in use after: 59.3 MB.
+System memory in use before: 65.8 MB.
+System memory in use after: 63.0 MB.
 
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2496.
-Total: 5.397300 ms (FindLiveObjects: 0.348300 ms CreateObjectMapping: 0.175700 ms MarkObjects: 2.350200 ms  DeleteObjects: 2.521800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008286 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.303 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2067 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 99.4 MB.
-
-Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 2499.
-Total: 7.903800 ms (FindLiveObjects: 0.579500 ms CreateObjectMapping: 0.340900 ms MarkObjects: 4.480200 ms  DeleteObjects: 2.501100 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 7.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.2 MB.
-System memory in use after: 59.3 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2499.
-Total: 10.612700 ms (FindLiveObjects: 0.262200 ms CreateObjectMapping: 0.172500 ms MarkObjects: 6.800300 ms  DeleteObjects: 3.375600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.023991 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.027 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2067 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 99.4 MB.
-
-Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 2502.
-Total: 2.901600 ms (FindLiveObjects: 0.173400 ms CreateObjectMapping: 0.077100 ms MarkObjects: 1.532900 ms  DeleteObjects: 1.117500 ms)
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2505.
+Total: 7.272800 ms (FindLiveObjects: 0.691900 ms CreateObjectMapping: 0.215100 ms MarkObjects: 3.703600 ms  DeleteObjects: 2.660400 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
