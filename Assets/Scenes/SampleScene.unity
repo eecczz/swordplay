@@ -448,7 +448,7 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: 13182107f288fdc47a11f9216c8f062b, type: 3}
   - {fileID: 8300000, guid: 7053294e066eb1945baa4d9cc9194f15, type: 3}
-  - {fileID: 8300000, guid: 188f7dff145cb114f965ce6ce55ef1a2, type: 3}
+  - {fileID: 8300000, guid: 37f299df9b9b9a84e97c55c63d93b09c, type: 3}
   - {fileID: 8300000, guid: 5190f4718055acd4b88ef8400938004f, type: 3}
   hitVFX: {fileID: 1092808340257719351, guid: f95ad15c97744c14eadbd1f477804712, type: 3}
   shieldVFX: {fileID: 1092808340257719351, guid: 639dc3c1f2b5d6b46a91a79477f699dd, type: 3}
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 0
