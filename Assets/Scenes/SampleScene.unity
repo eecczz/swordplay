@@ -714,7 +714,7 @@ MonoBehaviour:
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
   StabilizingSpeed: 0.375
-  PushHipsOnLegMove: 0.1
+  PushHipsOnLegMove: 0
   NormalizePush: 0
   PushReactionSpeed: 0.3
   PushYBlend: 1
@@ -1002,11 +1002,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 0
-  _EditorMotionCategory: 0
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -2763,7 +2763,7 @@ MonoBehaviour:
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
   StabilizingSpeed: 0.375
-  PushHipsOnLegMove: 0.1
+  PushHipsOnLegMove: 0
   NormalizePush: 0
   PushReactionSpeed: 0.3
   PushYBlend: 1
@@ -3051,7 +3051,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 0
