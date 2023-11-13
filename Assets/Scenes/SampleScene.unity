@@ -448,8 +448,8 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: 13182107f288fdc47a11f9216c8f062b, type: 3}
   - {fileID: 8300000, guid: 7053294e066eb1945baa4d9cc9194f15, type: 3}
-  - {fileID: 8300000, guid: 6a9ec6b89b35c43a49c72f32b9958908, type: 3}
-  - {fileID: 8300000, guid: 67dd73a8fb8b99e4d8c8d793c86c4324, type: 3}
+  - {fileID: 8300000, guid: 188f7dff145cb114f965ce6ce55ef1a2, type: 3}
+  - {fileID: 8300000, guid: 5190f4718055acd4b88ef8400938004f, type: 3}
   hitVFX: {fileID: 1092808340257719351, guid: f95ad15c97744c14eadbd1f477804712, type: 3}
   shieldVFX: {fileID: 1092808340257719351, guid: 639dc3c1f2b5d6b46a91a79477f699dd, type: 3}
   ma: {fileID: 2093368463}
@@ -3285,8 +3285,8 @@ MonoBehaviour:
   joint: {fileID: 714484950}
   body: {fileID: 2011324565}
   clips:
-  - {fileID: 8300000, guid: 6a9ec6b89b35c43a49c72f32b9958908, type: 3}
-  - {fileID: 8300000, guid: 67dd73a8fb8b99e4d8c8d793c86c4324, type: 3}
+  - {fileID: 8300000, guid: 188f7dff145cb114f965ce6ce55ef1a2, type: 3}
+  - {fileID: 8300000, guid: 5190f4718055acd4b88ef8400938004f, type: 3}
   hitVFX: {fileID: 1092808340257719351, guid: 6fc32fac418bfae46906a4dc2841fb4c, type: 3}
   shieldVFX: {fileID: 1092808340257719351, guid: 639dc3c1f2b5d6b46a91a79477f699dd, type: 3}
   hips1: {fileID: 1178973531}
