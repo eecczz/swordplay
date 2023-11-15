@@ -1,0 +1,711 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.3570; Version 2009; 64bit' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Public/Documents/swordplay-clone
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53318
+Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
+C:/Users/Public/Documents/swordplay-clone
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 76.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Public/Documents/swordplay-clone/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   
+    VRAM:     3949 MB
+    Driver:   31.0.15.3141
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001680 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.871 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004077 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 71.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.528 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3218 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 175.7 MB.
+System memory in use after: 173.3 MB.
+
+Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 3657.
+Total: 3.901600 ms (FindLiveObjects: 0.319200 ms CreateObjectMapping: 0.169200 ms MarkObjects: 2.294000 ms  DeleteObjects: 1.118000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Mii_2010.fbx
+  artifactKey: Guid(b846638e1444bd44282e9278aacd2863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mii_2010.fbx using Guid(b846638e1444bd44282e9278aacd2863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e97f158238a1deb0a6861c3d126d2d') in 0.298624 seconds
+  Import took 0.303751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000997 seconds.
+  path: Assets/Mii_2010.fbx
+  artifactKey: Guid(b846638e1444bd44282e9278aacd2863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mii_2010.fbx using Guid(b846638e1444bd44282e9278aacd2863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e97f158238a1deb0a6861c3d126d2d') in 0.045328 seconds
+  Import took 0.050507 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.044 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.4 MB.
+System memory in use after: 171.0 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3741.
+Total: 3.897300 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.139200 ms MarkObjects: 2.282400 ms  DeleteObjects: 1.180200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1204.549816 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material.mat
+  artifactKey: Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material.mat using Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9006174d7de7d9c98bc9416541efe4') in 0.227547 seconds
+  Import took 0.233053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.557783 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat
+  artifactKey: Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat using Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c60ba14e12b0100a3e969d0e09144d') in 0.014451 seconds
+  Import took 0.019909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.150824 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat
+  artifactKey: Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat using Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49df0b9daf9d7358f9c3c139fc88f257') in 0.015487 seconds
+  Import took 0.020486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.374716 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat
+  artifactKey: Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat using Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73851c50753f62e52b2949fc8c209cb0') in 0.013119 seconds
+  Import took 0.019151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.650649 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat
+  artifactKey: Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat using Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0ba148742a22c7aceb25db7a3eedb5') in 0.018501 seconds
+  Import took 0.024795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat
+  artifactKey: Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat using Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7083188c060bbd2e8d9d8dd84e0ddcda') in 0.012732 seconds
+  Import took 0.017778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material.mat
+  artifactKey: Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material.mat using Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df153e11abb1f0709c0da801e709db47') in 0.012627 seconds
+  Import took 0.017689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat
+  artifactKey: Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat using Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651b164ad2ed1ad9265e465f424b721e') in 0.020029 seconds
+  Import took 0.025193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat
+  artifactKey: Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat using Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da07ba67a4b66ea3afa362c999e448e6') in 0.013422 seconds
+  Import took 0.018498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.935072 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat
+  artifactKey: Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat using Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979fe8884fa66841f6aeba57a9f271a5') in 0.020408 seconds
+  Import took 0.025996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 5.mat
+  artifactKey: Guid(e2ca9dfb18c3a464d89d6331c0441e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 5.mat using Guid(e2ca9dfb18c3a464d89d6331c0441e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9980b9151059a76c138e90f63d6a1c74') in 0.012900 seconds
+  Import took 0.017833 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003961 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.068 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.6 MB.
+System memory in use after: 171.3 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3780.
+Total: 4.436700 ms (FindLiveObjects: 0.615200 ms CreateObjectMapping: 0.452000 ms MarkObjects: 2.332700 ms  DeleteObjects: 1.035400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003866 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.059 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.7 MB.
+System memory in use after: 171.3 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3783.
+Total: 6.976200 ms (FindLiveObjects: 0.398900 ms CreateObjectMapping: 0.264400 ms MarkObjects: 4.651800 ms  DeleteObjects: 1.659800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003956 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.036 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.7 MB.
+System memory in use after: 171.3 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3786.
+Total: 4.334000 ms (FindLiveObjects: 0.334900 ms CreateObjectMapping: 0.194600 ms MarkObjects: 2.452800 ms  DeleteObjects: 1.350000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003864 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.7 MB.
+System memory in use after: 171.3 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3789.
+Total: 11.435000 ms (FindLiveObjects: 0.441700 ms CreateObjectMapping: 0.208400 ms MarkObjects: 7.903600 ms  DeleteObjects: 2.879000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1124.272631 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(9605bf508cc871849a5d99254d8add0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(9605bf508cc871849a5d99254d8add0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e270f10380290ef66eabfb0a7a71022e') in 0.363346 seconds
+  Import took 0.369345 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004601 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.082 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.8 MB.
+System memory in use after: 171.5 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3828.
+Total: 6.311100 ms (FindLiveObjects: 0.340000 ms CreateObjectMapping: 0.189500 ms MarkObjects: 4.150800 ms  DeleteObjects: 1.629000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004530 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.810 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.8 MB.
+System memory in use after: 171.5 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 3.936200 ms (FindLiveObjects: 0.305200 ms CreateObjectMapping: 0.152100 ms MarkObjects: 2.478900 ms  DeleteObjects: 0.999100 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 3.777200 ms (FindLiveObjects: 0.320000 ms CreateObjectMapping: 0.158800 ms MarkObjects: 2.149000 ms  DeleteObjects: 1.148600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 347.050103 seconds.
+  path: Assets/ImageToStl.com_mii.fbx
+  artifactKey: Guid(762f1d0c065295b4bb721c9b8bd87c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImageToStl.com_mii.fbx using Guid(762f1d0c065295b4bb721c9b8bd87c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0de9314f14430475409459c56e69b8') in 0.332093 seconds
+  Import took 0.339436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.047921 seconds.
+  path: Assets/Mii.mtl
+  artifactKey: Guid(aa05d989814260349a580a796126b0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mii.mtl using Guid(aa05d989814260349a580a796126b0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bedd468dd23c3510ed5809b3c390625') in 0.012182 seconds
+  Import took 0.017525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 274.035104 seconds.
+  path: Assets/ImageToStl.com_miicompletemap.fbx
+  artifactKey: Guid(23f0c81cdfecfab41a86f310b862b452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImageToStl.com_miicompletemap.fbx using Guid(23f0c81cdfecfab41a86f310b862b452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97f37dddd678a9dd823dcb87fbe273c') in 0.129987 seconds
+  Import took 0.137181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.938353 seconds.
+  path: Assets/Wii_Assets/Miis/MiiRigged_FBX.rar9c310c2f-b8e2-4d43-a17b-43407079db1a/MiiCompleteMap.png
+  artifactKey: Guid(673652991c7a0d1438c4992e3677b568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/MiiRigged_FBX.rar9c310c2f-b8e2-4d43-a17b-43407079db1a/MiiCompleteMap.png using Guid(673652991c7a0d1438c4992e3677b568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '963c7054530d7a20b3116f49018315fa') in 0.039507 seconds
+  Import took 0.045128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.895775 seconds.
+  path: Assets/Wii_Assets/Miis/MiiRigged_FBX.rar9c310c2f-b8e2-4d43-a17b-43407079db1a/New Material.mat
+  artifactKey: Guid(c59f9d82f9b7fd64e851258f384bcc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/MiiRigged_FBX.rar9c310c2f-b8e2-4d43-a17b-43407079db1a/New Material.mat using Guid(c59f9d82f9b7fd64e851258f384bcc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77902fc8d6217ff917934a71e0399d39') in 0.008378 seconds
+  Import took 0.013898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 434.973198 seconds.
+  path: Assets/Wii_Assets/Miis/MiiRigged_FBX 1.rar9c310c2f-b8e2-4d43-a17b-43407079db1a/New Material.mat
+  artifactKey: Guid(00c049c6bc7286c47ba0e2d61a6c3b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/MiiRigged_FBX 1.rar9c310c2f-b8e2-4d43-a17b-43407079db1a/New Material.mat using Guid(00c049c6bc7286c47ba0e2d61a6c3b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f85c83a8754225ed139a42ec6b0ae3') in 0.015279 seconds
+  Import took 0.020915 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.090 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.1 MB.
+System memory in use after: 171.8 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3872.
+Total: 6.686500 ms (FindLiveObjects: 0.533400 ms CreateObjectMapping: 0.397900 ms MarkObjects: 4.300300 ms  DeleteObjects: 1.453200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.536709 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe70e2eeefb2f86bcdf538b458ce4526') in 0.279535 seconds
+  Import took 0.285990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001411 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe70e2eeefb2f86bcdf538b458ce4526') in 0.069077 seconds
+  Import took 0.075132 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003988 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.3 MB.
+System memory in use after: 171.9 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3911.
+Total: 4.530200 ms (FindLiveObjects: 0.322700 ms CreateObjectMapping: 0.138200 ms MarkObjects: 3.004500 ms  DeleteObjects: 1.064200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 250.154753 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/New Material.mat
+  artifactKey: Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/New Material.mat using Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31a400397a4e1d9282f46825c3690f1') in 0.255785 seconds
+  Import took 0.262548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.098523 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/New Material 1.mat
+  artifactKey: Guid(43bd926000f0f7d4d90eaa92f3459326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/New Material 1.mat using Guid(43bd926000f0f7d4d90eaa92f3459326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b402da78c4d5c02cfb31659ed70a46') in 0.013871 seconds
+  Import took 0.019956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/New Material.mat
+  artifactKey: Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/New Material.mat using Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce72a3470aa2254b22e22c83ebcffb6') in 0.012363 seconds
+  Import took 0.018136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.173172 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185bda10c234002ee93f0e5bf29af740') in 0.110369 seconds
+  Import took 0.116874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.515128 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df15f23b0d2df248089ab63762e0e53a') in 0.081687 seconds
+  Import took 0.086399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.693615 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c17ced62bc51bb3d276c7a96de773b') in 0.071950 seconds
+  Import took 0.079205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 332.991564 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ddf2014b9321f1cefb591e245dd4e7d') in 0.084881 seconds
+  Import took 0.091468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.828364 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50652fd8e7533084d329a5f10abc8d38') in 0.094705 seconds
+  Import took 0.100707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.829549 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d8c22c603ac8d1c845563b64803d41') in 0.081590 seconds
+  Import took 0.088498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.606409 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/Matt.fbx
+  artifactKey: Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/Matt.fbx using Guid(60c2a1c01f2a6ad4d849ec5dd74b3297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f487f8ddc04c0eabab79f4452d9930') in 0.071299 seconds
+  Import took 0.079173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 218.488022 seconds.
+  path: Assets/Wii_Assets/Miis/Matt/source/New Material 1.mat
+  artifactKey: Guid(43bd926000f0f7d4d90eaa92f3459326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Matt/source/New Material 1.mat using Guid(43bd926000f0f7d4d90eaa92f3459326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bb5adf77c4f3d7153b8ffa20ac39f39') in 0.021421 seconds
+  Import took 0.027286 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.5 MB.
+System memory in use after: 112.1 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3974.
+Total: 5.678000 ms (FindLiveObjects: 0.401100 ms CreateObjectMapping: 0.193600 ms MarkObjects: 3.958900 ms  DeleteObjects: 1.123500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006030 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.061 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.5 MB.
+System memory in use after: 172.1 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3950.
+Total: 6.872100 ms (FindLiveObjects: 0.500500 ms CreateObjectMapping: 0.272200 ms MarkObjects: 4.228400 ms  DeleteObjects: 1.869500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005394 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.046 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.5 MB.
+System memory in use after: 172.1 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3953.
+Total: 3.954200 ms (FindLiveObjects: 0.319700 ms CreateObjectMapping: 0.154900 ms MarkObjects: 2.192700 ms  DeleteObjects: 1.286200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 381.060632 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat
+  artifactKey: Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat using Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756a9761b4ed99e94c4c82f23b3649ed') in 0.303740 seconds
+  Import took 0.308973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat
+  artifactKey: Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat using Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4795f68c6d20628d1348b84ff4d8ed0c') in 0.011666 seconds
+  Import took 0.017403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material.mat
+  artifactKey: Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material.mat using Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd198fda7e12ab100a97aa875f6ea1c56') in 0.011562 seconds
+  Import took 0.017419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat
+  artifactKey: Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat using Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e22f537c6c6996cef2f310c43b3823') in 0.012559 seconds
+  Import took 0.018537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat
+  artifactKey: Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat using Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cc403ebc35d1d96822de07a2659322') in 0.013651 seconds
+  Import took 0.019460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 5.mat
+  artifactKey: Guid(e2ca9dfb18c3a464d89d6331c0441e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 5.mat using Guid(e2ca9dfb18c3a464d89d6331c0441e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ba5ac3fb0070ceddf11fc2801b877b') in 0.016791 seconds
+  Import took 0.023613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.823061 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/New Material 6.mat
+  artifactKey: Guid(9605bf508cc871849a5d99254d8add0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/New Material 6.mat using Guid(9605bf508cc871849a5d99254d8add0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd416b639b9c99322990076867e4873fa') in 0.012800 seconds
+  Import took 0.018096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.078328 seconds.
+  path: Assets/Materials/New Material 1.mat
+  artifactKey: Guid(751d6b34dbc8f014d861b5417dc8d9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 1.mat using Guid(751d6b34dbc8f014d861b5417dc8d9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4dd09af0dce5458d752b7b424fe28d') in 0.010876 seconds
+  Import took 0.017679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.265971 seconds.
+  path: Assets/Materials/New Material 1.mat
+  artifactKey: Guid(751d6b34dbc8f014d861b5417dc8d9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 1.mat using Guid(751d6b34dbc8f014d861b5417dc8d9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2b94a400b9dca462fd710a042325c9') in 0.012237 seconds
+  Import took 0.019370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.449901 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat
+  artifactKey: Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat using Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2726d164aa9c6934f9920b933c1537') in 0.017462 seconds
+  Import took 0.022966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 6.mat
+  artifactKey: Guid(b8f53bf762f3d364d8b890cec1e38e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 6.mat using Guid(b8f53bf762f3d364d8b890cec1e38e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34dba9a653011a52b8666b736c194503') in 0.023724 seconds
+  Import took 0.028485 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003983 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.619 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.6 MB.
+System memory in use after: 172.3 MB.
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 3992.
+Total: 3.924900 ms (FindLiveObjects: 0.365000 ms CreateObjectMapping: 0.164200 ms MarkObjects: 2.347300 ms  DeleteObjects: 1.047200 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.2 MB.
+System memory in use after: 111.8 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3992.
+Total: 4.032100 ms (FindLiveObjects: 0.337800 ms CreateObjectMapping: 0.166900 ms MarkObjects: 2.201900 ms  DeleteObjects: 1.324800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -87,7 +87,13 @@ public class PlayerMotion : MonoBehaviour
         }
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            GetComponentInChildren<Renderer>().material = mat1;
+            GetComponentInChildren<SkinnedMeshRenderer>().material = mat1;
+            foreach (MeshRenderer render in GetComponentsInChildren<MeshRenderer>())
+            {
+                Color color = render.material.color;
+                color.a = 0.5f;
+                render.material.color = color;
+            }
             GetComponentInChildren<Rig>().weight = Mathf.Lerp(GetComponentInChildren<Rig>().weight, 1, 0.01f);
             ConfigurableJoint joint = GetComponent<ConfigurableJoint>();
             var limit0 = joint.lowAngularXLimit;
@@ -103,7 +109,15 @@ public class PlayerMotion : MonoBehaviour
         else
         {
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                GetComponentInChildren<Renderer>().material = mat2;
+            {
+                GetComponentInChildren<SkinnedMeshRenderer>().material = mat2;
+                foreach(MeshRenderer render in GetComponentsInChildren<MeshRenderer>())
+                {
+                    Color color = render.material.color;
+                    color.a = 1;
+                    render.material.color = color;
+                }
+            }
             GetComponentInChildren<Rig>().weight = 0;
         }
         if (health > -1)
