@@ -27,7 +27,6 @@ public class PlayerMotion : MonoBehaviour
     int health = 2;
     RigBuilder rb;
     public MultiAimConstraint ma, hips1, hips2;
-    public Material mat1, mat2;
 
     private void Start()
     {
@@ -87,12 +86,15 @@ public class PlayerMotion : MonoBehaviour
         }
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
-            GetComponentInChildren<SkinnedMeshRenderer>().material = mat1;
-            foreach (MeshRenderer render in GetComponentsInChildren<MeshRenderer>())
+            foreach (Renderer render in GetComponentsInChildren<Renderer>())
             {
-                Color color = render.material.color;
-                color.a = 0.5f;
-                render.material.color = color;
+                foreach (Material mat in render.materials)
+                {
+                    Color color = mat.color;
+                    if(color.a !=0f)
+                        color.a = 0.5f;
+                    mat.color = color;
+                }
             }
             GetComponentInChildren<Rig>().weight = Mathf.Lerp(GetComponentInChildren<Rig>().weight, 1, 0.01f);
             ConfigurableJoint joint = GetComponent<ConfigurableJoint>();
@@ -110,12 +112,15 @@ public class PlayerMotion : MonoBehaviour
         {
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
-                GetComponentInChildren<SkinnedMeshRenderer>().material = mat2;
-                foreach(MeshRenderer render in GetComponentsInChildren<MeshRenderer>())
+                foreach(Renderer render in GetComponentsInChildren<Renderer>())
                 {
-                    Color color = render.material.color;
-                    color.a = 1;
-                    render.material.color = color;
+                    foreach(Material mat in render.materials)
+                    {
+                        Color color = mat.color;
+                        if (color.a != 0f)
+                            color.a = 1;
+                        mat.color = color;
+                    }
                 }
             }
             GetComponentInChildren<Rig>().weight = 0;
