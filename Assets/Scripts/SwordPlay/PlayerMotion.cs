@@ -27,6 +27,7 @@ public class PlayerMotion : MonoBehaviour
     int health = 2;
     RigBuilder rb;
     public MultiAimConstraint ma, hips1, hips2;
+    public Material mat1, mat2;
 
     private void Start()
     {
@@ -91,8 +92,11 @@ public class PlayerMotion : MonoBehaviour
                 foreach (Material mat in render.materials)
                 {
                     Color color = mat.color;
-                    if(color.a !=0f)
+                    if (color.a != 0f)
+                    {
+                        mat.CopyPropertiesFromMaterial(mat1);
                         color.a = 0.5f;
+                    }
                     mat.color = color;
                 }
             }
@@ -118,7 +122,10 @@ public class PlayerMotion : MonoBehaviour
                     {
                         Color color = mat.color;
                         if (color.a != 0f)
+                        {
+                            mat.CopyPropertiesFromMaterial(mat2);
                             color.a = 1;
+                        }
                         mat.color = color;
                     }
                 }
