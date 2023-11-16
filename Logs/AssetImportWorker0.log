@@ -1,0 +1,131 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.3570; Version 2009; 64bit' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Public/Documents/swordplay-clone
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52315
+Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
+C:/Users/Public/Documents/swordplay-clone
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 71.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Public/Documents/swordplay-clone/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   
+    VRAM:     3949 MB
+    Driver:   31.0.15.3141
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001470 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.597 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3218 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 174.8 MB.
+
+Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 3657.
+Total: 3.344800 ms (FindLiveObjects: 0.304300 ms CreateObjectMapping: 0.167500 ms MarkObjects: 1.922000 ms  DeleteObjects: 0.949900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Fantasy Adventure Environment/Materials/Skybox/FAE_Skybox.mat
+  artifactKey: Guid(3afd1c7f9b00d254a9880e3445eee85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Adventure Environment/Materials/Skybox/FAE_Skybox.mat using Guid(3afd1c7f9b00d254a9880e3445eee85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af122f28e629c5ca4b3c3473d895028d') in 0.341395 seconds
+  Import took 0.347957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Fantasy Adventure Environment/Materials/Skybox
+  artifactKey: Guid(68a6874f515f86e4aadade252f23408e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Adventure Environment/Materials/Skybox using Guid(68a6874f515f86e4aadade252f23408e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638ec4efa7c11b89937fb7460395130f') in 0.007795 seconds
+  Import took 0.013946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Fantasy Adventure Environment/Materials
+  artifactKey: Guid(6179aae4ed923a747b082b57ea6f814b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Adventure Environment/Materials using Guid(6179aae4ed923a747b082b57ea6f814b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9924bb1c0adac26af4e378688643d71') in 0.010593 seconds
+  Import took 0.017134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Fantasy Adventure Environment
+  artifactKey: Guid(94154084a0a341c4fbdcb17242fccb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Adventure Environment using Guid(94154084a0a341c4fbdcb17242fccb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db40d1bb16d339c1b374cba4b29ba407') in 0.008493 seconds
+  Import took 0.016283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Fantasy Adventure Environment/Materials/Skybox/FAE_SkyboxRender_4k.png
+  artifactKey: Guid(a28bb56bb27d9f6429a638fcdeeed483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Adventure Environment/Materials/Skybox/FAE_SkyboxRender_4k.png using Guid(a28bb56bb27d9f6429a638fcdeeed483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4e4e0fee16a753a4abb226f9b90b53') in 0.041880 seconds
+  Import took 0.049550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.101931 seconds.
+  path: Assets/Fantasy Adventure Environment/Materials/Skybox/FAE_Skybox.mat
+  artifactKey: Guid(3afd1c7f9b00d254a9880e3445eee85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Adventure Environment/Materials/Skybox/FAE_Skybox.mat using Guid(3afd1c7f9b00d254a9880e3445eee85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7657e70c1e87eb21fb9fa49a1ff617') in 0.156102 seconds
+  Import took 0.171326 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.5 MB.
+System memory in use after: 111.1 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3764.
+Total: 4.109300 ms (FindLiveObjects: 0.296500 ms CreateObjectMapping: 0.166700 ms MarkObjects: 2.647700 ms  DeleteObjects: 0.997600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
