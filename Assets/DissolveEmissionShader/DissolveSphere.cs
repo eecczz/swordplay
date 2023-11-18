@@ -13,6 +13,6 @@ public class DissolveSphere : MonoBehaviour {
 
     private void Update() {
         for (int i = 0; i < GetComponent<Renderer>().materials.Length; i++)
-            mat[i].SetFloat("_DissolveAmount", Mathf.Sin(Time.time - time) / 2 + 0.5f);
+            mat[i].SetFloat("_Dissolve", Mathf.Sin(Time.time - time) / 2 + 0.5f);
     }
 }

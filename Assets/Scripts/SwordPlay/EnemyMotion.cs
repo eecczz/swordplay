@@ -11,7 +11,7 @@ public class EnemyMotion : MonoBehaviour
     Animator anim;
     NavMeshAgent nav;
     public static Transform player;
-    public Transform jointParent, joint, body;
+    public Transform jointParent, joint, body, crosshead;
     public static Transform ejoint;
     Collider sword;
     float sensitivity = 0.01f;
@@ -26,9 +26,10 @@ public class EnemyMotion : MonoBehaviour
     int sign;
     Vector3 vec, knockBack;
     Rigidbody rigid;
-    public MultiAimConstraint hips1, hips2;
+    public MultiAimConstraint ma, hips1, hips2;
     public static Rigidbody rigid1;
     int health = 2;
+    RigBuilder rb;
 
     // Start is called before the first frame update
     void Start()
@@ -37,12 +38,22 @@ public class EnemyMotion : MonoBehaviour
         nav = body.GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerMotion>().transform;
         sword = jointParent.GetComponentInChildren<Collider>();
+        rb = GetComponent<RigBuilder>();
     }
 
     // Update is called once per frame
     void Update()
     {
         nav.Warp(transform.position);
+        if (player != null)
+            body.rotation = Quaternion.Euler(new Vector3(0, Quaternion.LookRotation(player.position - body.position).eulerAngles.y, 0));
+        if (player == null && ma.data.sourceObjects[0].transform != crosshead)
+        {
+            var data = ma.data.sourceObjects;
+            data.SetTransform(0, crosshead);
+            ma.data.sourceObjects = data;
+            rb.Build();
+        }
         if (guard == 0)
         {
             hips1.weight = Mathf.Lerp(hips1.weight, 1, 0.01f);
@@ -53,8 +64,6 @@ public class EnemyMotion : MonoBehaviour
             hips1.weight = Mathf.Lerp(hips1.weight, 0, 0.01f);
             hips2.weight = Mathf.Lerp(hips2.weight, 0, 0.01f);
         }
-        if (player != null)
-            body.rotation = Quaternion.LookRotation(player.position - body.position);
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
         {
             GetComponentInChildren<Rig>().weight = Mathf.Lerp(GetComponentInChildren<Rig>().weight, 1, 0.01f);
@@ -76,37 +85,34 @@ public class EnemyMotion : MonoBehaviour
         anim.SetBool("leftStep", PlayerMotion.lr);
         if (player != null)
             anim.SetFloat("dis", (player.position - transform.position).magnitude);
-        if (health > -1)
+        if (cool1 > 0)
         {
-            if (cool1 > 0)
+            cool1--;
+            tx = Mathf.Lerp(tx, rtx, sensitivity);
+            ty = Mathf.Lerp(ty, rty, sensitivity);
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                sensitivity = 0.01f;
+            else
+                sensitivity = 0.1f;
+        }
+        if (cool1 == 0)
+        {
+            Physics.IgnoreLayerCollision(6, 9, true);
+            cool1 = 100;
+            if (guard == 0)
             {
-                cool1--;
-                tx = Mathf.Lerp(tx, rtx, sensitivity);
-                ty = Mathf.Lerp(ty, rty, sensitivity);
-                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                    sensitivity = 0.01f;
-                else
-                    sensitivity = 0.1f;
+                rtx = Random.Range(-180, 180);
+                rty = Random.Range(-30, 150);
             }
-            if (cool1 == 0)
+            else
             {
-                Physics.IgnoreLayerCollision(6, 9, true);
-                cool1 = 100;
-                if (guard == 0)
-                {
-                    rtx = Random.Range(-180, 180);
-                    rty = Random.Range(-30, 150);
-                }
-                else
-                {
-                    rtx = Random.Range(-90, 90);
-                    rty = Random.Range(-30, 90);
-                }
+                rtx = Random.Range(-90, 90);
+                rty = Random.Range(-30, 90);
             }
         }
         if (nav.enabled && swing == 0 && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && player != null)
             nav.SetDestination(player.position);
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && swing == 0 && guardTime == -1 && health > -1)
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && swing == 0 && guardTime == -1)
         {
             //sword movement
             if (guard == 1)
@@ -177,7 +183,7 @@ public class EnemyMotion : MonoBehaviour
                     guardTime = Random.Range(500, 1000);
                 }
             }
-            if (PlayerMotion.ent.transform == transform && player != null)
+            if (PlayerMotion.ent.transform == transform)
             {
                 ejoint = joint;
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && health > -1)
@@ -273,7 +279,7 @@ public class EnemyMotion : MonoBehaviour
             {
                 if (health > 0)
                 {
-                    //health--;
+                    health--;
                     ConfigurableJoint joint = GetComponent<ConfigurableJoint>();
                     var limit0 = joint.lowAngularXLimit;
                     limit0.limit = -90;
@@ -300,6 +306,10 @@ public class EnemyMotion : MonoBehaviour
                 }
                 else
                 {
+                    if (guard == 1)
+                    {
+                        guard = 0;
+                    }
                     health = -1;
                     anim.SetBool("died", true);
                     GetComponentInChildren<Rig>().weight = 0;
@@ -312,7 +322,6 @@ public class EnemyMotion : MonoBehaviour
                         sign = -1;
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                    Destroy(GetComponent<Rigidbody>());
                     Destroy(GetComponent<Collider>());
                     GetComponent<Animator>().enabled = false;
                     foreach (Collider collider in GetComponentsInChildren<Collider>())
@@ -377,11 +386,14 @@ public class EnemyMotion : MonoBehaviour
                     foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                         xw.MaxFrame = 0;
                     GetComponent<LegsAnimator>().enabled = false;
-                    gameObject.tag = "Untagged";
                     anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                     transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
+                    anim.GetBoneTransform(HumanBodyBones.RightShoulder).localScale = new Vector3(1, 1, 1);
+                    jointParent.parent = anim.GetBoneTransform(HumanBodyBones.RightShoulder);
+                    jointParent.localPosition = new Vector3(0, jointParent.localPosition.y, 0);
                     Invoke("Dissolve", 4);
                     Destroy(jointParent.gameObject, 5f);
+                    Destroy(anim.GetBoneTransform(HumanBodyBones.Hips).gameObject, 5f);
                     Destroy(gameObject, 5f);
                 }
             }
@@ -423,6 +435,10 @@ public class EnemyMotion : MonoBehaviour
                     }
                     else
                     {
+                        if (guard == 1)
+                        {
+                            guard = 0;
+                        }
                         health = -1;
                         anim.SetBool("died", true);
                         GetComponentInChildren<Rig>().weight = 0;
@@ -435,7 +451,6 @@ public class EnemyMotion : MonoBehaviour
                             sign = -1;
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                        Destroy(GetComponent<Rigidbody>());
                         Destroy(GetComponent<Collider>());
                         GetComponent<Animator>().enabled = false;
                         foreach (Collider collider in GetComponentsInChildren<Collider>())
@@ -500,11 +515,14 @@ public class EnemyMotion : MonoBehaviour
                         foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                             xw.MaxFrame = 0;
                         GetComponent<LegsAnimator>().enabled = false;
-                        gameObject.tag = "Untagged";
                         anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                         transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
+                        anim.GetBoneTransform(HumanBodyBones.RightShoulder).localScale = new Vector3(1, 1, 1);
+                        jointParent.parent = anim.GetBoneTransform(HumanBodyBones.RightShoulder);
+                        jointParent.localPosition = new Vector3(0, jointParent.localPosition.y, 0);
                         Invoke("Dissolve", 4);
                         Destroy(jointParent.gameObject, 5f);
+                        Destroy(anim.GetBoneTransform(HumanBodyBones.Hips).gameObject, 5f);
                         Destroy(gameObject, 5f);
                     }
                 }
@@ -521,16 +539,11 @@ public class EnemyMotion : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        //GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-        //GetComponent<Rigidbody>().velocity = Vector3.zero;
-    }
-
     public Material dissolve;
 
     void Dissolve()
     {
+        gameObject.tag = "Untagged";
         foreach (Renderer renderer in jointParent.GetComponentsInChildren<Renderer>())
         {
             renderer.gameObject.AddComponent<DissolveSphere>();
@@ -542,7 +555,18 @@ public class EnemyMotion : MonoBehaviour
         foreach (Renderer renderer in GetComponentsInChildren<Renderer>())
         {
             renderer.gameObject.AddComponent<DissolveSphere>();
-            renderer.material = dissolve;
+            Material[] mat = renderer.materials;
+            for (int i = 0; i < renderer.materials.Length; i++)
+                mat[i] = dissolve;
+            renderer.materials = mat;
+        }
+        foreach (Renderer renderer in anim.GetBoneTransform(HumanBodyBones.Hips).GetComponentsInChildren<Renderer>())
+        {
+            renderer.gameObject.AddComponent<DissolveSphere>();
+            Material[] mat = renderer.materials;
+            for (int i = 0; i < renderer.materials.Length; i++)
+                mat[i] = dissolve;
+            renderer.materials = mat;
         }
     }
 }
