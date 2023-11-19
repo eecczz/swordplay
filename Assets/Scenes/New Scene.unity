@@ -4133,11 +4133,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
-  _EditorSetupCategory: 0
-  _EditorMotionCategory: 1
+  _EditorCategory: 1
+  _EditorSetupCategory: 2
+  _EditorMotionCategory: 0
   _EditorExtraCategory: 2
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -4165,8 +4165,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -10748,7 +10748,7 @@ MonoBehaviour:
   FadeOffAtDistance: 0
   GroundMask:
     serializedVersion: 2
-    m_Bits: 15
+    m_Bits: 31
   RaycastHitTrigger: 1
   CastDistance: 1
   RaycastStartHeight: 0
@@ -10757,8 +10757,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -13325,9 +13325,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
+  _EditorMotionCategory: 0
   _EditorExtraCategory: 2
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -13355,8 +13355,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -19366,9 +19366,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -19396,8 +19396,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -21853,9 +21853,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
+  _EditorMotionCategory: 0
   _EditorExtraCategory: 2
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -21883,8 +21883,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -32102,9 +32102,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 0
   LimitLegStretch: 0.99
@@ -32132,8 +32132,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
@@ -33448,7 +33448,7 @@ MonoBehaviour:
   FadeOffAtDistance: 0
   GroundMask:
     serializedVersion: 2
-    m_Bits: 15
+    m_Bits: 31
   RaycastHitTrigger: 1
   CastDistance: 1
   RaycastStartHeight: 0
@@ -33457,8 +33457,8 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   ZeroStepsOnNoRaycast: 0
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
+  BodyStepDown: 1
+  MaxBodyStepUp: 1
   UngroundFadeSpeed: 0.1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
