@@ -72,7 +72,7 @@ public class PlayerMotion : MonoBehaviour
     private void Update()
     {
         nav.Warp(transform.position);
-        if (ent != null)
+        if (onTarget)
             body.rotation = Quaternion.Euler(new Vector3(0, Quaternion.LookRotation(ent.transform.position - body.position).eulerAngles.y, 0));
         if (!onTarget && ma.data.sourceObjects[0].transform != crosshead)
         {
@@ -216,7 +216,7 @@ public class PlayerMotion : MonoBehaviour
         }
         //animation parameter settings
         anim.SetBool("leftStep", lr);
-        if (ent == null)
+        if (!onTarget)
             anim.SetFloat("dis", 1000);
         else
             anim.SetFloat("dis", (ent.transform.position - transform.position).magnitude);
@@ -421,6 +421,8 @@ public class PlayerMotion : MonoBehaviour
                     foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                         xw.MaxFrame = 0;
                     GetComponent<LegsAnimator>().enabled = false;
+                    EnemyMotion.player = null;
+                    gameObject.tag = "Untagged";
                     anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                     transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
                     foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
@@ -549,6 +551,8 @@ public class PlayerMotion : MonoBehaviour
                         foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                             xw.MaxFrame = 0;
                         GetComponent<LegsAnimator>().enabled = false;
+                        EnemyMotion.player = null;
+                        gameObject.tag = "Untagged";
                         anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                         transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
                         foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
@@ -579,8 +583,6 @@ public class PlayerMotion : MonoBehaviour
 
     void Dissolve()
     {
-        EnemyMotion.player = null;
-        gameObject.tag = "Untagged";
         foreach (Renderer renderer in jointParent.GetComponentsInChildren<Renderer>())
         {
             renderer.gameObject.AddComponent<DissolveSphere>();

@@ -85,6 +85,8 @@ public class EnemyMotion : MonoBehaviour
         anim.SetBool("leftStep", PlayerMotion.lr);
         if (player != null)
             anim.SetFloat("dis", (player.position - transform.position).magnitude);
+        else
+            anim.SetFloat("dis", 1000);
         if (cool1 > 0)
         {
             cool1--;
@@ -377,6 +379,7 @@ public class EnemyMotion : MonoBehaviour
                     foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                         xw.MaxFrame = 0;
                     GetComponent<LegsAnimator>().enabled = false;
+                    gameObject.tag = "Untagged";
                     anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                     transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
                     foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
@@ -503,6 +506,7 @@ public class EnemyMotion : MonoBehaviour
                         foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                             xw.MaxFrame = 0;
                         GetComponent<LegsAnimator>().enabled = false;
+                        gameObject.tag = "Untagged";
                         anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                         transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
                         foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
@@ -533,7 +537,6 @@ public class EnemyMotion : MonoBehaviour
 
     void Dissolve()
     {
-        gameObject.tag = "Untagged";
         foreach (Renderer renderer in jointParent.GetComponentsInChildren<Renderer>())
         {
             renderer.gameObject.AddComponent<DissolveSphere>();
