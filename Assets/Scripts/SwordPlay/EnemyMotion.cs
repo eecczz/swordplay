@@ -137,12 +137,12 @@ public class EnemyMotion : MonoBehaviour
             {
                 cool = -1;
                 int r = Random.Range(0, 2);
-                if (r == 0 && anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
+                if (r == 0 && (anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") || health == -1 || player == null))
                 {
                     r = -1;
                     cool = Random.Range(100, 500);
                 }
-                if (health > -1 && r == 0 && lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                if (r == 0 && lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 {
                     if (PlayerMotion.ent.transform == transform)
                     {
@@ -158,7 +158,7 @@ public class EnemyMotion : MonoBehaviour
                         rty = Mathf.Clamp(rty, -30, 150);
                     }
                 }
-                else if (health > -1 && r == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                else if (r == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 {
                     if (PlayerMotion.ent.transform == transform)
                     {
@@ -173,10 +173,6 @@ public class EnemyMotion : MonoBehaviour
                         rtx = Mathf.Clamp(rtx, -90, 90);
                         rty = Mathf.Clamp(rty, -30, 150);
                     }
-                }
-                else if(r==0)
-                {
-                    cool = Random.Range(100, 500);
                 }
                 if (r == 1)
                 {
@@ -375,11 +371,6 @@ public class EnemyMotion : MonoBehaviour
                                     }
                                 }
                             }
-                            else
-                            {
-                                jointParent.parent = collider.transform;
-                                Physics.IgnoreLayerCollision(3, 9, false);
-                            }
                         }
                     }
                     SoundManager.Instance.SFXPlay("Hit", clips[0]);
@@ -388,6 +379,8 @@ public class EnemyMotion : MonoBehaviour
                     GetComponent<LegsAnimator>().enabled = false;
                     anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                     transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
+                    foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
+                        col.gameObject.layer = 0;
                     anim.GetBoneTransform(HumanBodyBones.RightShoulder).localScale = new Vector3(1, 1, 1);
                     jointParent.parent = anim.GetBoneTransform(HumanBodyBones.RightShoulder);
                     jointParent.localPosition = new Vector3(0, jointParent.localPosition.y, 0);
@@ -504,11 +497,6 @@ public class EnemyMotion : MonoBehaviour
                                         }
                                     }
                                 }
-                                else
-                                {
-                                    jointParent.parent = collider.transform;
-                                    Physics.IgnoreLayerCollision(3, 9, false);
-                                }
                             }
                         }
                         SoundManager.Instance.SFXPlay("Hit", clips[0]);
@@ -517,6 +505,8 @@ public class EnemyMotion : MonoBehaviour
                         GetComponent<LegsAnimator>().enabled = false;
                         anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                         transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
+                        foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
+                            col.gameObject.layer = 0;
                         anim.GetBoneTransform(HumanBodyBones.RightShoulder).localScale = new Vector3(1, 1, 1);
                         jointParent.parent = anim.GetBoneTransform(HumanBodyBones.RightShoulder);
                         jointParent.localPosition = new Vector3(0, jointParent.localPosition.y, 0);
