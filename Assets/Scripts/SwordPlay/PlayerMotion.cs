@@ -426,7 +426,7 @@ public class PlayerMotion : MonoBehaviour
                     anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                     transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
                     foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
-                        col.gameObject.layer = 0;
+                        col.gameObject.layer = 10;
                     anim.GetBoneTransform(HumanBodyBones.RightShoulder).localScale = new Vector3(1, 1, 1);
                     jointParent.parent = anim.GetBoneTransform(HumanBodyBones.RightShoulder);
                     jointParent.localPosition = new Vector3(0, jointParent.localPosition.y, 0);
@@ -556,7 +556,7 @@ public class PlayerMotion : MonoBehaviour
                         anim.GetBoneTransform(HumanBodyBones.Hips).parent = null;
                         transform.parent = anim.GetBoneTransform(HumanBodyBones.Hips);
                         foreach (Collider col in jointParent.GetComponentsInChildren<Collider>())
-                            col.gameObject.layer = 0;
+                            col.gameObject.layer = 10;
                         anim.GetBoneTransform(HumanBodyBones.RightShoulder).localScale = new Vector3(1, 1, 1);
                         jointParent.parent = anim.GetBoneTransform(HumanBodyBones.RightShoulder);
                         jointParent.localPosition = new Vector3(0, jointParent.localPosition.y, 0);

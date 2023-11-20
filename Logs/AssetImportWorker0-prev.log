@@ -15,11 +15,11 @@ C:/Users/Public/Documents/swordplay-clone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54304
+64772
 Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
 C:/Users/Public/Documents/swordplay-clone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 628.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 101.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -36,44 +36,1054 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001991 seconds.
+Registered in 0.001712 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 110.17 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 92.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.748 seconds
+- Completed reload, in  2.036 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005123 seconds.
+Registered in 0.168570 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 135.97 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 118.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.401 seconds
+- Completed reload, in  3.830 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3224 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.9 MB.
-System memory in use after: 181.9 MB.
+System memory in use before: 184.2 MB.
+System memory in use after: 182.2 MB.
 
 Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3666.
-Total: 5.187700 ms (FindLiveObjects: 0.434200 ms CreateObjectMapping: 0.218800 ms MarkObjects: 3.616500 ms  DeleteObjects: 0.916000 ms)
+Total: 5.232900 ms (FindLiveObjects: 0.544200 ms CreateObjectMapping: 0.386800 ms MarkObjects: 3.390600 ms  DeleteObjects: 0.909300 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d845174afe9b01c018a2d30392f9f3') in 0.099420 seconds
+  Import took 0.107733 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.3 MB.
+System memory in use after: 113.3 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3666.
+Total: 4.596200 ms (FindLiveObjects: 0.338100 ms CreateObjectMapping: 0.201400 ms MarkObjects: 3.072800 ms  DeleteObjects: 0.982900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.693685 seconds.
+  path: Assets/Animations/Side Step.fbx
+  artifactKey: Guid(e565614396f8830489d5e8f6abe2d539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Side Step.fbx using Guid(e565614396f8830489d5e8f6abe2d539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3030ef00c86185b88af297addc892338') in 0.087742 seconds
+  Import took 0.096324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001013 seconds.
+  path: Assets/Animations/Side Step.fbx
+  artifactKey: Guid(e565614396f8830489d5e8f6abe2d539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Side Step.fbx using Guid(e565614396f8830489d5e8f6abe2d539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3030ef00c86185b88af297addc892338') in 0.006290 seconds
+  Import took 0.011685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.072625 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255d0821edf57297aa0208b739862b67') in 0.014934 seconds
+  Import took 0.021283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006038 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255d0821edf57297aa0208b739862b67') in 0.009400 seconds
+  Import took 0.015488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.322658 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebd2b75cd16c30f7ffd4bc71bfa4f5e') in 0.009851 seconds
+  Import took 0.017695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009069 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebd2b75cd16c30f7ffd4bc71bfa4f5e') in 0.009811 seconds
+  Import took 0.016537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.918682 seconds.
+  path: Assets/OnehandShieldAnimations/OneHandShieldComplete.fbx
+  artifactKey: Guid(70df6c5fd85e4c64fb8a5e637898e7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OnehandShieldAnimations/OneHandShieldComplete.fbx using Guid(70df6c5fd85e4c64fb8a5e637898e7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45fb6c5531ed9c6fc066cf7c79001dba') in 0.294349 seconds
+  Import took 0.304641 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.134 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.4 MB.
+System memory in use after: 179.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3717.
+Total: 3.436100 ms (FindLiveObjects: 0.296500 ms CreateObjectMapping: 0.163300 ms MarkObjects: 2.099100 ms  DeleteObjects: 0.876300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.166463 seconds.
+  path: Assets/OnehandShieldAnimations/OneHandShieldComplete.fbx
+  artifactKey: Guid(70df6c5fd85e4c64fb8a5e637898e7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OnehandShieldAnimations/OneHandShieldComplete.fbx using Guid(70df6c5fd85e4c64fb8a5e637898e7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd219bc89ed785b9045694577ae7e08d1') in 0.292863 seconds
+  Import took 0.304399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.620736 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c5c5ab0fa5d15ed9d6a7d7a3a6a858') in 0.010855 seconds
+  Import took 0.020005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.700409 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0a306467348254747b26f9b51a602041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1d7d369ddc54011589f9f4bc7aca00') in 0.009565 seconds
+  Import took 0.016826 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006071 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.160 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.6 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3756.
+Total: 11.227000 ms (FindLiveObjects: 0.646500 ms CreateObjectMapping: 0.426700 ms MarkObjects: 4.820000 ms  DeleteObjects: 5.331400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.468216 seconds.
+  path: Assets/Animations/Side Step.fbx
+  artifactKey: Guid(e565614396f8830489d5e8f6abe2d539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Side Step.fbx using Guid(e565614396f8830489d5e8f6abe2d539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6769ebcc2a7e2dbdcd49ce1a43a97725') in 0.172430 seconds
+  Import took 0.187050 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004792 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.6 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3759.
+Total: 5.403200 ms (FindLiveObjects: 0.432500 ms CreateObjectMapping: 0.236300 ms MarkObjects: 3.362700 ms  DeleteObjects: 1.369100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 172.228209 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c734e498c4370dce15faa702e3d67b68') in 0.138547 seconds
+  Import took 0.148610 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005232 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.6 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3762.
+Total: 5.562300 ms (FindLiveObjects: 0.554600 ms CreateObjectMapping: 0.375700 ms MarkObjects: 3.649100 ms  DeleteObjects: 0.981000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.628516 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40bcfd488e05b36b9d32da617087ae6') in 0.173553 seconds
+  Import took 0.182589 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004649 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.195 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.6 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3765.
+Total: 4.051200 ms (FindLiveObjects: 0.300500 ms CreateObjectMapping: 0.225000 ms MarkObjects: 2.799200 ms  DeleteObjects: 0.725700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 275.324094 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7aa434de0d26cfbd3bc029712de679') in 0.099488 seconds
+  Import took 0.107174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017699 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7aa434de0d26cfbd3bc029712de679') in 0.006864 seconds
+  Import took 0.013092 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004460 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.098 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.6 MB.
+System memory in use after: 179.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3768.
+Total: 5.849700 ms (FindLiveObjects: 0.461600 ms CreateObjectMapping: 0.325300 ms MarkObjects: 4.072300 ms  DeleteObjects: 0.988300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.553735 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1af05440832549d80902d6bc79acd27') in 0.135637 seconds
+  Import took 0.145016 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004650 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.215 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.7 MB.
+System memory in use after: 179.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3771.
+Total: 5.686600 ms (FindLiveObjects: 0.841800 ms CreateObjectMapping: 0.311700 ms MarkObjects: 3.404500 ms  DeleteObjects: 1.125500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005793 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.221 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.7 MB.
+System memory in use after: 179.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3774.
+Total: 4.743000 ms (FindLiveObjects: 0.353700 ms CreateObjectMapping: 0.183600 ms MarkObjects: 3.297000 ms  DeleteObjects: 0.907800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 239.151162 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d282d60a8910cfdbf702ce41e792ed') in 0.183512 seconds
+  Import took 0.190360 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004692 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.217 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.7 MB.
+System memory in use after: 179.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3777.
+Total: 4.756400 ms (FindLiveObjects: 0.376000 ms CreateObjectMapping: 0.196800 ms MarkObjects: 3.267300 ms  DeleteObjects: 0.915300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.378778 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10d778b9605430d45b39aa9c5766b9f') in 0.111520 seconds
+  Import took 0.119110 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005584 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.284 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.7 MB.
+System memory in use after: 179.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3780.
+Total: 5.750900 ms (FindLiveObjects: 0.923600 ms CreateObjectMapping: 0.480200 ms MarkObjects: 3.090400 ms  DeleteObjects: 1.255000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 237.082453 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx
+  artifactKey: Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles/BasicMotions@Idle01.fbx using Guid(a3422ad278cd9a94aa3da8e6bff9deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43a2a6a36c5c56736c16adb7021d63d') in 0.138901 seconds
+  Import took 0.149811 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004685 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.893 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.7 MB.
+System memory in use after: 179.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3783.
+Total: 6.060500 ms (FindLiveObjects: 0.570700 ms CreateObjectMapping: 0.407800 ms MarkObjects: 3.525800 ms  DeleteObjects: 1.554400 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.2 MB.
+System memory in use after: 119.2 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3783.
+Total: 4.253500 ms (FindLiveObjects: 0.526700 ms CreateObjectMapping: 0.282000 ms MarkObjects: 2.545700 ms  DeleteObjects: 0.898300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 767.544592 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture head.mat
+  artifactKey: Guid(2234055afda6d9140b3881c79633f2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture head.mat using Guid(2234055afda6d9140b3881c79633f2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3910b2178e8d99ff57e89f541bd07289') in 0.418767 seconds
+  Import took 0.427347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right leg.mat
+  artifactKey: Guid(edb39c09f765cb74ca46bf30c82714cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right leg.mat using Guid(edb39c09f765cb74ca46bf30c82714cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7090a166d1f76e1912770de95a1d5a') in 0.022452 seconds
+  Import took 0.028401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material head.mat
+  artifactKey: Guid(1d274fc4fcfa5a945bba2c92825c712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material head.mat using Guid(1d274fc4fcfa5a945bba2c92825c712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16f5adac081db17498d3a8366b11363') in 0.026385 seconds
+  Import took 0.033126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right leg.mat
+  artifactKey: Guid(8ec2407ad1315a44d9e8b417ba57dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right leg.mat using Guid(8ec2407ad1315a44d9e8b417ba57dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349f9e47a7ed0c5c241fb996f4c41be1') in 0.018496 seconds
+  Import took 0.026304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left leg.mat
+  artifactKey: Guid(c79ebcf915056f040871591a66e89834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left leg.mat using Guid(c79ebcf915056f040871591a66e89834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef11c56fd0cad353317ba98f674435b4') in 0.022945 seconds
+  Import took 0.029538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right arm.mat
+  artifactKey: Guid(a85ab1455d7a8464b8d916fc4016183b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right arm.mat using Guid(a85ab1455d7a8464b8d916fc4016183b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaef9a894bf71be7ad9300ceab6942dd') in 0.029574 seconds
+  Import took 0.035931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left leg.mat
+  artifactKey: Guid(5d1b1916b21347c47a3c1a0eb86a5f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left leg.mat using Guid(5d1b1916b21347c47a3c1a0eb86a5f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912c2060a7a210845f41d9b07208bfeb') in 0.020779 seconds
+  Import took 0.028026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material body.mat
+  artifactKey: Guid(8d413ce456ba78347809dd4fec56a4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material body.mat using Guid(8d413ce456ba78347809dd4fec56a4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ba8691beaa34020dc38ac8e53f6694') in 0.022601 seconds
+  Import took 0.027966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right arm.mat
+  artifactKey: Guid(8c549480cc8aa87438f5e1a0279668d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right arm.mat using Guid(8c549480cc8aa87438f5e1a0279668d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ea5c0723f523b94a85135caa6dc974') in 0.018207 seconds
+  Import took 0.024536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left arm.mat
+  artifactKey: Guid(8fbc499e5bc283347beeacc69449d344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left arm.mat using Guid(8fbc499e5bc283347beeacc69449d344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5363b5fdd329447ae05fd5008656a484') in 0.023601 seconds
+  Import took 0.029907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left arm.mat
+  artifactKey: Guid(e3c93ae9904920f41a0fd536717dfdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left arm.mat using Guid(e3c93ae9904920f41a0fd536717dfdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb02d46618afedcc33aefcf330dee28') in 0.021171 seconds
+  Import took 0.027979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.198095 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material.mat
+  artifactKey: Guid(fca99a38e81da3e44adab80721b316b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material.mat using Guid(fca99a38e81da3e44adab80721b316b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de41afe7ecc6a6a390a6be35e8d74fa') in 0.038122 seconds
+  Import took 0.043339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.728512 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material 1.mat
+  artifactKey: Guid(7e423184f6d940c4ab9b8fcf065e92e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material 1.mat using Guid(7e423184f6d940c4ab9b8fcf065e92e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e35c8c93e4d088e0c328643948d48a4') in 0.020413 seconds
+  Import took 0.025908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material.mat
+  artifactKey: Guid(fca99a38e81da3e44adab80721b316b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material.mat using Guid(fca99a38e81da3e44adab80721b316b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229d46a46adefafc92cbd4033f0dbde4') in 0.018206 seconds
+  Import took 0.024189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.189863 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material 1.mat
+  artifactKey: Guid(7e423184f6d940c4ab9b8fcf065e92e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material 1.mat using Guid(7e423184f6d940c4ab9b8fcf065e92e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f0a71c1790045d650ac15f738b3f23') in 0.015433 seconds
+  Import took 0.020932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material 2.mat
+  artifactKey: Guid(2e6f587c81829f14cbee2f1be80aab66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material 2.mat using Guid(2e6f587c81829f14cbee2f1be80aab66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ace4df2149ace7c15d4b56289f1922') in 0.013908 seconds
+  Import took 0.020201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.846262 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material 2.mat
+  artifactKey: Guid(2e6f587c81829f14cbee2f1be80aab66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material 2.mat using Guid(2e6f587c81829f14cbee2f1be80aab66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55354dbbbe1bb7dfb8034a82514a0380') in 0.013926 seconds
+  Import took 0.020889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material 3.mat
+  artifactKey: Guid(5936c4e1ab8361d4ca03fc1e3adc6f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material 3.mat using Guid(5936c4e1ab8361d4ca03fc1e3adc6f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2b8c3007bd48d5feef592a639a6834') in 0.018991 seconds
+  Import took 0.025020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.748365 seconds.
   path: Assets/Materials/SkyboxMaterial.mat
   artifactKey: Guid(cae9ef5534d71e149bfa704457195f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/SkyboxMaterial.mat using Guid(cae9ef5534d71e149bfa704457195f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0356924bcfd21d8d35ddd07e787831') in 0.686581 seconds
-  Import took 0.694739 seconds .
+Start importing Assets/Materials/SkyboxMaterial.mat using Guid(cae9ef5534d71e149bfa704457195f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27c92efd0e7666cd6689b66e6880cb1') in 0.019678 seconds
+  Import took 0.027350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.469361 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(f1b3c36160b8ea5498347b693036d1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(f1b3c36160b8ea5498347b693036d1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f336ab596b5cb52b60e1b5245846301f') in 0.013505 seconds
+  Import took 0.018771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Materials/SwordMaterial1.mat
+  artifactKey: Guid(2bf6064f5f2041b48ba8c7cfd973147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial1.mat using Guid(2bf6064f5f2041b48ba8c7cfd973147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f351e547ed503d66324c995eec80b49') in 0.025612 seconds
+  Import took 0.031073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Materials/SwordMaterial4.mat
+  artifactKey: Guid(f52de553e23625741b9ad5c2515e84db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial4.mat using Guid(f52de553e23625741b9ad5c2515e84db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0545edbd840296c1f25eb0a06e097e24') in 0.025819 seconds
+  Import took 0.032268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Materials/SwordMaterial3.mat
+  artifactKey: Guid(572a19baf4e32704ab35e3a55056487d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial3.mat using Guid(572a19baf4e32704ab35e3a55056487d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc3e5dd3bccf29005000768a754b7b9') in 0.015040 seconds
+  Import took 0.020837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Materials/SwordMaterial2.mat
+  artifactKey: Guid(988f18c1871f5384597dac8ba53b5e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial2.mat using Guid(988f18c1871f5384597dac8ba53b5e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38deb42c681ce9c103b7207b4d786c85') in 0.022392 seconds
+  Import took 0.027247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.807201 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat
+  artifactKey: Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat using Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca3f81f7b60f0fd711e7f23faadb607') in 0.014435 seconds
+  Import took 0.064880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat
+  artifactKey: Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 3.mat using Guid(c0f5e809cadfb9740b36a47a7dfb339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045167956bb5ba56fe149153eb09dae5') in 0.014953 seconds
+  Import took 0.019562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material.mat
+  artifactKey: Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material.mat using Guid(6dbc2d374672c15438cfd4fa0c36647a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de31a6cb0ddfef74b1e56e87a4c3d284') in 0.013055 seconds
+  Import took 0.018409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat
+  artifactKey: Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat using Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44cb76f72519472ce3b550e792470ee5') in 0.013853 seconds
+  Import took 0.019390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat
+  artifactKey: Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 1.mat using Guid(5c795a7e98d30c641bbe34eba995b320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca3f81f7b60f0fd711e7f23faadb607') in 0.008085 seconds
+  Import took 0.012891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat
+  artifactKey: Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 2.mat using Guid(adfd59633dab458418a831fa8a417296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e2529640fbc8de8e0fcb4932b44b24') in 0.010731 seconds
+  Import took 0.015857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 6.mat
+  artifactKey: Guid(b8f53bf762f3d364d8b890cec1e38e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 6.mat using Guid(b8f53bf762f3d364d8b890cec1e38e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69532221afe117b55405ef04826eb0e') in 0.012458 seconds
+  Import took 0.018889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat
+  artifactKey: Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 4.mat using Guid(43a867b461dc5894d94074514fae543a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44cb76f72519472ce3b550e792470ee5') in 0.011335 seconds
+  Import took 0.016806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Wii_Assets/Miis/Savun/source/New Material 5.mat
+  artifactKey: Guid(e2ca9dfb18c3a464d89d6331c0441e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Savun/source/New Material 5.mat using Guid(e2ca9dfb18c3a464d89d6331c0441e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85885457be354d40e5d1186d0a65e520') in 0.011633 seconds
+  Import took 0.017634 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.226 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.1 MB.
+System memory in use after: 180.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3855.
+Total: 6.083100 ms (FindLiveObjects: 0.596600 ms CreateObjectMapping: 0.302200 ms MarkObjects: 3.911900 ms  DeleteObjects: 1.270600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005457 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.1 MB.
+System memory in use after: 180.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3858.
+Total: 5.807500 ms (FindLiveObjects: 0.474100 ms CreateObjectMapping: 0.222300 ms MarkObjects: 3.742600 ms  DeleteObjects: 1.366700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.195 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.1 MB.
+System memory in use after: 180.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3861.
+Total: 6.312400 ms (FindLiveObjects: 0.626000 ms CreateObjectMapping: 0.325100 ms MarkObjects: 4.197400 ms  DeleteObjects: 1.162200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004106 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.841 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.1 MB.
+System memory in use after: 180.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3864.
+Total: 4.271300 ms (FindLiveObjects: 0.328300 ms CreateObjectMapping: 0.160300 ms MarkObjects: 2.938600 ms  DeleteObjects: 0.843200 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.7 MB.
+System memory in use after: 119.7 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3864.
+Total: 4.238000 ms (FindLiveObjects: 0.404200 ms CreateObjectMapping: 0.223600 ms MarkObjects: 2.765500 ms  DeleteObjects: 0.843600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 753.451810 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture body.mat
+  artifactKey: Guid(b86fd0fb581a0744f829f85c5438c6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture body.mat using Guid(b86fd0fb581a0744f829f85c5438c6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efac9dd1e94414ff2fc0cfe76b5c68cf') in 0.680706 seconds
+  Import took 0.686745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right leg.mat
+  artifactKey: Guid(edb39c09f765cb74ca46bf30c82714cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right leg.mat using Guid(edb39c09f765cb74ca46bf30c82714cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec92c83dcdbdf1d546f9f10502af252') in 0.012420 seconds
+  Import took 0.018401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material head.mat
+  artifactKey: Guid(1d274fc4fcfa5a945bba2c92825c712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material head.mat using Guid(1d274fc4fcfa5a945bba2c92825c712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b61b463afe8f8f63e46f94bde94bdb') in 0.015716 seconds
+  Import took 0.022237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right leg.mat
+  artifactKey: Guid(8ec2407ad1315a44d9e8b417ba57dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right leg.mat using Guid(8ec2407ad1315a44d9e8b417ba57dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d1b1b0e10bc08c7521a18edc388927') in 0.013029 seconds
+  Import took 0.018660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left leg.mat
+  artifactKey: Guid(c79ebcf915056f040871591a66e89834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left leg.mat using Guid(c79ebcf915056f040871591a66e89834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fb87ee426ca1c8592b24f229b13a52') in 0.013207 seconds
+  Import took 0.019604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right arm.mat
+  artifactKey: Guid(a85ab1455d7a8464b8d916fc4016183b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material right arm.mat using Guid(a85ab1455d7a8464b8d916fc4016183b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad72b05518a263327c0b4b5b9ef26c3') in 0.013928 seconds
+  Import took 0.019888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture head.mat
+  artifactKey: Guid(2234055afda6d9140b3881c79633f2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture head.mat using Guid(2234055afda6d9140b3881c79633f2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a165b9a9f79f4e8d2a92387b95f7da') in 0.014719 seconds
+  Import took 0.021072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left leg.mat
+  artifactKey: Guid(5d1b1916b21347c47a3c1a0eb86a5f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left leg.mat using Guid(5d1b1916b21347c47a3c1a0eb86a5f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f12379a6655335dadf710ed699cab5') in 0.013117 seconds
+  Import took 0.019142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right arm.mat
+  artifactKey: Guid(8c549480cc8aa87438f5e1a0279668d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture right arm.mat using Guid(8c549480cc8aa87438f5e1a0279668d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe91c92a4b7c5e4d4e39893cc78fb6b') in 0.013376 seconds
+  Import took 0.019471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material body.mat
+  artifactKey: Guid(8d413ce456ba78347809dd4fec56a4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material body.mat using Guid(8d413ce456ba78347809dd4fec56a4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14c9d670e2d02320778f3caf4821621') in 0.014903 seconds
+  Import took 0.020897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left arm.mat
+  artifactKey: Guid(8fbc499e5bc283347beeacc69449d344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Player - New Material left arm.mat using Guid(8fbc499e5bc283347beeacc69449d344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd2d80db8efef277fb08ca67401322ad') in 0.013029 seconds
+  Import took 0.018677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left arm.mat
+  artifactKey: Guid(e3c93ae9904920f41a0fd536717dfdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPSMeshTool/Materials/FPSMesh - Mii Enemy - Mii_texture left arm.mat using Guid(e3c93ae9904920f41a0fd536717dfdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c813a133f886bca865756fb8f9adeb87') in 0.012710 seconds
+  Import took 0.018743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.296357 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/source/New Material 3.mat
+  artifactKey: Guid(5936c4e1ab8361d4ca03fc1e3adc6f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/source/New Material 3.mat using Guid(5936c4e1ab8361d4ca03fc1e3adc6f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f912778f40c61114cc86044789883d7c') in 0.011990 seconds
+  Import took 0.018089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 134.776538 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/textures
+  artifactKey: Guid(c1aae5cb704f21748b344e1a3fbfa5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/textures using Guid(c1aae5cb704f21748b344e1a3fbfa5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff89aef83136a5576868fa75765566fe') in 0.009584 seconds
+  Import took 0.015036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052253 seconds.
+  path: Assets/Wii_Assets/Miis/JDG/textures/Texture Chemise JDG.jpeg
+  artifactKey: Guid(4beabee9500103241bb8905e7d8c064c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/JDG/textures/Texture Chemise JDG.jpeg using Guid(4beabee9500103241bb8905e7d8c064c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201ff44b4206021b08eafa1f5a504187') in 0.025633 seconds
+  Import took 0.030884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.138128 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(f1b3c36160b8ea5498347b693036d1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(f1b3c36160b8ea5498347b693036d1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270e7a9fe121f4145b59aeefebb63d09') in 0.025930 seconds
+  Import took 0.031850 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004154 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.071 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.4 MB.
+System memory in use after: 180.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3905.
+Total: 3.808600 ms (FindLiveObjects: 0.480700 ms CreateObjectMapping: 0.172600 ms MarkObjects: 2.457400 ms  DeleteObjects: 0.697100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 337.849657 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(f1b3c36160b8ea5498347b693036d1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(f1b3c36160b8ea5498347b693036d1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1ca13b4aaf3dc2978f356bee9a4e30') in 0.194889 seconds
+  Import took 0.201600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Materials/SwordMaterial1.mat
+  artifactKey: Guid(2bf6064f5f2041b48ba8c7cfd973147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial1.mat using Guid(2bf6064f5f2041b48ba8c7cfd973147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d20f76ee27c26d613e6f5311e3df966') in 0.029811 seconds
+  Import took 0.035387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Materials/SwordMaterial4.mat
+  artifactKey: Guid(f52de553e23625741b9ad5c2515e84db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial4.mat using Guid(f52de553e23625741b9ad5c2515e84db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2d9f9e1349c569f249cf61d8a9c605') in 0.012550 seconds
+  Import took 0.018055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Materials/SwordMaterial3.mat
+  artifactKey: Guid(572a19baf4e32704ab35e3a55056487d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial3.mat using Guid(572a19baf4e32704ab35e3a55056487d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8adf7670df0089c206a768db886861e4') in 0.006776 seconds
+  Import took 0.012682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014894 seconds.
+  path: Assets/Materials/SwordMaterial4.mat
+  artifactKey: Guid(f52de553e23625741b9ad5c2515e84db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwordMaterial4.mat using Guid(f52de553e23625741b9ad5c2515e84db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2d9f9e1349c569f249cf61d8a9c605') in 0.012514 seconds
+  Import took 0.018291 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.5 MB.
+System memory in use after: 180.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3944.
+Total: 4.749400 ms (FindLiveObjects: 0.492200 ms CreateObjectMapping: 0.257700 ms MarkObjects: 3.029600 ms  DeleteObjects: 0.968700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004342 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.154 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.5 MB.
+System memory in use after: 180.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3947.
+Total: 4.223900 ms (FindLiveObjects: 0.376600 ms CreateObjectMapping: 0.184700 ms MarkObjects: 2.833200 ms  DeleteObjects: 0.828100 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.1 MB.
+System memory in use after: 120.1 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3947.
+Total: 4.323100 ms (FindLiveObjects: 0.401800 ms CreateObjectMapping: 0.211400 ms MarkObjects: 2.846100 ms  DeleteObjects: 0.863000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
