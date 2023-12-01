@@ -53,6 +53,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
@@ -658,7 +659,7 @@ ScriptsOnlyBuild:
     className: LAM_StepFurther
   - hash:
       serializedVersion: 2
-      Hash: 4cfd766ff634bfaea801a53b6747af1f
+      Hash: 53eed4e309b2b9a6cfe37773d18a1501
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMotion

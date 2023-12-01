@@ -27,7 +27,7 @@ public class PlayerMotion : MonoBehaviour
     int health = 2;
     RigBuilder rb;
     public MultiAimConstraint ma, hips1, hips2;
-    public Material mat1, mat2;
+    public Material mat1, mat2, handmat;
 
     private void Start()
     {
@@ -93,6 +93,13 @@ public class PlayerMotion : MonoBehaviour
         }
         if (GetComponentInChildren<RigBuilder>().enabled && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && health > -1)
         {
+            Color color1 = handmat.color;
+            if (color1.a != 0f)
+            {
+                handmat.CopyPropertiesFromMaterial(mat1);
+                color1.a = 0.5f;
+            }
+            handmat.color = color1;
             foreach (Renderer render in GetComponentsInChildren<Renderer>())
             {
                 foreach (Material mat in render.materials)
@@ -122,7 +129,14 @@ public class PlayerMotion : MonoBehaviour
         {
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
-                foreach(Renderer render in GetComponentsInChildren<Renderer>())
+                Color color1 = handmat.color;
+                if (color1.a != 0f)
+                {
+                    handmat.CopyPropertiesFromMaterial(mat2);
+                    color1.a = 1;
+                }
+                handmat.color = color1;
+                foreach (Renderer render in GetComponentsInChildren<Renderer>())
                 {
                     foreach(Material mat in render.materials)
                     {

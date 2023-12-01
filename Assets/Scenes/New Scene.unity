@@ -11954,6 +11954,7 @@ MonoBehaviour:
   hips2: {fileID: 1639083459}
   mat1: {fileID: 0}
   mat2: {fileID: 0}
+  handmat: {fileID: 0}
   dissolve: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!114 &927059757
 MonoBehaviour:
@@ -26775,6 +26776,7 @@ MonoBehaviour:
   hips2: {fileID: 894130852}
   mat1: {fileID: 2100000, guid: 8ed03fe0fe06d604781d0bb615261692, type: 2}
   mat2: {fileID: 2100000, guid: 82d9561495a16fd4a9509575443178ba, type: 2}
+  handmat: {fileID: 0}
   dissolve: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!114 &919132149581946744
 MonoBehaviour:
@@ -31410,6 +31412,7 @@ MonoBehaviour:
   hips2: {fileID: 3590502006044201532}
   mat1: {fileID: 2100000, guid: 8ed03fe0fe06d604781d0bb615261692, type: 2}
   mat2: {fileID: 2100000, guid: 82d9561495a16fd4a9509575443178ba, type: 2}
+  handmat: {fileID: 2100000, guid: 5c795a7e98d30c641bbe34eba995b320, type: 2}
   dissolve: {fileID: 2100000, guid: 1a50a9ace93fd614db63694d201e262b, type: 2}
 --- !u!1 &5649006192745314859
 GameObject:
