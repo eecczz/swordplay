@@ -1,0 +1,313 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.3693; Version 2009; 64bit' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Public/Documents/swordplay-clone
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+61435
+Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
+C:/Users/Public/Documents/swordplay-clone
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 381.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Public/Documents/swordplay-clone/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   
+    VRAM:     3949 MB
+    Driver:   31.0.15.3141
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56436
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002569 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 127.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.648 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007107 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 136.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 14.979 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3224 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.8 MB.
+System memory in use after: 183.8 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3666.
+Total: 8.143200 ms (FindLiveObjects: 0.497700 ms CreateObjectMapping: 0.296900 ms MarkObjects: 5.512200 ms  DeleteObjects: 1.834100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Wii_Assets/Miis/Speculo/textures/Bouchespéculo.png
+  artifactKey: Guid(b679a028e99ee43449d594ff2ffa1fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Speculo/textures/Bouchespéculo.png using Guid(b679a028e99ee43449d594ff2ffa1fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0eb99762183d2f936332a435dffdef3') in 0.197719 seconds
+  Import took 0.209854 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011243 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.972 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.5 MB.
+System memory in use after: 175.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3671.
+Total: 82.258300 ms (FindLiveObjects: 0.698500 ms CreateObjectMapping: 0.349300 ms MarkObjects: 78.301600 ms  DeleteObjects: 2.906300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.366507 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material.mat
+  artifactKey: Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material.mat using Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4e5c723f02c0c39e9d81aaf0b0da8c') in 0.510418 seconds
+  Import took 0.528390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.949245 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 1.mat
+  artifactKey: Guid(327eda13d4b827440a8acfaa28b01b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 1.mat using Guid(327eda13d4b827440a8acfaa28b01b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabb55c1b2d6147b85a578d5254c6750') in 0.115296 seconds
+  Import took 0.137097 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006303 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.244 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.0 MB.
+System memory in use after: 181.0 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3752.
+Total: 6.230800 ms (FindLiveObjects: 0.470000 ms CreateObjectMapping: 0.302600 ms MarkObjects: 4.399600 ms  DeleteObjects: 1.056600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008317 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.934 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.0 MB.
+System memory in use after: 181.0 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3755.
+Total: 15.689300 ms (FindLiveObjects: 0.807100 ms CreateObjectMapping: 0.699700 ms MarkObjects: 12.155700 ms  DeleteObjects: 2.024800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 200.049981 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 1.mat
+  artifactKey: Guid(327eda13d4b827440a8acfaa28b01b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 1.mat using Guid(327eda13d4b827440a8acfaa28b01b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658808c10f81578fb2eb1235e24c62a9') in 0.361099 seconds
+  Import took 0.372280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.364344 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 2.mat
+  artifactKey: Guid(0e9a9b6ab18586848951dc36dde83adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 2.mat using Guid(0e9a9b6ab18586848951dc36dde83adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d549b31c7731ffa5a7c669b64b00c2a') in 0.037988 seconds
+  Import took 0.090667 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010019 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 181.2 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3794.
+Total: 5.908100 ms (FindLiveObjects: 0.433800 ms CreateObjectMapping: 0.409700 ms MarkObjects: 4.014800 ms  DeleteObjects: 1.046800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 154.954901 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 2.mat
+  artifactKey: Guid(0e9a9b6ab18586848951dc36dde83adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 2.mat using Guid(0e9a9b6ab18586848951dc36dde83adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b6fdd55d873ed5253b4a40fea6d790') in 0.541847 seconds
+  Import took 0.549662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 1.mat
+  artifactKey: Guid(327eda13d4b827440a8acfaa28b01b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 1.mat using Guid(327eda13d4b827440a8acfaa28b01b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a882fdda18732d98ebeed5061893b2a6') in 0.021888 seconds
+  Import took 0.030171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 3.mat
+  artifactKey: Guid(36dda0970af8d4a4f9e17a3d025fe787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 3.mat using Guid(36dda0970af8d4a4f9e17a3d025fe787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cfd782547343e3a3a5130779938680') in 0.050673 seconds
+  Import took 0.065929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 159.402007 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 4.mat
+  artifactKey: Guid(3a8a76c717efc9e45966076c34e2d2a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material 4.mat using Guid(3a8a76c717efc9e45966076c34e2d2a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e52c95d1fbed9e710ebf5ff62b3d2d') in 0.049229 seconds
+  Import took 0.092606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material.mat
+  artifactKey: Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Weapons/DefaultGuy/wii-sports-resort-swordplay-sword/New Material.mat using Guid(b26b28f2ca8e43f4193e63e8c8cc056f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ed46f81f13a1947df25cd147f68aaf') in 0.050208 seconds
+  Import took 0.061585 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008776 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.877 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.3 MB.
+System memory in use after: 181.3 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3833.
+Total: 6.806800 ms (FindLiveObjects: 0.612500 ms CreateObjectMapping: 0.230200 ms MarkObjects: 4.561500 ms  DeleteObjects: 1.400100 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.9 MB.
+System memory in use after: 120.9 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3833.
+Total: 11.714700 ms (FindLiveObjects: 0.696700 ms CreateObjectMapping: 0.550800 ms MarkObjects: 8.001600 ms  DeleteObjects: 2.462900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.386 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.4 MB.
+System memory in use after: 181.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3836.
+Total: 8.125500 ms (FindLiveObjects: 0.500400 ms CreateObjectMapping: 0.293000 ms MarkObjects: 6.024900 ms  DeleteObjects: 1.305400 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 6.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.9 MB.
+System memory in use after: 120.9 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3836.
+Total: 7.079000 ms (FindLiveObjects: 0.825700 ms CreateObjectMapping: 0.409800 ms MarkObjects: 4.575900 ms  DeleteObjects: 1.265800 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 10.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.9 MB.
+System memory in use after: 120.9 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3836.
+Total: 6.958900 ms (FindLiveObjects: 0.550300 ms CreateObjectMapping: 0.311900 ms MarkObjects: 4.522200 ms  DeleteObjects: 1.572800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
