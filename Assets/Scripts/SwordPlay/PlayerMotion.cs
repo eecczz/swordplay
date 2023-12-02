@@ -295,6 +295,7 @@ public class PlayerMotion : MonoBehaviour
         float angle = Quaternion.Angle(GetComponent<Rigidbody>().rotation, body.rotation);
         if (angle < 10f && GetComponent<Rigidbody>().angularVelocity.magnitude < 0.1f && anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))
         {
+            GetComponent<LegsAnimator>().UseGluing = true;
             anim.CrossFade("Idle", 0, 1);
             GetComponent<Animator>().applyRootMotion = true;
             GetComponent<RigBuilder>().enabled = true;
@@ -328,6 +329,7 @@ public class PlayerMotion : MonoBehaviour
                 if (health > 0)
                 {
                     health--;
+                    GetComponent<LegsAnimator>().UseGluing = false;
                     ConfigurableJoint joint = GetComponent<ConfigurableJoint>();
                     var limit0 = joint.lowAngularXLimit;
                     limit0.limit = -90;
@@ -458,6 +460,7 @@ public class PlayerMotion : MonoBehaviour
                     if (health > 0)
                     {
                         health--;
+                        GetComponent<LegsAnimator>().UseGluing = false;
                         ConfigurableJoint joint = GetComponent<ConfigurableJoint>();
                         var limit0 = joint.lowAngularXLimit;
                         limit0.limit = -90;
