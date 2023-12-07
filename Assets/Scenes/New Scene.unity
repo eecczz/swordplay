@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: cae9ef5534d71e149bfa704457195f07, type: 2}
   m_HaloStrength: 0.5
@@ -1021,7 +1021,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b26b28f2ca8e43f4193e63e8c8cc056f, type: 2}
+  - {fileID: 2100000, guid: 988f18c1871f5384597dac8ba53b5e7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1280,6 +1280,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: adec051c070195c409e57d24bd56a760, type: 3}
   m_PrefabInstance: {fileID: 145421366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &152280840 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
+  m_PrefabInstance: {fileID: 828867035}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &157720486
 GameObject:
@@ -2015,7 +2020,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -5.54, z: 0}
   m_LocalScale: {x: 310, y: 310, z: 310}
-  m_Children: []
+  m_Children:
+  - {fileID: 901012868}
   m_Father: {fileID: 1729039741}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4238,7 +4244,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 2
@@ -6540,8 +6546,8 @@ MonoBehaviour:
   GroundedParameter: 
   MovingParameter: 
   User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
-  Rigidbody: {fileID: 0}
-  UseRigidbodyVelocityForIsMoving: 0
+  Rigidbody: {fileID: 629582702}
+  UseRigidbodyVelocityForIsMoving: 1
   UseRaycastsForIsGrounded: 0
   SlidingParameter: 
   SpineBone: {fileID: 1566322312}
@@ -6675,7 +6681,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   HubBackBonesElasticity: 0.1
   HipsSetup:
-    HipsElasticityBlend: 1
+    HipsElasticityBlend: 0
     HipsMuscle:
       DesiredPosition: {x: 0, y: 0, z: 0}
       Acceleration: 10000
@@ -6692,7 +6698,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -6985,11 +6991,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 2
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 1
+  _EditorMotionCategory: 3
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -7019,7 +7025,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
@@ -8037,8 +8043,8 @@ MonoBehaviour:
   GroundedParameter: 
   MovingParameter: 
   User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
-  Rigidbody: {fileID: 0}
-  UseRigidbodyVelocityForIsMoving: 0
+  Rigidbody: {fileID: 694934473}
+  UseRigidbodyVelocityForIsMoving: 1
   UseRaycastsForIsGrounded: 0
   SlidingParameter: 
   SpineBone: {fileID: 865791823}
@@ -8172,7 +8178,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   HubBackBonesElasticity: 0.1
   HipsSetup:
-    HipsElasticityBlend: 1
+    HipsElasticityBlend: 0
     HipsMuscle:
       DesiredPosition: {x: 0, y: 0, z: 0}
       Acceleration: 10000
@@ -8189,7 +8195,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -8482,9 +8488,9 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 2
   _EditorSetupCategory: 2
   _EditorMotionCategory: 1
   _EditorExtraCategory: 2
@@ -8516,7 +8522,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
@@ -9667,7 +9673,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+  - {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10943,6 +10949,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899897469}
   m_Mesh: {fileID: 4300002, guid: 350f812f98e77f04dbae28bba6435a8b, type: 3}
+--- !u!1 &901012867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901012868}
+  - component: {fileID: 901012870}
+  - component: {fileID: 901012869}
+  m_Layer: 0
+  m_Name: Matt_Nose_GEO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901012868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901012867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.02126, z: 0.0027}
+  m_LocalScale: {x: 0.93548495, y: 0.9354837, z: 0.9354846}
+  m_Children: []
+  m_Father: {fileID: 274579918}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &901012869
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901012867}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 43bd926000f0f7d4d90eaa92f3459326, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &901012870
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901012867}
+  m_Mesh: {fileID: 1736970905434611673, guid: 60c2a1c01f2a6ad4d849ec5dd74b3297, type: 3}
 --- !u!1 &910595593
 GameObject:
   m_ObjectHideFlags: 0
@@ -13623,7 +13710,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Name
       value: Cap
@@ -14110,7 +14197,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Name
       value: Cap
@@ -15325,7 +15412,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Name
       value: Cap
@@ -16097,7 +16184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+  - {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16228,8 +16315,8 @@ MonoBehaviour:
   GroundedParameter: 
   MovingParameter: 
   User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
-  Rigidbody: {fileID: 0}
-  UseRigidbodyVelocityForIsMoving: 0
+  Rigidbody: {fileID: 1296907497}
+  UseRigidbodyVelocityForIsMoving: 1
   UseRaycastsForIsGrounded: 0
   SlidingParameter: 
   SpineBone: {fileID: 2053593485}
@@ -16363,7 +16450,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   HubBackBonesElasticity: 0.1
   HipsSetup:
-    HipsElasticityBlend: 1
+    HipsElasticityBlend: 0
     HipsMuscle:
       DesiredPosition: {x: 0, y: 0, z: 0}
       Acceleration: 10000
@@ -16380,7 +16467,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -16673,9 +16760,9 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 2
   _EditorSetupCategory: 2
   _EditorMotionCategory: 1
   _EditorExtraCategory: 2
@@ -16707,7 +16794,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
@@ -18186,7 +18273,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1579603056}
-  - {fileID: 1940162436}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
@@ -19628,7 +19714,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b26b28f2ca8e43f4193e63e8c8cc056f, type: 2}
+      objectReference: {fileID: 2100000, guid: 988f18c1871f5384597dac8ba53b5e7a, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Name
       value: Cap
@@ -20451,7 +20537,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+  - {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20855,7 +20941,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+  - {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23552,11 +23638,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940162434}
-  m_LocalRotation: {x: -0.19826694, y: -0.33036605, z: 0.9076734, w: -0.16636574}
-  m_LocalPosition: {x: -290.88965, y: -174.01598, z: -51.147675}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0.43301275, y: -0.43301266, z: 0.75, w: 0.24999991}
+  m_LocalPosition: {x: -0.0019073486, y: 300.00076, z: 0.0015258789}
+  m_LocalScale: {x: 100.00003, y: 100.00004, z: 100.000015}
   m_Children: []
-  m_Father: {fileID: 1398378384}
+  m_Father: {fileID: 152280840}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 120, y: -120, z: 0}
 --- !u!1 &1949049297
@@ -24443,7 +24529,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3a8a76c717efc9e45966076c34e2d2a4, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b8dbc7e2298cd8458f1e5167b34f11a, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d2c5ac8c34ecaa42ac8b7aa9d3d8cec, type: 3}
       propertyPath: m_Name
       value: Cap
@@ -33495,8 +33581,8 @@ MonoBehaviour:
   GroundedParameter: 
   MovingParameter: 
   User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
-  Rigidbody: {fileID: 0}
-  UseRigidbodyVelocityForIsMoving: 0
+  Rigidbody: {fileID: 3348217299027171305}
+  UseRigidbodyVelocityForIsMoving: 1
   UseRaycastsForIsGrounded: 0
   SlidingParameter: 
   SpineBone: {fileID: 641016339963014277}
@@ -33630,7 +33716,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   HubBackBonesElasticity: 0.1
   HipsSetup:
-    HipsElasticityBlend: 1
+    HipsElasticityBlend: 0
     HipsMuscle:
       DesiredPosition: {x: 0, y: 0, z: 0}
       Acceleration: 10000
@@ -33647,7 +33733,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -33685,11 +33771,11 @@ MonoBehaviour:
     UseFeet: 0
     BoneFeet: {fileID: 0}
     FeetSensitivity: 0.5
-    AnkleToHeel: {x: -0.03601045, y: 0.30775088, z: -0.40508977}
-    AnkleToFeetEnd: {x: -0.024893422, y: 0.36728436, z: -0.36084968}
-    AnkleRight: {x: -0.98642987, y: 0.07608858, z: 0.14548735}
+    AnkleToHeel: {x: -0.03601764, y: 0.30774605, z: -0.40509215}
+    AnkleToFeetEnd: {x: 0.014219854, y: 0.5767766, z: -0.2051731}
+    AnkleRight: {x: -0.9864301, y: 0.07608859, z: 0.14548738}
     AnkleUp: {x: 0.07060304, y: -0.60342574, z: 0.7942874}
-    AnkleForward: {x: 0.14822704, y: 0.7937807, z: 0.5898652}
+    AnkleForward: {x: 0.14822707, y: 0.7937809, z: 0.5898653}
     FootMiddlePosition: 0.5
     AnkleYawCorrection: 0
   - G_CustomForceAttach: 0
@@ -33940,11 +34026,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 2
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 1
+  _EditorMotionCategory: 2
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -33974,7 +34060,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
@@ -34991,8 +35077,8 @@ MonoBehaviour:
   GroundedParameter: 
   MovingParameter: 
   User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
-  Rigidbody: {fileID: 0}
-  UseRigidbodyVelocityForIsMoving: 0
+  Rigidbody: {fileID: 5024120403456399508}
+  UseRigidbodyVelocityForIsMoving: 1
   UseRaycastsForIsGrounded: 0
   SlidingParameter: 
   SpineBone: {fileID: 9154992104860900026}
@@ -35126,7 +35212,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   HubBackBonesElasticity: 0.1
   HipsSetup:
-    HipsElasticityBlend: 1
+    HipsElasticityBlend: 0
     HipsMuscle:
       DesiredPosition: {x: 0, y: 0, z: 0}
       Acceleration: 10000
@@ -35143,7 +35229,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -35438,10 +35524,10 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 2
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 0
-  _EditorExtraCategory: 0
+  _EditorMotionCategory: 1
+  _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
   FeetYOffset: 0
@@ -35470,7 +35556,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
