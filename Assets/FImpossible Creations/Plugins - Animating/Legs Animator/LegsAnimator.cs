@@ -4,7 +4,7 @@ using UnityEngine;
 namespace FIMSpace.FProceduralAnimation
 {
     [AddComponentMenu("FImpossible Creations/Legs Animator")]
-    [DefaultExecutionOrder(-7)]
+    [DefaultExecutionOrder(10)]
     public partial class LegsAnimator : MonoBehaviour
     {
         // All Legs Animator code is placed inside the partial classes \\
