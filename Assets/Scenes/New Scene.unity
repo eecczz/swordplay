@@ -4244,7 +4244,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 2
@@ -6576,13 +6576,7 @@ MonoBehaviour:
   GlueOnlyOnIdle: 0
   LocalWorldUp: 1
   DisableCustomModules: 0
-  CustomModules:
-  - Enabled: 1
-    Parent: {fileID: 629582697}
-    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
-    customStringList: []
-    customObjectList: []
-    variables: []
+  CustomModules: []
   ImpulsesPowerMultiplier: 1
   ImpulsesDurationMultiplier: 1
   ImpulsesDampUpPushes: 0
@@ -6991,11 +6985,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 0
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -8488,7 +8482,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 2
   _EditorSetupCategory: 2
@@ -16760,7 +16754,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 2
   _EditorSetupCategory: 2
@@ -33611,13 +33605,7 @@ MonoBehaviour:
   GlueOnlyOnIdle: 0
   LocalWorldUp: 1
   DisableCustomModules: 0
-  CustomModules:
-  - Enabled: 1
-    Parent: {fileID: 7909019664020661991}
-    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
-    customStringList: []
-    customObjectList: []
-    variables: []
+  CustomModules: []
   ImpulsesPowerMultiplier: 1
   ImpulsesDurationMultiplier: 1
   ImpulsesDampUpPushes: 0
@@ -34026,11 +34014,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 2
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 2
+  _EditorMotionCategory: 3
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -35107,13 +35095,7 @@ MonoBehaviour:
   GlueOnlyOnIdle: 0
   LocalWorldUp: 1
   DisableCustomModules: 0
-  CustomModules:
-  - Enabled: 1
-    Parent: {fileID: 9084263549584348872}
-    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
-    customStringList: []
-    customObjectList: []
-    variables: []
+  CustomModules: []
   ImpulsesPowerMultiplier: 1
   ImpulsesDurationMultiplier: 1
   ImpulsesDampUpPushes: 0
@@ -35522,11 +35504,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
-  _EditorSetupCategory: 2
-  _EditorMotionCategory: 1
+  _EditorCategory: 1
+  _EditorSetupCategory: 1
+  _EditorMotionCategory: 3
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
