@@ -308,7 +308,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 0, g: 0.25490198, b: 1, a: 0.2509804}
+  MyColor: {r: 0, g: 0.25490198, b: 1, a: 1}
   MyMaterial: {fileID: 2100000, guid: 67142dfe243573c459e57cb1be0f6a70, type: 2}
 --- !u!1 &17983063
 GameObject:
@@ -8916,7 +8916,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &719111460
 GameObject:
@@ -15734,7 +15734,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &1271896646
 GameObject:
@@ -24604,7 +24604,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &2027998224
 GameObject:
@@ -25125,7 +25125,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1001 &2056554574
 PrefabInstance:
