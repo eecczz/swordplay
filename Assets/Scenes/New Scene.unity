@@ -308,8 +308,8 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 0.27735847, g: 0.531674, b: 1, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  MyColor: {r: 0, g: 0.25490198, b: 1, a: 0.2509804}
+  MyMaterial: {fileID: 2100000, guid: 67142dfe243573c459e57cb1be0f6a70, type: 2}
 --- !u!1 &17983063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,7 +2306,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 297171489}
-  - component: {fileID: 297171488}
   - component: {fileID: 297171487}
   - component: {fileID: 297171486}
   m_Layer: 9
@@ -2346,29 +2345,6 @@ CapsuleCollider:
   m_Height: 0.5
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.09}
---- !u!114 &297171488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297171485}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c2c9828fec98747a1b0680f47bed80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseWith2D: 0
-  UseWithSRP: 1
-  SortingLayerName: 
-  SortingOrder: 0
-  PointStart: {fileID: 965115403}
-  PointEnd: {fileID: 1190566892}
-  MaxFrame: 8
-  Granularity: 60
-  Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &297171489
 Transform:
   m_ObjectHideFlags: 0
@@ -3318,7 +3294,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365175915}
-  - component: {fileID: 365175914}
   - component: {fileID: 365175913}
   - component: {fileID: 365175912}
   m_Layer: 9
@@ -3358,29 +3333,6 @@ CapsuleCollider:
   m_Height: 0.5
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.09}
---- !u!114 &365175914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365175911}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c2c9828fec98747a1b0680f47bed80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseWith2D: 0
-  UseWithSRP: 1
-  SortingLayerName: 
-  SortingOrder: 0
-  PointStart: {fileID: 1749793192}
-  PointEnd: {fileID: 685353821}
-  MaxFrame: 8
-  Granularity: 60
-  Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &365175915
 Transform:
   m_ObjectHideFlags: 0
@@ -3648,7 +3600,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400780873}
-  - component: {fileID: 400780872}
   - component: {fileID: 400780871}
   - component: {fileID: 400780870}
   m_Layer: 9
@@ -3688,29 +3639,6 @@ CapsuleCollider:
   m_Height: 0.5
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.09}
---- !u!114 &400780872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400780869}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c2c9828fec98747a1b0680f47bed80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseWith2D: 0
-  UseWithSRP: 1
-  SortingLayerName: 
-  SortingOrder: 0
-  PointStart: {fileID: 697268776}
-  PointEnd: {fileID: 1060917483}
-  MaxFrame: 8
-  Granularity: 60
-  Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &400780873
 Transform:
   m_ObjectHideFlags: 0
@@ -8988,8 +8916,8 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &719111460
 GameObject:
   m_ObjectHideFlags: 0
@@ -13775,7 +13703,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1127836344}
-  - component: {fileID: 1127836343}
   - component: {fileID: 1127836342}
   - component: {fileID: 1127836341}
   m_Layer: 9
@@ -13815,29 +13742,6 @@ CapsuleCollider:
   m_Height: 0.5
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.09}
---- !u!114 &1127836343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127836340}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c2c9828fec98747a1b0680f47bed80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseWith2D: 0
-  UseWithSRP: 1
-  SortingLayerName: 
-  SortingOrder: 0
-  PointStart: {fileID: 685263097}
-  PointEnd: {fileID: 1140536078}
-  MaxFrame: 8
-  Granularity: 60
-  Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &1127836344
 Transform:
   m_ObjectHideFlags: 0
@@ -15830,8 +15734,8 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &1271896646
 GameObject:
   m_ObjectHideFlags: 0
@@ -20657,7 +20561,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1641085193}
-  - component: {fileID: 1641085196}
   - component: {fileID: 1641085195}
   - component: {fileID: 1641085194}
   m_Layer: 8
@@ -20715,29 +20618,6 @@ CapsuleCollider:
   m_Height: 0.5
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.09}
---- !u!114 &1641085196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641085192}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c2c9828fec98747a1b0680f47bed80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseWith2D: 0
-  UseWithSRP: 1
-  SortingLayerName: 
-  SortingOrder: 0
-  PointStart: {fileID: 723215419}
-  PointEnd: {fileID: 1533828447}
-  MaxFrame: 8
-  Granularity: 60
-  Fps: 60
-  MyColor: {r: 0.27735847, g: 0.531674, b: 1, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &1647222212
 GameObject:
   m_ObjectHideFlags: 0
@@ -24724,8 +24604,8 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &2027998224
 GameObject:
   m_ObjectHideFlags: 0
@@ -25245,8 +25125,8 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0, b: 0.21176471, a: 0.2509804}
-  MyMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 0.2509804}
+  MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1001 &2056554574
 PrefabInstance:
   m_ObjectHideFlags: 0
