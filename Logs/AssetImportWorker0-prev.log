@@ -15,11 +15,11 @@ C:/Users/Public/Documents/swordplay-clone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49464
+50936
 Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
 C:/Users/Public/Documents/swordplay-clone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 116.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 77.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -36,1559 +36,160 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002445 seconds.
+Registered in 0.001853 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 183.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 94.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.678 seconds
+- Completed reload, in  1.635 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006246 seconds.
+Registered in 0.009497 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 116.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 101.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.636 seconds
+- Completed reload, in  1.982 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 2.38 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3224 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 186.4 MB.
-System memory in use after: 184.4 MB.
+System memory in use before: 186.8 MB.
+System memory in use after: 184.8 MB.
 
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3667.
-Total: 11.720600 ms (FindLiveObjects: 0.763000 ms CreateObjectMapping: 0.729700 ms MarkObjects: 7.161600 ms  DeleteObjects: 3.062700 ms)
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3669.
+Total: 6.367300 ms (FindLiveObjects: 1.572000 ms CreateObjectMapping: 0.637100 ms MarkObjects: 2.418500 ms  DeleteObjects: 1.732900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Drops_02.mat
-  artifactKey: Guid(3e2fae3c5d5f75842aae4fb531dc114a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Drops_02.mat using Guid(3e2fae3c5d5f75842aae4fb531dc114a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a313c164d8a4daccb5087b2c51f4aee9') in 0.833758 seconds
-  Import took 0.853382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000884 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Smoke04.mat
-  artifactKey: Guid(ddbf41176a7f1da48b8a478fa5af9b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Smoke04.mat using Guid(ddbf41176a7f1da48b8a478fa5af9b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5065edaf3fe0597a640a27debaccbb55') in 0.053118 seconds
-  Import took 0.117696 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000639 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Dust01.png
-  artifactKey: Guid(3abae89998dd7074a96e6b9c915a091d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Dust01.png using Guid(3abae89998dd7074a96e6b9c915a091d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c656a7dff9758b4051a7b03561676a32') in 0.071551 seconds
-  Import took 0.093016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000684 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Water_Stylized.mat
-  artifactKey: Guid(8574f3a3e714b384fa97a01144150614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Water_Stylized.mat using Guid(8574f3a3e714b384fa97a01144150614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08760bb96cd1f32be62b1a7cb63882bb') in 0.058784 seconds
-  Import took 0.077955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000601 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flare.mat
-  artifactKey: Guid(934fac1b1a9b7774eaebb63e51048b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flare.mat using Guid(934fac1b1a9b7774eaebb63e51048b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26904d8eeb036b8043009cf584fe53c7') in 0.044413 seconds
-  Import took 0.064466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000578 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Stylized_Drops02.png
-  artifactKey: Guid(9bbcf555fa10814479f5d3948c4271b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Stylized_Drops02.png using Guid(9bbcf555fa10814479f5d3948c4271b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f16a6e7560b42834c44f104ccbe19b') in 0.042611 seconds
-  Import took 0.060278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000685 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Water_Stylized_B.mat
-  artifactKey: Guid(742c67d4d86b4db4d9109935d6190945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Water_Stylized_B.mat using Guid(742c67d4d86b4db4d9109935d6190945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6430a55f796a5ea783ba07523f3ce46') in 0.045218 seconds
-  Import took 0.062237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000652 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Drop.mat
-  artifactKey: Guid(ebdbd445039e45c45bbe909f209f4d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Drop.mat using Guid(ebdbd445039e45c45bbe909f209f4d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a601f953e78d500a711d719f836acc67') in 0.046981 seconds
-  Import took 0.064863 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000631 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Debris02.mat
-  artifactKey: Guid(4a87ef912bc0c93499c1024078edd4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Debris02.mat using Guid(4a87ef912bc0c93499c1024078edd4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac0e97fd2d45912184339b3033a6747') in 0.045486 seconds
-  Import took 0.064040 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000670 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flare02.mat
-  artifactKey: Guid(e03807f970e19d94bb7534acd0655415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flare02.mat using Guid(e03807f970e19d94bb7534acd0655415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0afe6d7e5dff4ad97a929ef76127e421') in 0.047768 seconds
-  Import took 0.065388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000676 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Fluff.png
-  artifactKey: Guid(40fa005a97cde764896807c174550a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Fluff.png using Guid(40fa005a97cde764896807c174550a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df26139fc2386d92c45993b02fefd6e3') in 0.042243 seconds
-  Import took 0.060363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000661 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_PixelFlash02.mat
-  artifactKey: Guid(cf2e34c7b0cbe66439a06523371658d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_PixelFlash02.mat using Guid(cf2e34c7b0cbe66439a06523371658d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70795fe120666680b75dfe0fa5be7651') in 0.049025 seconds
-  Import took 0.067943 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000592 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Smoke01.mat
-  artifactKey: Guid(b8c91ac3aee16194abbacf785df7cd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Smoke01.mat using Guid(b8c91ac3aee16194abbacf785df7cd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba31cdccff6a439d04c6aa2c8226234a') in 0.050249 seconds
-  Import took 0.068764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000623 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_GlassImpact01.png
-  artifactKey: Guid(2fa5adb1a19414d44b0d2927efce7974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_GlassImpact01.png using Guid(2fa5adb1a19414d44b0d2927efce7974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a32b872a07595bf99d8e068da6d45c') in 0.045662 seconds
-  Import took 0.062791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000848 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Trail02.mat
-  artifactKey: Guid(4065af8ea47469a4dbae349cb8d3e3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Trail02.mat using Guid(4065af8ea47469a4dbae349cb8d3e3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c63fa38839a31c7d148eb5dd10a2ffc') in 0.047213 seconds
-  Import took 0.064803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000618 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Flare.png
-  artifactKey: Guid(6246e75d0c500124683b34065b3bd238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Flare.png using Guid(6246e75d0c500124683b34065b3bd238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4aa5c699aba6b2b5d4c9bbc7badd47') in 0.037159 seconds
-  Import took 0.056250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000825 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Lightnings01.png
-  artifactKey: Guid(1322096965e1e4c4e852b430eea994e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Lightnings01.png using Guid(1322096965e1e4c4e852b430eea994e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f867d78079905211454083779c2e72b') in 0.039739 seconds
-  Import took 0.058156 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000662 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Debris01.mat
-  artifactKey: Guid(de7a3af219d22e0458e2277218747fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Debris01.mat using Guid(de7a3af219d22e0458e2277218747fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb9fd6a6ed04beeed8d07fd0c3e8c48') in 0.048935 seconds
-  Import took 0.070102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000642 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_PixelFlash01.png
-  artifactKey: Guid(bea48af9a88795d41acb02adbaa4ad78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_PixelFlash01.png using Guid(bea48af9a88795d41acb02adbaa4ad78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab76217a34621bdaa0521d884004d97') in 0.042135 seconds
-  Import took 0.061402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000618 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_PixelDebris.png
-  artifactKey: Guid(0086bc43119535e469e69d201d48d56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_PixelDebris.png using Guid(0086bc43119535e469e69d201d48d56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92afe082e3c6dff8579e40328244e528') in 0.039040 seconds
-  Import took 0.056305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000631 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flash_Pixels01.mat
-  artifactKey: Guid(1c83fe26949708c4496c6620d14695b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flash_Pixels01.mat using Guid(1c83fe26949708c4496c6620d14695b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '339e3371541a86ff904a616f1d8c1065') in 0.049396 seconds
-  Import took 0.070851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000656 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Dust01.mat
-  artifactKey: Guid(01555b3b5f63f474eb1a94dc4cf76203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Dust01.mat using Guid(01555b3b5f63f474eb1a94dc4cf76203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454bcf46b6ffda7991e0985d134b4ba1') in 0.046969 seconds
-  Import took 0.065974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000686 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_PixelSmoke01.png
-  artifactKey: Guid(2152d19f9e235dd468407b8aec750d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_PixelSmoke01.png using Guid(2152d19f9e235dd468407b8aec750d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd299bb833787908625a365a7125305') in 0.039937 seconds
-  Import took 0.058903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000824 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Drop01.png
-  artifactKey: Guid(58dc9929ddaa20047b81f2e19aac8986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Drop01.png using Guid(58dc9929ddaa20047b81f2e19aac8986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1115586fc56200228255aa9f689b876c') in 0.043244 seconds
-  Import took 0.062769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000635 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Glass01.png
-  artifactKey: Guid(a8dee075d1acd0f4fad90b5986cecdfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Glass01.png using Guid(a8dee075d1acd0f4fad90b5986cecdfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8836e60720777abb4e6fe3e265b7612c') in 0.042354 seconds
-  Import took 0.105303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000725 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Smoke03.mat
-  artifactKey: Guid(b824f2338ca41f54cbd86c3112c61eaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Smoke03.mat using Guid(b824f2338ca41f54cbd86c3112c61eaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e06cd7a953cc317be5f9c34b2cae3d') in 0.049544 seconds
-  Import took 0.071133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000647 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas02.png
-  artifactKey: Guid(d7d6b74b10fdf1d47aff6f315ba1130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas02.png using Guid(d7d6b74b10fdf1d47aff6f315ba1130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e17ea3368326536ff0369f1daa784cb') in 0.040884 seconds
-  Import took 0.060290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000629 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flash02.mat
-  artifactKey: Guid(37b0f6cd4ee8e6c46827f93b1e4be754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flash02.mat using Guid(37b0f6cd4ee8e6c46827f93b1e4be754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68610d90e23dab68968bbf1cab60ce4') in 0.045028 seconds
-  Import took 0.064281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000637 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Leaves.mat
-  artifactKey: Guid(406283c1044a8944fab25080a4bf2071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Leaves.mat using Guid(406283c1044a8944fab25080a4bf2071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d68b8517d56b593ab73791a5e25e398') in 0.051266 seconds
-  Import took 0.070939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000624 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_PixelFlash02.png
-  artifactKey: Guid(18fed86114f0b4343851b4f02bd0e2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_PixelFlash02.png using Guid(18fed86114f0b4343851b4f02bd0e2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be8d7a37a7c5db0b7c36344b24e8364') in 0.044823 seconds
-  Import took 0.064258 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000639 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Leaves.tif
-  artifactKey: Guid(3497d75c762f68e43a9451782f8fcf10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Leaves.tif using Guid(3497d75c762f68e43a9451782f8fcf10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48b61980c7304a25d93510e680537de') in 0.060907 seconds
-  Import took 0.077739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000684 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_PixelImpact.tif
-  artifactKey: Guid(0c5ca3ca2d8859349a05716077c2c494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_PixelImpact.tif using Guid(0c5ca3ca2d8859349a05716077c2c494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165db74d0433edaec93b494cb34b9b0a') in 0.054598 seconds
-  Import took 0.079548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000623 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_SmokePixels02.mat
-  artifactKey: Guid(34c10af92c178df4084a28fc9f6eb220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_SmokePixels02.mat using Guid(34c10af92c178df4084a28fc9f6eb220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d22ac1b30e31c57a8b5f3ad0e8524a9') in 0.050534 seconds
-  Import took 0.068286 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000654 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_GlassImpact.mat
-  artifactKey: Guid(c05011a5e221d3f4a9150e303d48015b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_GlassImpact.mat using Guid(c05011a5e221d3f4a9150e303d48015b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df47b665802e2021e1fe37e432620da') in 0.046767 seconds
-  Import took 0.063755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000630 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Fluff.mat
-  artifactKey: Guid(7ba7025c2187a3e4f8336462e9c1129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Fluff.mat using Guid(7ba7025c2187a3e4f8336462e9c1129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17794426afeb0e4978545d510ad0eb8') in 0.051087 seconds
-  Import took 0.072335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000705 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Smoke02.mat
-  artifactKey: Guid(6cc041d9ce11ac24fb02d54dd3e3d4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Smoke02.mat using Guid(6cc041d9ce11ac24fb02d54dd3e3d4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682ab34174e3ed363af09ed2c9212343') in 0.046221 seconds
-  Import took 0.064104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000623 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_SmokePixels.mat
-  artifactKey: Guid(db09c7c30828c594795c1012fd280e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_SmokePixels.mat using Guid(db09c7c30828c594795c1012fd280e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af0b8eb0b55750fa090ee45fcd70e0e4') in 0.051661 seconds
-  Import took 0.071373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000583 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Noise03.png
-  artifactKey: Guid(03cdf885ee5f23544a48bdfc0f222f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Noise03.png using Guid(03cdf885ee5f23544a48bdfc0f222f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97475d826b753a35ff293ca6594fcfcb') in 0.040500 seconds
-  Import took 0.059413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000636 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Lightnings.mat
-  artifactKey: Guid(a6a8bd8538a99ab4c9291105f86a4cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Lightnings.mat using Guid(a6a8bd8538a99ab4c9291105f86a4cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2449c80040e6c651d5f2ae90add124df') in 0.049407 seconds
-  Import took 0.066503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000685 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_SplashStylized.png
-  artifactKey: Guid(5ed5d03d68bf20b40b84a4ec84511a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_SplashStylized.png using Guid(5ed5d03d68bf20b40b84a4ec84511a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d2150621065e4ce54a9c2597994798') in 0.036691 seconds
-  Import took 0.100870 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000612 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flash01.mat
-  artifactKey: Guid(4d2b62010eeb95444943883f537a4c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flash01.mat using Guid(4d2b62010eeb95444943883f537a4c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c0e40a33f7503281dd28668ffea194') in 0.053392 seconds
-  Import took 0.071457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000647 seconds.
-  path: Assets/Stylized_Impacts_VFX
-  artifactKey: Guid(128896f5ded262c44a973b31aa7adb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX using Guid(128896f5ded262c44a973b31aa7adb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3d1bcfb095a373842c55666d2a46b1') in 0.026659 seconds
-  Import took 0.043488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000419 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Trail.mat
-  artifactKey: Guid(67142dfe243573c459e57cb1be0f6a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Trail.mat using Guid(67142dfe243573c459e57cb1be0f6a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9bee14eeb987b7eb69750ddc026406') in 0.019944 seconds
-  Import took 0.028416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Drop_B.mat
-  artifactKey: Guid(73948fc7487460042a436d8047d15d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Drop_B.mat using Guid(73948fc7487460042a436d8047d15d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99739d750e1aa0c86b3b31b82b9a807') in 0.021986 seconds
-  Import took 0.029902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Glass01.mat
-  artifactKey: Guid(b25d58ef06ba51b44861cf6fb909c7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Glass01.mat using Guid(b25d58ef06ba51b44861cf6fb909c7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6505c5f7272cc2648f0354205eae1001') in 0.030377 seconds
-  Import took 0.042426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000442 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_PixelImpact.mat
-  artifactKey: Guid(1b6be27655609f34fb91d7ca5a84afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_PixelImpact.mat using Guid(1b6be27655609f34fb91d7ca5a84afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762e975697b7a0280ed332002422f827') in 0.037739 seconds
-  Import took 0.050681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000459 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas01.png
-  artifactKey: Guid(88e32c660f84f7944ad875e9c84cbc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas01.png using Guid(88e32c660f84f7944ad875e9c84cbc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39b11e541f03cf7716015ff0ee05afa') in 0.031886 seconds
-  Import took 0.044359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000536 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png
-  artifactKey: Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png using Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d516efd4227f17a391752913eddc95') in 0.029152 seconds
-  Import took 0.042296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000493 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_StylizedSmoke01.png
-  artifactKey: Guid(3722b7b46b44007408d2959c5f7a148a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_StylizedSmoke01.png using Guid(3722b7b46b44007408d2959c5f7a148a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408da89402594ef00102d888ff93fa63') in 0.030648 seconds
-  Import took 0.043761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000610 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Debris01.tif
-  artifactKey: Guid(cd38b67088c9c2f4d86563e5553c8795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Debris01.tif using Guid(cd38b67088c9c2f4d86563e5553c8795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce5db2192ad9ab2c44a819f02f51ed5') in 0.030476 seconds
-  Import took 0.042879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000489 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Trail.png
-  artifactKey: Guid(c3c732bf4e5e54a4baa101086b2af06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Trail.png using Guid(c3c732bf4e5e54a4baa101086b2af06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db93a85204aec30d978cf59bd2e96418') in 0.030610 seconds
-  Import took 0.043970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000439 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_PixelFlash01.mat
-  artifactKey: Guid(2c64345d5ed5e2c4094e7110d9afbab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_PixelFlash01.mat using Guid(2c64345d5ed5e2c4094e7110d9afbab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f652aa5cd33d25fe09befdc48efa352') in 0.033761 seconds
-  Import took 0.049139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000514 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_StylizedSmoke02.png
-  artifactKey: Guid(a6a22924dcf4e89438f9d6dc090202e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_StylizedSmoke02.png using Guid(a6a22924dcf4e89438f9d6dc090202e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fe6ab622cc8b304aabf5b13deb2deea') in 0.029216 seconds
-  Import took 0.042338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000561 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Splash02_Stylized.mat
-  artifactKey: Guid(bdfc50fc082422042a4d8edbafbea625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Splash02_Stylized.mat using Guid(bdfc50fc082422042a4d8edbafbea625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01c70ee4a6e69f8a5bfe9f7eec41450') in 0.040959 seconds
-  Import took 0.054323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000533 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_PixelSmoke02.png
-  artifactKey: Guid(25ded9914ab417c4299b0f5215d36638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_PixelSmoke02.png using Guid(25ded9914ab417c4299b0f5215d36638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4168382978fdb9a59dc11b795b33fb8') in 0.029399 seconds
-  Import took 0.043483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000456 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Sparks.png
-  artifactKey: Guid(b26841224a57e4146a4d5d123197ffa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Sparks.png using Guid(b26841224a57e4146a4d5d123197ffa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc8a633e9930c2e30022c47de672695') in 0.027524 seconds
-  Import took 0.040424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials
-  artifactKey: Guid(6a5a2cc01b56af740a8b8a9a66e3887b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials using Guid(6a5a2cc01b56af740a8b8a9a66e3887b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b060a8026653fbb901fe3f3264ddbda') in 0.017905 seconds
-  Import took 0.032048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000438 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_BulletImpact.mat
-  artifactKey: Guid(8bdb2b8c3e248fc41bec7091090bdd45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_BulletImpact.mat using Guid(8bdb2b8c3e248fc41bec7091090bdd45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0155a2081b09177ac980b0a1ea5d87c2') in 0.046514 seconds
-  Import took 0.061246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000569 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flash03.mat
-  artifactKey: Guid(cd371836d9e89ed45915717a6b3f962a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flash03.mat using Guid(cd371836d9e89ed45915717a6b3f962a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5f39517c1d071ecf4b6e4fe9268d5f') in 0.047852 seconds
-  Import took 0.065413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000671 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flash_Pixels02.mat
-  artifactKey: Guid(ab47c235ddd534942b9783cf53381772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flash_Pixels02.mat using Guid(ab47c235ddd534942b9783cf53381772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aaba17ce428a0a3eef8da48d6accb62') in 0.086168 seconds
-  Import took 0.105767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000653 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Sparks.mat
-  artifactKey: Guid(a2dfb7b245877624d9a2df072749a051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Sparks.mat using Guid(a2dfb7b245877624d9a2df072749a051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4815f485485123e4e84696161699b98b') in 0.047277 seconds
-  Import took 0.066107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000649 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Splash02_Stylized_B.mat
-  artifactKey: Guid(9d7f7f1f4f4b1624e8440d6d98b80fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Splash02_Stylized_B.mat using Guid(9d7f7f1f4f4b1624e8440d6d98b80fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cf36570469f3df91a5993659c98c0a') in 0.056624 seconds
-  Import took 0.074547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000743 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_StylizedSmoke03.png
-  artifactKey: Guid(8d19afea212274046883b1a730756f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_StylizedSmoke03.png using Guid(8d19afea212274046883b1a730756f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729798bbd1a9439b7b56f5ae700cdf64') in 0.038975 seconds
-  Import took 0.100695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000632 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_PixelDebris.mat
-  artifactKey: Guid(346c52dc85158ef4d9845e47d1842ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_PixelDebris.mat using Guid(346c52dc85158ef4d9845e47d1842ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629fc4650890118c823d744ff3198905') in 0.051958 seconds
-  Import took 0.070108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000768 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Drops_03.mat
-  artifactKey: Guid(634d55c2faa4c86478a5c61c21befc79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Drops_03.mat using Guid(634d55c2faa4c86478a5c61c21befc79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050958576ba07d19868dd0f6e0fbe865') in 0.046155 seconds
-  Import took 0.065350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.201770 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_BulletImpact.tif
-  artifactKey: Guid(2135b82eb9852cd44b7ec3b478cebcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_BulletImpact.tif using Guid(2135b82eb9852cd44b7ec3b478cebcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bd23f0ff6a932bf1cf2cf153fbb28e') in 0.064436 seconds
-  Import took 0.074604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000377 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Noise.png
-  artifactKey: Guid(c703cd705b8b9194f8814dc992b62d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Noise.png using Guid(c703cd705b8b9194f8814dc992b62d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf570b506527f44362b7ca19ece4972') in 0.021248 seconds
-  Import took 0.031833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Stylized_Drops.png
-  artifactKey: Guid(e5d16891da1b4fc4588ff06c6a7f0f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Stylized_Drops.png using Guid(e5d16891da1b4fc4588ff06c6a7f0f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f19eff9b82513c68ebd087b8def8fc5a') in 0.021829 seconds
-  Import took 0.031068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_BulletImpact.tif
-  artifactKey: Guid(2135b82eb9852cd44b7ec3b478cebcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_BulletImpact.tif using Guid(2135b82eb9852cd44b7ec3b478cebcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bd23f0ff6a932bf1cf2cf153fbb28e') in 0.019767 seconds
-  Import took 0.027947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021142 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_Noise.png
-  artifactKey: Guid(c703cd705b8b9194f8814dc992b62d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_Noise.png using Guid(c703cd705b8b9194f8814dc992b62d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf570b506527f44362b7ca19ece4972') in 0.023486 seconds
-  Import took 0.034263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 60.745673 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures
-  artifactKey: Guid(2b2f567644c377c45b98143c39db69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures using Guid(2b2f567644c377c45b98143c39db69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa237fe205e2cc2078296012b1d43891') in 0.013169 seconds
-  Import took 0.067453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.020729 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/trail.mat
-  artifactKey: Guid(965ca80de47355c44ac2b86287fe5fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/trail.mat using Guid(965ca80de47355c44ac2b86287fe5fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6870b3baa89f44353ce1cabdfd91a7e0') in 0.033266 seconds
-  Import took 0.086108 seconds .
+  path: Assets/Hovl Studio/Magic hits/Materials/Circle17cg.mat
+  artifactKey: Guid(f75fa4eaa4fda8c4d91ab4fefcdb3d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic hits/Materials/Circle17cg.mat using Guid(f75fa4eaa4fda8c4d91ab4fefcdb3d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203017eaf520b6fe244abbf08087b1d9') in 0.393611 seconds
+  Import took 0.405560 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005662 seconds.
+Registered in 0.004703 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.172 seconds
+- Completed reload, in  1.155 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.5 MB.
-System memory in use after: 181.6 MB.
+System memory in use before: 183.9 MB.
+System memory in use after: 181.9 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3750.
+Total: 3.837300 ms (FindLiveObjects: 0.284700 ms CreateObjectMapping: 0.121900 ms MarkObjects: 2.394500 ms  DeleteObjects: 1.035600 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.5 MB.
+System memory in use after: 121.5 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3750.
+Total: 3.424700 ms (FindLiveObjects: 0.296800 ms CreateObjectMapping: 0.143800 ms MarkObjects: 2.143100 ms  DeleteObjects: 0.840500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003935 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.112 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.0 MB.
+System memory in use after: 182.0 MB.
 
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3753.
-Total: 15.615000 ms (FindLiveObjects: 1.125000 ms CreateObjectMapping: 0.680500 ms MarkObjects: 10.654500 ms  DeleteObjects: 3.151100 ms)
+Total: 7.975200 ms (FindLiveObjects: 0.976900 ms CreateObjectMapping: 0.894300 ms MarkObjects: 4.759200 ms  DeleteObjects: 1.342600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 180.182843 seconds.
+  path: Assets/Prefab/ShieldVFX.prefab
+  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a421d6fbb645074e458379ae5b5959') in 0.567355 seconds
+  Import took 0.579572 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006964 seconds.
+Registered in 0.003936 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.230 seconds
+- Completed reload, in  1.368 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.6 MB.
-System memory in use after: 181.6 MB.
+System memory in use before: 184.0 MB.
+System memory in use after: 182.0 MB.
 
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3756.
-Total: 7.974800 ms (FindLiveObjects: 0.698700 ms CreateObjectMapping: 0.473900 ms MarkObjects: 5.163600 ms  DeleteObjects: 1.636600 ms)
+Total: 3.371400 ms (FindLiveObjects: 0.371600 ms CreateObjectMapping: 0.170700 ms MarkObjects: 2.130200 ms  DeleteObjects: 0.698000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005518 seconds.
+Registered in 0.004617 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.611 seconds
+- Completed reload, in  1.200 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.7 MB.
-System memory in use after: 181.7 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3759.
-Total: 5.461500 ms (FindLiveObjects: 0.369600 ms CreateObjectMapping: 0.190600 ms MarkObjects: 3.938900 ms  DeleteObjects: 0.961200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 925.119415 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png
-  artifactKey: Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png using Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06500df85231e43d5210b63957152b45') in 0.317596 seconds
-  Import took 0.328311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 81.662691 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png
-  artifactKey: Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png using Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b2f08067cb8b1abb732766b5452c1f') in 0.011052 seconds
-  Import took 0.018604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.118848 seconds.
-  path: Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png
-  artifactKey: Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Textures/T_FlashAtlas03.png using Guid(1b98cfcce17d1e2469da225b28865ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b2f08067cb8b1abb732766b5452c1f') in 0.039139 seconds
-  Import took 0.057482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.112644 seconds.
-  path: Assets/Stylized_Impacts_VFX/Meshes
-  artifactKey: Guid(86cee48fdce72034c9ac9e3e0d5406d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Meshes using Guid(86cee48fdce72034c9ac9e3e0d5406d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed1702aa90a43ad950cef62deb883cf') in 0.013718 seconds
-  Import took 0.021096 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.174324 seconds.
-  path: Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash03 Variant.prefab
-  artifactKey: Guid(86c06656683463d4b9ef96e784dd3e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash03 Variant.prefab using Guid(86c06656683463d4b9ef96e784dd3e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c98e5a7ce099d3db9cb4b740ea5bafa') in 0.233014 seconds
-  Import took 0.246458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000384 seconds.
-  path: Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash08.fbx
-  artifactKey: Guid(8fb55d0f44f1f634197aa3849da28344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash08.fbx using Guid(8fb55d0f44f1f634197aa3849da28344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4131cd7a1706a09dfe5e708a43b6b92d') in 0.215655 seconds
-  Import took 0.223785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash08 Variant.prefab
-  artifactKey: Guid(a0c0f65d83657d941a12ca6d2222d752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash08 Variant.prefab using Guid(a0c0f65d83657d941a12ca6d2222d752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9c671e93fafa7f7082a2954bd503c3') in 0.021272 seconds
-  Import took 0.028244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash03.fbx
-  artifactKey: Guid(1786fc2f81286fb47a9b4cfa924c603d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Meshes/Mesh_Splash03.fbx using Guid(1786fc2f81286fb47a9b4cfa924c603d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1350969de4cd5ddf0ab9d83fbe971598') in 0.047769 seconds
-  Import took 0.055385 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007971 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.042 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.0 MB.
-System memory in use after: 182.0 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3801.
-Total: 14.512600 ms (FindLiveObjects: 0.992200 ms CreateObjectMapping: 0.543400 ms MarkObjects: 8.702800 ms  DeleteObjects: 4.270700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.020469 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.309 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.0 MB.
-System memory in use after: 182.0 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3804.
-Total: 9.897400 ms (FindLiveObjects: 0.680200 ms CreateObjectMapping: 0.382700 ms MarkObjects: 6.960000 ms  DeleteObjects: 1.871600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010776 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.04 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.445 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 3.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.0 MB.
-System memory in use after: 182.0 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3807.
-Total: 13.036200 ms (FindLiveObjects: 1.034100 ms CreateObjectMapping: 0.600600 ms MarkObjects: 8.462900 ms  DeleteObjects: 2.935000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 997.779683 seconds.
-  path: Assets/Prefab/HitVFX.prefab
-  artifactKey: Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX.prefab using Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b26069e55aeb61c7d22b68a95f918c') in 0.078709 seconds
-  Import took 0.095354 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005553 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.451 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 184.1 MB.
 System memory in use after: 182.1 MB.
 
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3810.
-Total: 13.676200 ms (FindLiveObjects: 1.084700 ms CreateObjectMapping: 0.643100 ms MarkObjects: 8.380100 ms  DeleteObjects: 3.564600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 142.650040 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1b80b07ee481ec9373f2249fc69e4f') in 0.293370 seconds
-  Import took 0.317874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.375181 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de206e06643f5c901e6953972dc71ea1') in 0.017218 seconds
-  Import took 0.036272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.691739 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65bc494022f509be3d46e0a591890e9') in 0.007015 seconds
-  Import took 0.015945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.841100 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884c42f97003d18673a2e089a9ab878d') in 0.007396 seconds
-  Import took 0.015935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.245600 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ace08e620ceff43f663f35b749c08f') in 0.007938 seconds
-  Import took 0.017282 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.211751 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4181c03f05b1845f4a2b85abb09a9c8d') in 0.014087 seconds
-  Import took 0.091348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.679108 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261957e28a60b455334588dd60a35700') in 0.009908 seconds
-  Import took 0.022118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.202531 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf610c169e387702152d4c3f64ed965') in 0.016498 seconds
-  Import took 0.035204 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.958154 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22025a9587932ad3a79569bc74ce79f') in 0.032441 seconds
-  Import took 0.099206 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.809795 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d67b640a13f101a501bd77fe31d9031') in 0.009538 seconds
-  Import took 0.020789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 86.446339 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de7ab8d522007be048b59ccfe9b48ed4') in 0.018223 seconds
-  Import took 0.041129 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.221739 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3315f1992794ababffeaa5ab255853b9') in 0.010075 seconds
-  Import took 0.023816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.549812 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfad454f4596e16683ca3c1ac585a15') in 0.011029 seconds
-  Import took 0.073072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.818079 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511e312ea62211755e0c40b5e5c20732') in 0.006867 seconds
-  Import took 0.014958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.839104 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fa0d403d3f7846f3cec7d07ff462f3') in 0.006914 seconds
-  Import took 0.015651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.108313 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de5aba3da2b85ae66de47afd926f441') in 0.006825 seconds
-  Import took 0.015416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.012519 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f23b9fbbc8157846682f5ff2619ae20') in 0.011026 seconds
-  Import took 0.025029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.288400 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307fc4030ff58a67ac8b683cb8ab1653') in 0.009173 seconds
-  Import took 0.019833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.797687 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33fa0495f1764e7a21649157e7605df') in 0.017402 seconds
-  Import took 0.046424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.330244 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a3a496b93a66cfef1f090ec479243b') in 0.007128 seconds
-  Import took 0.016268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.471089 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a991b9509e1c233378f77ccc696777') in 0.008223 seconds
-  Import took 0.018977 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.206211 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fffa35bec5c1c141dd277b08c2f62e06') in 0.017308 seconds
-  Import took 0.095655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.559424 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffcbd87f625e894f8e6220e9a5e2505') in 0.017551 seconds
-  Import took 0.084506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.412998 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90bb80e02e8e3b11efd7f19124fcbc5') in 0.011694 seconds
-  Import took 0.027593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.513718 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d7dd16542b74cfd6590fb58a9e1e026') in 0.016933 seconds
-  Import took 0.080617 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.981107 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191ee81d14321416371f0cb5ba463d61') in 0.006919 seconds
-  Import took 0.015067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.968436 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3255dc473fd9961ab5ce16c79e3c8458') in 0.017425 seconds
-  Import took 0.037195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.554822 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76fbb0cb79a386e354c27cdc9590ee12') in 0.007591 seconds
-  Import took 0.016961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.621449 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b88d2ab5241b2595711296edb9df28b') in 0.011077 seconds
-  Import took 0.027766 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.776231 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2d61033f706476bd25113dceb88e13') in 0.012982 seconds
-  Import took 0.076912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.909625 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e089086fecdf003e5794111f11d53f91') in 0.012165 seconds
-  Import took 0.029659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.984176 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b76fb3f6b5a0bae1c68888b45e36ee') in 0.017512 seconds
-  Import took 0.096183 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.183470 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaac418c2ab304b1795f05069ae3ef90') in 0.016663 seconds
-  Import took 0.035134 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.177025 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9aaa75c65ddbb1a857696e8141ecd8') in 0.017471 seconds
-  Import took 0.081791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.287175 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132bb256e242258224dc385292884811') in 0.017101 seconds
-  Import took 0.081231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.359443 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f702162ce2789552c8d7fae62ca264') in 0.018074 seconds
-  Import took 0.037000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.917526 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9d414cd2c63d85f46edb352156eb8b') in 0.014041 seconds
-  Import took 0.029298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.278614 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f62837408e394d701b7255e8ea48df4') in 0.019585 seconds
-  Import took 0.086591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.996972 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edfd4dc945dfea8ba6bf4fc43de64f6') in 0.008273 seconds
-  Import took 0.018899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.573290 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13772f7818c93e930d01adb6e2fbcaf') in 0.012356 seconds
-  Import took 0.027451 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005516 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.566 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.4 MB.
-System memory in use after: 182.4 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3813.
-Total: 5.129300 ms (FindLiveObjects: 0.430300 ms CreateObjectMapping: 0.191300 ms MarkObjects: 3.477600 ms  DeleteObjects: 1.028700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006330 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.820 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.19 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.1 MB.
-System memory in use after: 182.2 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3816.
-Total: 14.443100 ms (FindLiveObjects: 0.917400 ms CreateObjectMapping: 0.530600 ms MarkObjects: 9.437400 ms  DeleteObjects: 3.554000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.965 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.2 MB.
-System memory in use after: 182.2 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3819.
-Total: 7.059500 ms (FindLiveObjects: 0.483100 ms CreateObjectMapping: 0.265700 ms MarkObjects: 5.061300 ms  DeleteObjects: 1.248000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 674.468006 seconds.
-  path: Assets/Prefab/HitVFX.prefab
-  artifactKey: Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX.prefab using Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6411c4dd9520462a7c5f9db7cb3203b') in 0.268762 seconds
-  Import took 0.282635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.224155 seconds.
-  path: Assets/Prefab/HitVFX.prefab
-  artifactKey: Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX.prefab using Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc7ccbe129c211280cb2e6137f25369') in 0.018396 seconds
-  Import took 0.038496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.524846 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187217d9a888934641ab62e4ef8c1281') in 0.017777 seconds
-  Import took 0.082034 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006135 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.878 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.2 MB.
-System memory in use after: 182.2 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3822.
-Total: 5.411300 ms (FindLiveObjects: 0.431100 ms CreateObjectMapping: 0.215600 ms MarkObjects: 3.629900 ms  DeleteObjects: 1.132500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 542.881572 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Trail02.mat
-  artifactKey: Guid(4065af8ea47469a4dbae349cb8d3e3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Trail02.mat using Guid(4065af8ea47469a4dbae349cb8d3e3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922d12374ccb2034b589ea9f8ec69f34') in 0.364969 seconds
-  Import took 0.417512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000516 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Trail.mat
-  artifactKey: Guid(67142dfe243573c459e57cb1be0f6a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Trail.mat using Guid(67142dfe243573c459e57cb1be0f6a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58cbdf34376bd91b12e251717f091f86') in 0.017278 seconds
-  Import took 0.027497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000461 seconds.
-  path: Assets/Stylized_Impacts_VFX/Materials/M_Flash03.mat
-  artifactKey: Guid(cd371836d9e89ed45915717a6b3f962a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized_Impacts_VFX/Materials/M_Flash03.mat using Guid(cd371836d9e89ed45915717a6b3f962a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3495cd2a52e7ccc7c53e5f31dd850c29') in 0.035119 seconds
-  Import took 0.045359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.508737 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7798c9b8005d94dfcdf7c47884e8f6') in 0.023915 seconds
-  Import took 0.032670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.458975 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5542389ccc46f9a08367b2b7db970f2') in 0.007748 seconds
-  Import took 0.016904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.029592 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cefb0788aae3a5024a85e6a3c40bc639') in 0.007240 seconds
-  Import took 0.015954 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.138767 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881293578ad6f6067555f77d17346f39') in 0.007343 seconds
-  Import took 0.015921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.424117 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e566a3443bf6fe9ba81337aa8d9f9928') in 0.007455 seconds
-  Import took 0.016028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.909446 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8a617cb577af1d10d9d1d02a78643a') in 0.017422 seconds
-  Import took 0.097289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.986593 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d591f03da99dabf1edeee5b71539a4') in 0.009868 seconds
-  Import took 0.022123 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.939643 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01443b0d1725ecebae7a7ea756a11dca') in 0.011236 seconds
-  Import took 0.025574 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.212798 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a2c3e2efbf0cc453828c288cefe6fd') in 0.019139 seconds
-  Import took 0.048807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.723708 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd4ac30ff55e696ae7f3442f87e0423') in 0.009598 seconds
-  Import took 0.020215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.932754 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c1cee2cb22246a9bbbedb6e553b964') in 0.013510 seconds
-  Import took 0.028845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.780860 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b28167fc2998bcfdce7c269b6112c02') in 0.017398 seconds
-  Import took 0.096614 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.623233 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5acc8d37cc2baa237e8ea47fd9ca6ea0') in 0.011029 seconds
-  Import took 0.024560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.783015 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8ade220e1cf607b519c03b3ed62618') in 0.008242 seconds
-  Import took 0.017674 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.463440 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48130d8908379fe7bcae0ce0d73d7505') in 0.012618 seconds
-  Import took 0.026494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.928588 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15059122e8358f8203970d997787e43') in 0.008199 seconds
-  Import took 0.018714 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.931756 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcab89ff1ce0116e1d65d2cdd600891') in 0.010685 seconds
-  Import took 0.021245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.416765 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6aa721a2b500b3f986af4ba9040142d') in 0.006697 seconds
-  Import took 0.014659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.274338 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e52772dd5bb23c2bb8263b238fc5a4') in 0.009678 seconds
-  Import took 0.021629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.112467 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30dd1b469971aad694dcd5d14fc28e20') in 0.009676 seconds
-  Import took 0.020903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.507624 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da18ab8aa5b1dbedcabfff38e98bde79') in 0.017128 seconds
-  Import took 0.037730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.318003 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cceddd11a0c304fe4c89773c9c2259') in 0.007164 seconds
-  Import took 0.015826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.989795 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d4ae944beb98a10f7af4562e5cc6563') in 0.012836 seconds
-  Import took 0.027214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.373044 seconds.
-  path: Assets/Prefab/ShieldVFX.prefab
-  artifactKey: Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/ShieldVFX.prefab using Guid(639dc3c1f2b5d6b46a91a79477f699dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e27ad81be6afdba400bdbb243555dd') in 0.019615 seconds
-  Import took 0.041310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.861355 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Debris2.png
-  artifactKey: Guid(c6fbbfdbb4d88e4458046eec6645c0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Debris2.png using Guid(c6fbbfdbb4d88e4458046eec6645c0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e69c81019a9a10cab0b1a5c2e3a7fe2') in 0.075525 seconds
-  Import took 0.088459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flare15.png
-  artifactKey: Guid(8701afd3c077c224aaed7725edcddc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flare15.png using Guid(8701afd3c077c224aaed7725edcddc6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed7f15c5066f4ca118f45f7055e3f75') in 0.042685 seconds
-  Import took 0.053752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/HandPaintedLightning2.png
-  artifactKey: Guid(e1f5daa4611af4844a03ec5a45012456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/HandPaintedLightning2.png using Guid(e1f5daa4611af4844a03ec5a45012456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6fa36046d4aff9aabfdcb3f6f1a2c95') in 0.048698 seconds
-  Import took 0.058503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000440 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flare14.png
-  artifactKey: Guid(62f42cf95c5d20e43aed2ee326e4871b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flare14.png using Guid(62f42cf95c5d20e43aed2ee326e4871b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44447559333fd7097e105df8d997b02') in 0.035261 seconds
-  Import took 0.045217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Trail25.png
-  artifactKey: Guid(63e298374ab0c384ebe243e627781d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Trail25.png using Guid(63e298374ab0c384ebe243e627781d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8853788cb0150c28fdfab9c52407a88') in 0.048732 seconds
-  Import took 0.059263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flare6.png
-  artifactKey: Guid(fb60f4826d03c644c80d10aace44bfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flare6.png using Guid(fb60f4826d03c644c80d10aace44bfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a6046dbae925f9a6d9551af3535c87') in 0.040149 seconds
-  Import took 0.050695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000483 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Trail21.png
-  artifactKey: Guid(0d1fb353c40bd6345af42a3b4f0bdb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Trail21.png using Guid(0d1fb353c40bd6345af42a3b4f0bdb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65de6cbf86c01955dc303a800163200') in 0.045119 seconds
-  Import took 0.058345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000510 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flash21.png
-  artifactKey: Guid(6c6076316faf3ec48b1600130510cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flash21.png using Guid(6c6076316faf3ec48b1600130510cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875f91626780dd97f4d288c96980372e') in 0.045437 seconds
-  Import took 0.058902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flash23.png
-  artifactKey: Guid(e8e7032ad5b1f6a429eb2632a11b0d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flash23.png using Guid(e8e7032ad5b1f6a429eb2632a11b0d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a5b8ec025c264e48f4e7c78bfcf1fa') in 0.045754 seconds
-  Import took 0.059276 seconds .
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3759.
+Total: 4.826900 ms (FindLiveObjects: 0.330400 ms CreateObjectMapping: 0.160800 ms MarkObjects: 3.565600 ms  DeleteObjects: 0.768700 ms)
 
 ========================================================================
 Received Prepare
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 7.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.25 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 124.3 MB.
-System memory in use after: 122.3 MB.
+System memory in use before: 123.6 MB.
+System memory in use after: 121.6 MB.
 
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3885.
-Total: 11.062500 ms (FindLiveObjects: 0.704000 ms CreateObjectMapping: 0.399100 ms MarkObjects: 8.079600 ms  DeleteObjects: 1.878000 ms)
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3759.
+Total: 3.725400 ms (FindLiveObjects: 0.326700 ms CreateObjectMapping: 0.185100 ms MarkObjects: 2.445700 ms  DeleteObjects: 0.767000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
