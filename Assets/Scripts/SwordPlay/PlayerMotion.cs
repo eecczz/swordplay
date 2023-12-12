@@ -458,9 +458,9 @@ public class PlayerMotion : MonoBehaviour
             else if (guard == 1)
             {
                 Vector2 v = joint.localRotation * Vector3.up;
-                float r = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 180;
-                Vector2 v1 = EnemyMotion.ejoint.localRotation * Vector3.up;
-                float r1 = Mathf.Atan2(v1.y, -v1.x) * Mathf.Rad2Deg + 180;
+                float r = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 90;
+                Vector2 v1 = new Vector2(EnemyMotion.etx - EnemyMotion.ertx, EnemyMotion.erty - EnemyMotion.ety).normalized;
+                float r1 = Mathf.Atan2(v1.y, v1.x) * Mathf.Rad2Deg + 180;
                 float angle = Mathf.Abs(r - r1);
                 if (angle < 30 || angle > 345 || (angle > 150 && angle < 210))
                 {

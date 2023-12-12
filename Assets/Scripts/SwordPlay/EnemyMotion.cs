@@ -12,10 +12,10 @@ public class EnemyMotion : MonoBehaviour
     NavMeshAgent nav;
     public static Transform player;
     public Transform jointParent, joint, body, crosshead;
-    public static Transform ejoint;
     Collider sword;
     float sensitivity = 0.01f;
     float tx, ty, rtx, rty;
+    public static float etx, ety, ertx, erty;
     int cool = 100;
     int cool1 = 100;
     float guardTime = -1;
@@ -139,7 +139,7 @@ public class EnemyMotion : MonoBehaviour
             {
                 cool = -1;
                 int r = Random.Range(0, 2);
-                if (r == 0 && (anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") || health == -1 || player == null))
+                if (r == 0 && (anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") || anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") || health == -1 || player == null))
                 {
                     r = -1;
                     cool = Random.Range(100, 500);
@@ -159,6 +159,8 @@ public class EnemyMotion : MonoBehaviour
                         rtx = Mathf.Clamp(rtx, -90, 90);
                         rty = Mathf.Clamp(rty, -30, 150);
                     }
+                    else
+                        cool = Random.Range(100, 500);
                 }
                 else if (r == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 {
@@ -175,6 +177,8 @@ public class EnemyMotion : MonoBehaviour
                         rtx = Mathf.Clamp(rtx, -90, 90);
                         rty = Mathf.Clamp(rty, -30, 150);
                     }
+                    else
+                        cool = Random.Range(100, 500);
                 }
                 if (r == 1)
                 {
@@ -183,7 +187,10 @@ public class EnemyMotion : MonoBehaviour
             }
             if (PlayerMotion.ent.transform == transform)
             {
-                ejoint = joint;
+                etx = tx;
+                ety = ty;
+                ertx = rtx;
+                erty = rty;
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && health > -1)
                 {
                     if (guard == 1)
@@ -401,7 +408,7 @@ public class EnemyMotion : MonoBehaviour
             else if (guard == 1)
             {
                 Vector2 v = joint.localRotation * Vector3.up;
-                float r = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 180;
+                float r = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 90;
                 Vector2 v1 = new Vector2(-Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized;
                 float r1 = Mathf.Atan2(v1.y, v1.x) * Mathf.Rad2Deg + 180;
                 float angle = Mathf.Abs(r - r1);

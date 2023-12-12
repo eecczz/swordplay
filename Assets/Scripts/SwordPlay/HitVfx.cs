@@ -10,6 +10,5 @@ public class HitVfx : MonoBehaviour
         Vector2 v1 = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized;
         float r1 = Mathf.Atan2(v1.y, v1.x) * Mathf.Rad2Deg;
         transform.RotateAround(transform.position, transform.forward, r1);
-        Debug.Log(r1);
     }
 }
