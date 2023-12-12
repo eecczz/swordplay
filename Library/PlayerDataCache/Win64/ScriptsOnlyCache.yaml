@@ -1,15 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - EnemyHitVfx
     - EnemyMotion
     - FIMSpace.FProceduralAnimation.LAM_InsectLegsHelper
     - FIMSpace.FProceduralAnimation.LAM_RotationStability
     - FIMSpace.FProceduralAnimation.LegsAnimator
+    - HitVfx
     - PlayerMotion
     - SoundManager
     - XftWeapon.XWeaponTrail
-    Unity.2D.Sprite.Editor.dll:
-    - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.Animation.Rigging.dll:
     - UnityEngine.Animations.Rigging.MultiAimConstraint
     - UnityEngine.Animations.Rigging.MultiParentConstraint
@@ -133,117 +133,121 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1766}
-    - Class: 114
       Script: {instanceID: 1768}
     - Class: 114
       Script: {instanceID: 1770}
     - Class: 114
       Script: {instanceID: 1772}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1774}
     - Class: 114
-      Script: {instanceID: 1834}
+      Script: {instanceID: 1784}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 1922}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 2284}
+      Script: {instanceID: 1926}
     - Class: 114
-      Script: {instanceID: 2472}
+      Script: {instanceID: 2292}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3372}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3396}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3458}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3514}
     - Class: 114
-      Script: {instanceID: 3620}
+      Script: {instanceID: 3576}
     - Class: 114
-      Script: {instanceID: 3662}
+      Script: {instanceID: 3644}
     - Class: 114
-      Script: {instanceID: 3960}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 4060}
+      Script: {instanceID: 3986}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4086}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 4858}
+      Script: {instanceID: 4592}
     - Class: 114
-      Script: {instanceID: 4876}
+      Script: {instanceID: 4896}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 4914}
     - Class: 114
-      Script: {instanceID: 5118}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 5156}
     - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 5226}
     - Class: 114
-      Script: {instanceID: 5386}
+      Script: {instanceID: 5242}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 5336}
     - Class: 114
-      Script: {instanceID: 5394}
+      Script: {instanceID: 5428}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5434}
     - Class: 114
-      Script: {instanceID: 5596}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 5660}
+      Script: {instanceID: 5454}
     - Class: 114
-      Script: {instanceID: 5666}
+      Script: {instanceID: 5638}
     - Class: 114
-      Script: {instanceID: 5780}
+      Script: {instanceID: 5702}
     - Class: 114
-      Script: {instanceID: 5786}
+      Script: {instanceID: 5708}
     - Class: 114
-      Script: {instanceID: 5904}
+      Script: {instanceID: 5824}
     - Class: 114
-      Script: {instanceID: 5966}
+      Script: {instanceID: 5830}
     - Class: 114
-      Script: {instanceID: 5972}
+      Script: {instanceID: 5952}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 6020}
     - Class: 114
-      Script: {instanceID: 6108}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 6146}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6164}
     - Class: 114
-      Script: {instanceID: 6328}
+      Script: {instanceID: 6202}
     - Class: 114
-      Script: {instanceID: 6460}
+      Script: {instanceID: 6282}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6386}
     - Class: 114
-      Script: {instanceID: 6636}
+      Script: {instanceID: 6518}
     - Class: 114
-      Script: {instanceID: 7058}
+      Script: {instanceID: 6628}
     - Class: 114
-      Script: {instanceID: 7182}
+      Script: {instanceID: 6696}
     - Class: 114
-      Script: {instanceID: 7206}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 7492}
+      Script: {instanceID: 7242}
     - Class: 114
-      Script: {instanceID: 7498}
+      Script: {instanceID: 7266}
     - Class: 114
-      Script: {instanceID: 7726}
+      Script: {instanceID: 7526}
+    - Class: 114
+      Script: {instanceID: 7556}
+    - Class: 114
+      Script: {instanceID: 7562}
+    - Class: 114
+      Script: {instanceID: 7796}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1083,6 +1087,12 @@ ScriptsOnlyBuild:
     className: DepthOfField
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyHitVfx
+  - hash:
+      serializedVersion: 2
       Hash: dbad32a64e755ab962b2be098723c281
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1555,6 +1565,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: FIMSpace.FProceduralAnimation
     className: RagdollIndicatorHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HitVfx
   - hash:
       serializedVersion: 2
       Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
