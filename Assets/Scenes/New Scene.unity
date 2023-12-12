@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0
-  m_AmbientMode: 3
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: cae9ef5534d71e149bfa704457195f07, type: 2}
   m_HaloStrength: 0.5
@@ -1280,11 +1280,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: adec051c070195c409e57d24bd56a760, type: 3}
   m_PrefabInstance: {fileID: 145421366}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &152280840 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-  m_PrefabInstance: {fileID: 828867035}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &157720486
 GameObject:
@@ -4172,7 +4167,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 2
@@ -18171,6 +18166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1579603056}
+  - {fileID: 1940162436}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
@@ -23512,13 +23508,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940162434}
-  m_LocalRotation: {x: 0.43301275, y: -0.43301266, z: 0.75, w: 0.24999991}
-  m_LocalPosition: {x: -0.0019073486, y: 300.00076, z: 0.0015258789}
-  m_LocalScale: {x: 100.00003, y: 100.00004, z: 100.000015}
+  m_LocalRotation: {x: 0.0272476, y: -0.18208976, z: 0.9773075, w: -0.104742266}
+  m_LocalPosition: {x: -290.8897, y: -174.01598, z: -51.147705}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 152280840}
+  m_Father: {fileID: 1398378384}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 120, y: -120, z: 0}
+  m_LocalEulerAnglesHint: {x: 159.5, y: -174.4, z: 13.248001}
 --- !u!1 &1949049297
 GameObject:
   m_ObjectHideFlags: 0
@@ -33894,7 +33890,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 2
   _EditorSetupCategory: 2
@@ -35384,7 +35380,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 1
