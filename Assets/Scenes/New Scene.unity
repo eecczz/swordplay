@@ -308,7 +308,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 0, g: 0.25490198, b: 1, a: 1}
+  MyColor: {r: 0, g: 0.33088234, b: 1, a: 1}
   MyMaterial: {fileID: 2100000, guid: 67142dfe243573c459e57cb1be0f6a70, type: 2}
 --- !u!1 &17983063
 GameObject:
@@ -1265,7 +1265,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 36dda0970af8d4a4f9e17a3d025fe787, type: 2}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: 919132149155446097, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Name
       value: Handle
@@ -4172,7 +4172,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 2
@@ -5695,7 +5695,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -156486658544998735, guid: 0d6226dc16206254785385c7978e5858, type: 3}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -5703,7 +5703,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 36dda0970af8d4a4f9e17a3d025fe787, type: 2}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: 919132149155446097, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Name
       value: Handle
@@ -5863,7 +5863,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 36dda0970af8d4a4f9e17a3d025fe787, type: 2}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: 919132149155446097, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Name
       value: Handle
@@ -8916,7 +8916,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
+  MyColor: {r: 1, g: 0.5529412, b: 0.5529412, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &719111460
 GameObject:
@@ -19022,7 +19022,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -156486658544998735, guid: 0d6226dc16206254785385c7978e5858, type: 3}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -19030,7 +19030,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 36dda0970af8d4a4f9e17a3d025fe787, type: 2}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: 919132149155446097, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Name
       value: Handle
@@ -21180,7 +21180,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 36dda0970af8d4a4f9e17a3d025fe787, type: 2}
+      objectReference: {fileID: 2100000, guid: 327eda13d4b827440a8acfaa28b01b2a, type: 2}
     - target: {fileID: 919132149155446097, guid: adec051c070195c409e57d24bd56a760, type: 3}
       propertyPath: m_Name
       value: Handle
@@ -33894,7 +33894,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 2
   _EditorSetupCategory: 2
@@ -33989,8 +33989,8 @@ SkinnedMeshRenderer:
   - {fileID: 2100000, guid: 89a78049627413e4ca1e67e67156fab3, type: 2}
   - {fileID: 2100000, guid: b8f53bf762f3d364d8b890cec1e38e38, type: 2}
   - {fileID: 2100000, guid: b8f53bf762f3d364d8b890cec1e38e38, type: 2}
-  - {fileID: 2100000, guid: 5c795a7e98d30c641bbe34eba995b320, type: 2}
-  - {fileID: 2100000, guid: 5c795a7e98d30c641bbe34eba995b320, type: 2}
+  - {fileID: 2100000, guid: 7a03afb3e86b3d741a3948dff5781672, type: 2}
+  - {fileID: 2100000, guid: 7a03afb3e86b3d741a3948dff5781672, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35384,7 +35384,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 1
