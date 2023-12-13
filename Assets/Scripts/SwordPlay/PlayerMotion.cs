@@ -10,6 +10,7 @@ public class PlayerMotion : MonoBehaviour
 {
     public Transform jointParent, joint, body, crosshead;
     Collider sword;
+    public static ConfigurableJoint psword;
     Animator anim;
     NavMeshAgent nav;
     public float sensitivity = 5;
@@ -35,6 +36,7 @@ public class PlayerMotion : MonoBehaviour
         anim = GetComponent<Animator>();
         nav = body.GetComponent<NavMeshAgent>();
         sword = jointParent.GetComponentInChildren<Collider>();
+        psword = jointParent.GetComponentInChildren<ConfigurableJoint>();
         rb = GetComponent<RigBuilder>();
     }
 
@@ -457,9 +459,10 @@ public class PlayerMotion : MonoBehaviour
             }
             else if (guard == 1)
             {
-                Vector2 v = joint.localRotation * Vector3.up;
-                float r = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 90;
-                Vector2 v1 = new Vector2(EnemyMotion.etx - EnemyMotion.ertx, EnemyMotion.erty - EnemyMotion.ety).normalized;
+                Vector3 v = Vector3.right * -tx / 90 + Vector3.up * -ty / 100;
+                float r = Mathf.Atan2(v.y, -v.x) * Mathf.Rad2Deg + 180;
+                Vector3 v1 = Quaternion.Euler(new Vector3(-ent.transform.rotation.eulerAngles.x, -ent.transform.rotation.eulerAngles.y, -ent.transform.rotation.eulerAngles.z)) * EnemyMotion.psword.GetComponent<Rigidbody>().velocity;
+                v1 = new Vector3(v1.x, v1.y, 0);
                 float r1 = Mathf.Atan2(v1.y, v1.x) * Mathf.Rad2Deg + 180;
                 float angle = Mathf.Abs(r - r1);
                 if (angle < 30 || angle > 345 || (angle > 150 && angle < 210))

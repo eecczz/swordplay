@@ -15,11 +15,11 @@ C:/Users/Public/Documents/swordplay-clone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55647
+50231
 Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
 C:/Users/Public/Documents/swordplay-clone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 75.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 76.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -36,25 +36,25 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001449 seconds.
+Registered in 0.001525 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 137.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.879 seconds
+- Completed reload, in  1.443 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004550 seconds.
+Registered in 0.006393 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 78.15 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 86.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.565 seconds
+- Completed reload, in  1.612 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -63,708 +63,188 @@ Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 second
 Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3260 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.1 MB.
-System memory in use after: 182.1 MB.
+System memory in use before: 184.2 MB.
+System memory in use after: 182.2 MB.
 
 Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3706.
-Total: 3.236400 ms (FindLiveObjects: 0.296600 ms CreateObjectMapping: 0.160200 ms MarkObjects: 2.156600 ms  DeleteObjects: 0.622000 ms)
+Total: 3.610200 ms (FindLiveObjects: 0.285900 ms CreateObjectMapping: 0.195400 ms MarkObjects: 2.387300 ms  DeleteObjects: 0.740800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefab/HitVFX.prefab
-  artifactKey: Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX.prefab using Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27689646116445e7f20a6f890ead798f') in 0.048493 seconds
-  Import took 0.053735 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 3.13 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.6 MB.
-System memory in use after: 112.6 MB.
-
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3706.
-Total: 4.067600 ms (FindLiveObjects: 0.280800 ms CreateObjectMapping: 0.150500 ms MarkObjects: 2.962700 ms  DeleteObjects: 0.672400 ms)
+  path: Assets/Scripts/SwordPlay/HitVfx.cs
+  artifactKey: Guid(a2cdbdfb672930c44873d905a98a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SwordPlay/HitVfx.cs using Guid(a2cdbdfb672930c44873d905a98a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2be8b5f9ed46b8401cac2762e86e3d') in 0.048166 seconds
+  Import took 0.054284 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 43.913337 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8109b815a7ae94ccc569452e475d795d') in 0.069352 seconds
-  Import took 0.075686 seconds .
+  Time since last request: 0.000212 seconds.
+  path: Assets/Scripts/SwordPlay/EnemyMotion.cs
+  artifactKey: Guid(c4a96756a1e3fc6459f66f8a7af6ab36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SwordPlay/EnemyMotion.cs using Guid(c4a96756a1e3fc6459f66f8a7af6ab36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a4404d884e45c3a3ff2b7fc45d0f71') in 0.007189 seconds
+  Import took 0.012147 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.294459 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0437ed7df872cf952bbd28182cc5028b') in 0.004488 seconds
-  Import took 0.009715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.335143 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1aa3aba76b80acdfe03c157bb185f4f') in 0.004378 seconds
-  Import took 0.011355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.939432 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e0a0642ff9ed587a63cd954f04e931') in 0.004386 seconds
-  Import took 0.009671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.176005 seconds.
-  path: Assets/Prefab/HitVFX.prefab
-  artifactKey: Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX.prefab using Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f779609da56e220660e363f9806048') in 0.005432 seconds
-  Import took 0.011500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.528852 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef79970fdb5f1cfc205054b3effde170') in 0.004158 seconds
-  Import took 0.009808 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.808877 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd3cbd06c487701b3993e5fe60bf8e7') in 0.004430 seconds
-  Import took 0.010487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.606721 seconds.
-  path: Assets/Prefab/HitVFX.prefab
-  artifactKey: Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX.prefab using Guid(6fc32fac418bfae46906a4dc2841fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dafc80934c41851d778548ea7ed1f55') in 0.004097 seconds
-  Import took 0.009199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.028247 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97d67335f86446f9488768163691ee4') in 0.004142 seconds
-  Import took 0.010644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.825342 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1ef8f20aa779fd85b13490631d628a') in 0.004183 seconds
-  Import took 0.010541 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.575749 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf79afb35c144c9ec27bab1859c6da9') in 0.005712 seconds
-  Import took 0.011494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.150532 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c5a7cf2c85f8f4e45d3e3339c61017') in 0.005397 seconds
-  Import took 0.011170 seconds .
+  Time since last request: 3.586540 seconds.
+  path: Assets/Scripts/SwordPlay/EnemyHitVfx.cs
+  artifactKey: Guid(13bd650005d73014eac3b99f4db918ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SwordPlay/EnemyHitVfx.cs using Guid(13bd650005d73014eac3b99f4db918ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd4f4a6da593d3a05d27c8fb7d784d7') in 0.007906 seconds
+  Import took 0.015597 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004417 seconds.
+Registered in 0.003894 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
+- Completed reload, in  1.232 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 175.9 MB.
 System memory in use after: 173.9 MB.
 
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3709.
-Total: 3.807700 ms (FindLiveObjects: 0.325300 ms CreateObjectMapping: 0.175800 ms MarkObjects: 2.548200 ms  DeleteObjects: 0.757400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.766365 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41bf841a1d588c47fd93599813cfb8bb') in 0.098855 seconds
-  Import took 0.106200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.686730 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ea29b1d01dcc32ee4028cebbecded3') in 0.005003 seconds
-  Import took 0.012028 seconds .
+Total: 3.576400 ms (FindLiveObjects: 0.318500 ms CreateObjectMapping: 0.172800 ms MarkObjects: 2.375000 ms  DeleteObjects: 0.708800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004388 seconds.
+Registered in 0.003901 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.167 seconds
+- Completed reload, in  1.048 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 175.9 MB.
-System memory in use after: 173.9 MB.
+System memory in use before: 176.0 MB.
+System memory in use after: 174.0 MB.
 
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3712.
-Total: 3.495500 ms (FindLiveObjects: 0.319000 ms CreateObjectMapping: 0.175300 ms MarkObjects: 2.233900 ms  DeleteObjects: 0.765700 ms)
+Total: 5.645700 ms (FindLiveObjects: 0.375000 ms CreateObjectMapping: 0.218000 ms MarkObjects: 4.045800 ms  DeleteObjects: 1.004900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 89.220753 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa0c48c40b04f380fded876b0305273') in 0.089289 seconds
-  Import took 0.096247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.536646 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2e5a76db7b4106f97a2cef05be120d') in 0.004801 seconds
-  Import took 0.011056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.950851 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf33e84baeab0cacd051589226278a6c') in 0.004806 seconds
-  Import took 0.011109 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.302053 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c7f55cc2dc7d629080c151ee1f0dd5') in 0.004431 seconds
-  Import took 0.011047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.154887 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6266dff3fe800dfe6939dc06af6ae3') in 0.004689 seconds
-  Import took 0.010415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.297509 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72181821881d2c184ebe14ee77cd242c') in 0.005201 seconds
-  Import took 0.011156 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.502159 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6dcf481b617dc17a125d30f7d63be8') in 0.004732 seconds
-  Import took 0.011012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.417945 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3222cb78cffa525b2030dfd921a82ff7') in 0.005051 seconds
-  Import took 0.010964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.717036 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc1c6e1626208a5228b47d49246b01f') in 0.004090 seconds
-  Import took 0.010080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.498526 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae08869dd72e9214eb5f3e7720001a2') in 0.005067 seconds
-  Import took 0.011836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.471082 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2c1a3d4235bf302852580d883d9bfb') in 0.005422 seconds
-  Import took 0.011664 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.521291 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2488786b2fd8aaf0765ca9ec176ab2ed') in 0.004657 seconds
-  Import took 0.010555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.091966 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad9c28e8ef96d95272f1fbfd4b8709c') in 0.004104 seconds
-  Import took 0.010304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.537980 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219083b9196620993e07ec9527968c8e') in 0.004833 seconds
-  Import took 0.009985 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.775633 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b299b9afc97256c7d1ced259fafaef') in 0.005397 seconds
-  Import took 0.013001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.057121 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fd028a85413fd3a2f4e69fe74706a4') in 0.006064 seconds
-  Import took 0.011713 seconds .
+  Time since last request: 182.255871 seconds.
+  path: Assets/Scripts/SwordPlay/EnemyHitVfx.cs
+  artifactKey: Guid(13bd650005d73014eac3b99f4db918ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SwordPlay/EnemyHitVfx.cs using Guid(13bd650005d73014eac3b99f4db918ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3d03305d694a7d4b1df91178987a54') in 0.008200 seconds
+  Import took 0.015603 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004199 seconds.
+Registered in 0.003938 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.244 seconds
+- Completed reload, in  1.124 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 175.9 MB.
-System memory in use after: 173.9 MB.
+System memory in use before: 176.0 MB.
+System memory in use after: 174.0 MB.
 
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3715.
-Total: 5.572100 ms (FindLiveObjects: 0.362700 ms CreateObjectMapping: 0.267500 ms MarkObjects: 4.101300 ms  DeleteObjects: 0.838900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 88.558652 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5aa383ddc973097316c64592c06f72') in 0.112695 seconds
-  Import took 0.119628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.198382 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b345f01475ba87d8f5624b45dc5b263e') in 0.004440 seconds
-  Import took 0.010054 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.246559 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229159174ef3c4a6631d02879e2493ac') in 0.004811 seconds
-  Import took 0.011235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.302253 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10a772a9d68199a154d541e1829a3dd') in 0.004599 seconds
-  Import took 0.011755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.100838 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0ad418bacd07f3779eac4ed201ca88') in 0.004671 seconds
-  Import took 0.009747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.247805 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665723b4b0c1c04403ab436b761c869a') in 0.004831 seconds
-  Import took 0.010002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.134003 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378b94984190843ce2a80f28bc9c84d0') in 0.004560 seconds
-  Import took 0.010121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.335158 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2168b742a5fddd1de86891dce1a463a6') in 0.005447 seconds
-  Import took 0.011164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.308259 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a96611016a4503509d20c92531ca6a7') in 0.006293 seconds
-  Import took 0.012795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.062479 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66918e5bbdc9e1d87c3e5adc6d430b2') in 0.005189 seconds
-  Import took 0.012086 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.333154 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e344df4828effc1549925254f7df3b84') in 0.005168 seconds
-  Import took 0.010618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.553693 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb61a4a2b43f33d6b58720f817b6e01') in 0.005594 seconds
-  Import took 0.010746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.612798 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd8999c7d209f38712e0884f0df36b6') in 0.005536 seconds
-  Import took 0.011344 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.527903 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flash21.png
-  artifactKey: Guid(6c6076316faf3ec48b1600130510cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flash21.png using Guid(6c6076316faf3ec48b1600130510cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e711e90e8d1f6e209709679b28431bf8') in 0.035498 seconds
-  Import took 0.040692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003639 seconds.
-  path: Assets/Hovl Studio/Magic hits/Textures/Flash21.png
-  artifactKey: Guid(6c6076316faf3ec48b1600130510cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic hits/Textures/Flash21.png using Guid(6c6076316faf3ec48b1600130510cc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e711e90e8d1f6e209709679b28431bf8') in 0.015222 seconds
-  Import took 0.020161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.319823 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e1fd858e717993a51706299fd76bd5') in 0.005204 seconds
-  Import took 0.010446 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.580786 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048bcd95a349cf70da5300efe1511240') in 0.004729 seconds
-  Import took 0.009764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.268890 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e91b12202f5691048d84dfae3798ebb') in 0.004900 seconds
-  Import took 0.011456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.439347 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e13c2d1834ed4c7df230752a0a83dc') in 0.005199 seconds
-  Import took 0.011523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.701586 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a510ca3a7592224b30958a0eb60df3') in 0.004178 seconds
-  Import took 0.009878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.286591 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07674e81aeae923966306883a67bde1') in 0.005860 seconds
-  Import took 0.011630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.700302 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f00d0951019f26f02b49f4656248979') in 0.005178 seconds
-  Import took 0.011829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.054265 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deca718dcf7bd11afd3fb1de0c181770') in 0.004202 seconds
-  Import took 0.010158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.372817 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6ad755df2e97061152d0e81445ccca') in 0.003959 seconds
-  Import took 0.010714 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.882921 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f90c446284c7737e99d77d6ffb5b9eb') in 0.005043 seconds
-  Import took 0.011023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.284016 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276fa583c4fbaa0e1c611aeedef76350') in 0.004949 seconds
-  Import took 0.010261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.952797 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0feeedbaba6dc0a501d382c8edbc6b3c') in 0.005299 seconds
-  Import took 0.011061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.554210 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f3b07394923269c37bcc80a0117e29') in 0.004658 seconds
-  Import took 0.009546 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.818820 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a245eac4462e3d4f05b201ed2d7da934') in 0.005210 seconds
-  Import took 0.011024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.929996 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b4a163ae16f8abae1c6a250b1735d0') in 0.004801 seconds
-  Import took 0.010370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.273281 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b2f17518fe2d188a23407f4bdfad53') in 0.004393 seconds
-  Import took 0.012633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.450424 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072ed569461e4e904f3e618f9944b98f') in 0.004226 seconds
-  Import took 0.009623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.148502 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f8cf276c2a1438e8a721950f283dbd') in 0.004485 seconds
-  Import took 0.009635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.588957 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024fbf9ac3d16eeaf2a963cc40d24293') in 0.004159 seconds
-  Import took 0.011895 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.183284 seconds.
-  path: Assets/Prefab/HitVFX 1.prefab
-  artifactKey: Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/HitVFX 1.prefab using Guid(f95ad15c97744c14eadbd1f477804712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783099d25bbcdbfbe6ecd3bc7999212b') in 0.004243 seconds
-  Import took 0.011939 seconds .
+Total: 3.558700 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.228700 ms  DeleteObjects: 0.919400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003929 seconds.
+Registered in 0.004052 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.008 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.1 MB.
+System memory in use after: 174.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3718.
+Total: 3.567700 ms (FindLiveObjects: 0.288900 ms CreateObjectMapping: 0.131500 ms MarkObjects: 2.384200 ms  DeleteObjects: 0.762400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.1 MB.
+System memory in use after: 174.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3721.
+Total: 4.459600 ms (FindLiveObjects: 0.566300 ms CreateObjectMapping: 0.266400 ms MarkObjects: 2.533500 ms  DeleteObjects: 1.091200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003995 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.225 seconds
+- Completed reload, in  1.120 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.0 MB.
-System memory in use after: 174.0 MB.
+System memory in use before: 176.1 MB.
+System memory in use after: 174.1 MB.
 
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3720.
-Total: 3.643800 ms (FindLiveObjects: 0.306600 ms CreateObjectMapping: 0.144900 ms MarkObjects: 2.492500 ms  DeleteObjects: 0.699100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003988 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.028 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.0 MB.
-System memory in use after: 174.0 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3723.
-Total: 3.703000 ms (FindLiveObjects: 0.300400 ms CreateObjectMapping: 0.141800 ms MarkObjects: 2.469000 ms  DeleteObjects: 0.790700 ms)
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3724.
+Total: 4.675900 ms (FindLiveObjects: 0.534200 ms CreateObjectMapping: 0.271700 ms MarkObjects: 2.724700 ms  DeleteObjects: 1.143700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004173 seconds.
+Registered in 0.003867 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.202 seconds
+- Completed reload, in  1.039 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.0 MB.
-System memory in use after: 174.0 MB.
+System memory in use before: 176.1 MB.
+System memory in use after: 174.1 MB.
 
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3726.
-Total: 3.528400 ms (FindLiveObjects: 0.349800 ms CreateObjectMapping: 0.168900 ms MarkObjects: 2.276400 ms  DeleteObjects: 0.732100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003923 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.054 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.0 MB.
-System memory in use after: 174.0 MB.
-
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3729.
-Total: 4.139400 ms (FindLiveObjects: 0.590100 ms CreateObjectMapping: 0.249600 ms MarkObjects: 2.559400 ms  DeleteObjects: 0.739500 ms)
-
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 6.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.8 MB.
-System memory in use after: 112.8 MB.
-
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3729.
-Total: 6.172500 ms (FindLiveObjects: 0.582900 ms CreateObjectMapping: 0.337400 ms MarkObjects: 3.960000 ms  DeleteObjects: 1.290400 ms)
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3727.
+Total: 3.345600 ms (FindLiveObjects: 0.330600 ms CreateObjectMapping: 0.181800 ms MarkObjects: 2.080000 ms  DeleteObjects: 0.751800 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

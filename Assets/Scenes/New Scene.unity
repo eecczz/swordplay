@@ -308,7 +308,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 0, g: 0.33088234, b: 1, a: 1}
+  MyColor: {r: 0.33333334, g: 0.6039216, b: 1, a: 1}
   MyMaterial: {fileID: 2100000, guid: 67142dfe243573c459e57cb1be0f6a70, type: 2}
 --- !u!1 &17983063
 GameObject:
@@ -8911,7 +8911,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.5529412, b: 0.5529412, a: 1}
+  MyColor: {r: 1, g: 0.21960784, b: 0.42745098, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &719111460
 GameObject:
@@ -15729,7 +15729,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
+  MyColor: {r: 1, g: 0.21960784, b: 0.42745098, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &1271896646
 GameObject:
@@ -18166,7 +18166,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1579603056}
-  - {fileID: 1940162436}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
@@ -22725,6 +22724,11 @@ Transform:
   m_Father: {fileID: 777414518}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1859216273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
+  m_PrefabInstance: {fileID: 828867035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1865010545
 GameObject:
   m_ObjectHideFlags: 0
@@ -23508,13 +23512,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940162434}
-  m_LocalRotation: {x: 0.0272476, y: -0.18208976, z: 0.9773075, w: -0.104742266}
-  m_LocalPosition: {x: -290.8897, y: -174.01598, z: -51.147705}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
-  m_Father: {fileID: 1398378384}
+  m_Father: {fileID: 1859216273}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 159.5, y: -174.4, z: 13.248001}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1949049297
 GameObject:
   m_ObjectHideFlags: 0
@@ -24600,7 +24604,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
+  MyColor: {r: 1, g: 0.21960784, b: 0.42745098, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1 &2027998224
 GameObject:
@@ -25121,7 +25125,7 @@ MonoBehaviour:
   MaxFrame: 8
   Granularity: 60
   Fps: 60
-  MyColor: {r: 1, g: 0.050980393, b: 0.3764706, a: 1}
+  MyColor: {r: 1, g: 0.21960784, b: 0.42745098, a: 1}
   MyMaterial: {fileID: 2100000, guid: 4065af8ea47469a4dbae349cb8d3e3d9, type: 2}
 --- !u!1001 &2056554574
 PrefabInstance:

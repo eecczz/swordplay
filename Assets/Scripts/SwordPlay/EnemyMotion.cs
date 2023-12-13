@@ -13,9 +13,9 @@ public class EnemyMotion : MonoBehaviour
     public static Transform player;
     public Transform jointParent, joint, body, crosshead;
     Collider sword;
+    public static ConfigurableJoint psword;
     float sensitivity = 0.01f;
     float tx, ty, rtx, rty;
-    public static float etx, ety, ertx, erty;
     int cool = 100;
     int cool1 = 100;
     float guardTime = -1;
@@ -187,10 +187,7 @@ public class EnemyMotion : MonoBehaviour
             }
             if (PlayerMotion.ent.transform == transform)
             {
-                etx = tx;
-                ety = ty;
-                ertx = rtx;
-                erty = rty;
+                psword = jointParent.GetComponentInChildren<ConfigurableJoint>();
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && health > -1)
                 {
                     if (guard == 1)
@@ -407,9 +404,10 @@ public class EnemyMotion : MonoBehaviour
             }
             else if (guard == 1)
             {
-                Vector2 v = joint.localRotation * Vector3.up;
-                float r = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg + 90;
-                Vector2 v1 = new Vector2(-Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized;
+                Vector3 v = Vector3.right * -tx / 90 + Vector3.up * -ty / 100;
+                float r = Mathf.Atan2(v.y, -v.x) * Mathf.Rad2Deg + 180;
+                Vector3 v1 = Quaternion.Euler(new Vector3(-player.rotation.eulerAngles.x, -player.rotation.eulerAngles.y, -player.rotation.eulerAngles.z)) * PlayerMotion.psword.GetComponent<Rigidbody>().velocity;
+                v1 = new Vector3(v1.x, v1.y, 0);
                 float r1 = Mathf.Atan2(v1.y, v1.x) * Mathf.Rad2Deg + 180;
                 float angle = Mathf.Abs(r - r1);
                 if (angle < 30 || angle > 345 || (angle > 150 && angle < 210))
