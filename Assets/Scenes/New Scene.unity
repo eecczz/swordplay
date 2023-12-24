@@ -7565,10 +7565,10 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cad9fe4bb9028e2428a8877080425fd4, type: 2}
+  - {fileID: 2100000, guid: 31b6bdf4b2251eb42914a9e767f626c0, type: 2}
   - {fileID: 2100000, guid: 89a78049627413e4ca1e67e67156fab3, type: 2}
-  - {fileID: 6692004714388526914, guid: bf35904690a002644b49b71a9692dfbe, type: 3}
-  - {fileID: 6692004714388526914, guid: bf35904690a002644b49b71a9692dfbe, type: 3}
+  - {fileID: 2100000, guid: 31b6bdf4b2251eb42914a9e767f626c0, type: 2}
+  - {fileID: 2100000, guid: 31b6bdf4b2251eb42914a9e767f626c0, type: 2}
   - {fileID: 2100000, guid: 036e8373399db3a4ea34adcec1aafe5c, type: 2}
   - {fileID: 2100000, guid: 036e8373399db3a4ea34adcec1aafe5c, type: 2}
   m_StaticBatchInfo:
@@ -15719,7 +15719,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.75
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -23875,7 +23875,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.75
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

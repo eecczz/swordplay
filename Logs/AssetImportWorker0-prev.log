@@ -1,0 +1,226 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.3803; Version 2009; 64bit' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Public/Documents/swordplay-clone
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53691
+Successfully changed project path to: C:/Users/Public/Documents/swordplay-clone
+C:/Users/Public/Documents/swordplay-clone
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 286.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Public/Documents/swordplay-clone/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   
+    VRAM:     3949 MB
+    Driver:   31.0.15.3141
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002066 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 135.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007401 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 213.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.780 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3306 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.3 MB.
+System memory in use after: 191.3 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3754.
+Total: 5.428600 ms (FindLiveObjects: 0.455200 ms CreateObjectMapping: 0.265700 ms MarkObjects: 3.640800 ms  DeleteObjects: 1.065500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Wii_Assets/Miis/Monsieur/source/01 - Default.mat
+  artifactKey: Guid(45fc58aa9e7eee0459c1197b256fcc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Monsieur/source/01 - Default.mat using Guid(45fc58aa9e7eee0459c1197b256fcc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07bd28f48b434bbffee1f4c24ef7ba93') in 0.362080 seconds
+  Import took 0.417473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Wii_Assets/Miis/Monsieur/source/08 - Default.mat
+  artifactKey: Guid(31b6bdf4b2251eb42914a9e767f626c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Monsieur/source/08 - Default.mat using Guid(31b6bdf4b2251eb42914a9e767f626c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37131e40e80a0d7e37dc470a041f1c15') in 0.022906 seconds
+  Import took 0.031455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Wii_Assets/Miis/Monsieur/source/07 - Default.mat
+  artifactKey: Guid(55948fbcd4d6c2744ac5d8ec9d159020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Monsieur/source/07 - Default.mat using Guid(55948fbcd4d6c2744ac5d8ec9d159020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1d126eaeaa552f2df327558ad04c14') in 0.023266 seconds
+  Import took 0.032934 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006839 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.233 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3170 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.9 MB.
+System memory in use after: 186.9 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3835.
+Total: 5.727600 ms (FindLiveObjects: 0.420400 ms CreateObjectMapping: 0.232900 ms MarkObjects: 3.733500 ms  DeleteObjects: 1.339400 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 127.1 MB.
+System memory in use after: 125.1 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3835.
+Total: 4.955000 ms (FindLiveObjects: 0.405800 ms CreateObjectMapping: 0.210900 ms MarkObjects: 3.340800 ms  DeleteObjects: 0.996300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 328.522188 seconds.
+  path: Assets/Wii_Assets/Miis/Monsieur/source/08 - Default.mat
+  artifactKey: Guid(31b6bdf4b2251eb42914a9e767f626c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Monsieur/source/08 - Default.mat using Guid(31b6bdf4b2251eb42914a9e767f626c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3fc8f914dafb8d35579d67e50c1558') in 0.495627 seconds
+  Import took 0.548636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Wii_Assets/Miis/Monsieur/source/07 - Default.mat
+  artifactKey: Guid(55948fbcd4d6c2744ac5d8ec9d159020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wii_Assets/Miis/Monsieur/source/07 - Default.mat using Guid(55948fbcd4d6c2744ac5d8ec9d159020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cce855f2e985c7841bfc091dacb657a') in 0.025694 seconds
+  Import took 0.033839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 429.859812 seconds.
+  path: Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/1 Tutorials/Materials/sky.mat
+  artifactKey: Guid(d0cc911cbb1421942981fbaadf93bb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/1 Tutorials/Materials/sky.mat using Guid(d0cc911cbb1421942981fbaadf93bb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4374ecffd57647ea53ff846399bee792') in 0.074458 seconds
+  Import took 0.087862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012656 seconds.
+  path: Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/1 Tutorials/Materials/sky.mat
+  artifactKey: Guid(d0cc911cbb1421942981fbaadf93bb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/1 Tutorials/Materials/sky.mat using Guid(d0cc911cbb1421942981fbaadf93bb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4374ecffd57647ea53ff846399bee792') in 0.012442 seconds
+  Import took 0.021933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.525773 seconds.
+  path: Assets/OToon- URP Toon Shading/Demo(Can be delete)/Plugins/unity-chan!/Unity-chan! Model/Art/Materials/skin1.mat
+  artifactKey: Guid(ca131910d5c9a634dbdd38e77111033f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OToon- URP Toon Shading/Demo(Can be delete)/Plugins/unity-chan!/Unity-chan! Model/Art/Materials/skin1.mat using Guid(ca131910d5c9a634dbdd38e77111033f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb602e9694a99a54531826da4dbc22d4') in 0.103023 seconds
+  Import took 0.121438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.376717 seconds.
+  path: Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/6 ShaderGraph RobotKyle/Material/Shader Verse.mat
+  artifactKey: Guid(43344f90d8abfa44994acf5a763c0d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/6 ShaderGraph RobotKyle/Material/Shader Verse.mat using Guid(43344f90d8abfa44994acf5a763c0d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0d462ce07a8072352eee65626353c9') in 3.461503 seconds
+  Import took 3.474922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/3 NPRStyles ShaderBall/Materials/ShaderVerse.mat
+  artifactKey: Guid(7e14eeff0ccfdc84f9d5a165a2079196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OToon- URP Toon Shading/Demo(Can be delete)/Scenes/3 NPRStyles ShaderBall/Materials/ShaderVerse.mat using Guid(7e14eeff0ccfdc84f9d5a165a2079196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498f50a7efbaacfce3304cf2e408a009') in 0.048386 seconds
+  Import took 0.058234 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007741 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.135 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3170 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3874.
+Total: 4.614600 ms (FindLiveObjects: 0.514500 ms CreateObjectMapping: 0.235200 ms MarkObjects: 2.891200 ms  DeleteObjects: 0.972500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005633 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.199 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3170 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 187.2 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3877.
+Total: 16.790100 ms (FindLiveObjects: 0.930900 ms CreateObjectMapping: 0.566100 ms MarkObjects: 11.157600 ms  DeleteObjects: 4.131100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
