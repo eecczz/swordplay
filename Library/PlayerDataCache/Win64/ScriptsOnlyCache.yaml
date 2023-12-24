@@ -55,6 +55,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
@@ -130,121 +131,121 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 1770}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 1772}
+      Script: {instanceID: 1802}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1804}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 1842}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 1924}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2290}
+      Script: {instanceID: 2328}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2528}
     - Class: 114
-      Script: {instanceID: 2580}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3308}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3370}
+      Script: {instanceID: 3420}
     - Class: 114
-      Script: {instanceID: 3394}
+      Script: {instanceID: 3444}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 3512}
+      Script: {instanceID: 3562}
     - Class: 114
-      Script: {instanceID: 3574}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3642}
+      Script: {instanceID: 3696}
     - Class: 114
-      Script: {instanceID: 3684}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 3984}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 4084}
+      Script: {instanceID: 4138}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 4420}
     - Class: 114
-      Script: {instanceID: 4590}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 4894}
+      Script: {instanceID: 4958}
     - Class: 114
-      Script: {instanceID: 4912}
+      Script: {instanceID: 4976}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5220}
     - Class: 114
-      Script: {instanceID: 5224}
+      Script: {instanceID: 5290}
     - Class: 114
-      Script: {instanceID: 5240}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 5334}
+      Script: {instanceID: 5402}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 5494}
     - Class: 114
-      Script: {instanceID: 5432}
+      Script: {instanceID: 5500}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 5502}
     - Class: 114
-      Script: {instanceID: 5452}
+      Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 5700}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 5706}
+      Script: {instanceID: 5780}
     - Class: 114
-      Script: {instanceID: 5822}
+      Script: {instanceID: 5898}
     - Class: 114
-      Script: {instanceID: 5828}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 5950}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6018}
+      Script: {instanceID: 6098}
     - Class: 114
-      Script: {instanceID: 6024}
-    - Class: 114
-      Script: {instanceID: 6120}
-    - Class: 114
-      Script: {instanceID: 6162}
+      Script: {instanceID: 6104}
     - Class: 114
       Script: {instanceID: 6200}
     - Class: 114
+      Script: {instanceID: 6242}
+    - Class: 114
       Script: {instanceID: 6280}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 6362}
     - Class: 114
-      Script: {instanceID: 6516}
+      Script: {instanceID: 6466}
     - Class: 114
-      Script: {instanceID: 6626}
+      Script: {instanceID: 6600}
     - Class: 114
-      Script: {instanceID: 6694}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 7116}
+      Script: {instanceID: 6780}
     - Class: 114
-      Script: {instanceID: 7240}
+      Script: {instanceID: 7202}
     - Class: 114
-      Script: {instanceID: 7264}
+      Script: {instanceID: 7328}
     - Class: 114
-      Script: {instanceID: 7524}
+      Script: {instanceID: 7354}
     - Class: 114
-      Script: {instanceID: 7554}
+      Script: {instanceID: 7616}
     - Class: 114
-      Script: {instanceID: 7560}
+      Script: {instanceID: 7646}
     - Class: 114
-      Script: {instanceID: 7794}
+      Script: {instanceID: 7652}
+    - Class: 114
+      Script: {instanceID: 7888}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -964,6 +965,12 @@ ScriptsOnlyBuild:
     className: LaserSword
   - hash:
       serializedVersion: 2
+      Hash: 40552e34f45e246afab810362a3300b3
+    assemblyName: OtoonShader.dll
+    namespaceName: 
+    className: SpherizeNormalCenterObject
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1148,6 +1155,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Animation.Rigging.dll
     namespaceName: UnityEngine.Animations.Rigging
     className: MultiReferentialConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 643bcb1f4ab65ce0a77292a4df5aaa88
+    assemblyName: OtoonShader.dll
+    namespaceName: OToon
+    className: OutlineObjectFeature
   - hash:
       serializedVersion: 2
       Hash: 63bdc2cf3273aa9bf650350f19d2af61

@@ -122,6 +122,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.Postprocessing.Runtime.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+--root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\OtoonShader.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 --assembly-folder=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\
@@ -264,6 +265,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.Postprocessing.Runtime.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+--root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\OtoonShader.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --root-assembly=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 --assembly-folder=C:\Users\Public\Documents\swordplay-clone\Temp\StagingArea\Data\Managed\
