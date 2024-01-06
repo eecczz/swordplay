@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638379425749109766
-    m_Hash: 975434183
+      ticks: 638401154486795003
+    m_Hash: 2155421427
   m_LockFileStatus:
     m_FilePath: C:/Users/Public/Documents/swordplay-clone/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638379425749149659
-    m_Hash: 2461474201
+      ticks: 638401154486795003
+    m_Hash: 3877775388
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -705,6 +705,7 @@ m_PackageAssets:
         - 3.2.1
         - 3.2.2
         - 3.3.0
+        - 3.4.0
         compatible:
         - 2.3.0
         - 3.0.1
@@ -715,6 +716,7 @@ m_PackageAssets:
         - 3.2.1
         - 3.2.2
         - 3.3.0
+        - 3.4.0
         verified: 3.1.1
       dependencies:
       - name: com.unity.modules.physics
@@ -929,6 +931,7 @@ m_PackageAssets:
         - 1.3.9
         - 1.4.0
         - 1.4.1
+        - 1.4.2
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -952,6 +955,7 @@ m_PackageAssets:
         - 1.3.9
         - 1.4.0
         - 1.4.1
+        - 1.4.2
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1120,6 +1124,7 @@ m_PackageAssets:
         - 3.2.0-pre.4
         - 3.2.0-pre.5
         - 3.2.0-pre.6
+        - 3.2.0-pre.7
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
@@ -1130,6 +1135,7 @@ m_PackageAssets:
         - 3.2.0-pre.4
         - 3.2.0-pre.5
         - 3.2.0-pre.6
+        - 3.2.0-pre.7
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui

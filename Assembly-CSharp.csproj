@@ -67,9 +67,11 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\LegsAnimator.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Extra Settings\LegsA.ImpulseSettings.cs" />
     <Compile Include="Assets\DissolveEmissionShader\DissolveSphere.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\BeatSaber\Spawner1.cs" />
     <Compile Include="Assets\Scripts\BeatSaber\Spawner3.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA.Initialization.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\SprintBone\SpringBone.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Core\RagdollDummy_PostAttach.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Core\RagdollProcessor.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA.EditorRelated.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\Glueing Helpers\LegsA.Glue.Attachement.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Shared\Animating Help\AnimationGenerateUtils.cs" />
     <Compile Include="Assets\FImpossible Creations\Shared Tools\Editor Tools\Property Attributes\FPD_FixedCurveWindowAttribute.cs" />
+    <Compile Include="Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_AutoRotate.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Hips Algorithms\LegsA.Hips.BodyStep.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\LegsA.Align.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_SlopePusher.cs" />
@@ -96,6 +99,7 @@
     <Compile Include="Assets\Scripts\BeatSaber\Spawner7.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_StepFurther.cs" />
     <Compile Include="Assets\Scripts\SwordPlay\PlayerMotion.cs" />
+    <Compile Include="Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\LegsA.Leg.Raycasting.cs" />
     <Compile Include="Assets\XWeaponTrail\Scripts\VertexPool.cs" />
     <Compile Include="Assets\ShaderGraph_Dissolve\Utility\Scripts\Follow.cs" />
@@ -112,6 +116,8 @@
     <Compile Include="Assets\Scripts\BeatSaber\Sliceable.cs" />
     <Compile Include="Assets\ShaderGraph_Dissolve\Utility\Scripts\DissolveOffest.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\Bases\LegsAnimatorControlModuleBase.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle\Scripts\DemoController.cs" />
+    <Compile Include="Assets\JMO Assets\MatCap Shaders\Creator\Assets\MC_CreateMatCap.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_InsectBodyElevateHelper.cs" />
     <Compile Include="Assets\FImpossible Creations\Shared Tools\Editor Tools\Property Attributes\FPD_LayersAttribute.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\LAM_StabilizePoseOnIdle.cs" />
@@ -137,7 +143,9 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\Glueing Helpers\LegsA.Glue.Extra.cs" />
     <Compile Include="Assets\LaserSword\Data\Script\LaserCollider.cs" />
     <Compile Include="Assets\Evil Spirit Katana\Resources\LightFlickering.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\ShowcaseDemoController.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Level Design\Generators Shared\Helpers\MinMax.cs" />
+    <Compile Include="Assets\Scripts\SwordPlay\EnemyHitVfx.cs" />
     <Compile Include="Assets\Scripts\BeatSaber\Spawner.cs" />
     <Compile Include="Assets\FImpossible Creations\Shared Tools\Editor Tools\FEditor_Handles.cs" />
     <Compile Include="Assets\XWeaponTrail\Scripts\XWeaponTrailDemo.cs" />
@@ -149,6 +157,7 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Forwarding\LegsA.Settings.Animating.cs" />
     <Compile Include="Assets\Scripts\BeatSaber\Note.cs" />
     <Compile Include="Assets\FImpossible Creations\Shared Tools\GUI Helpers\FGUI_Inspector.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\SceneHintController.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Extra Settings\LegsA.ExtraModules.Helper.cs" />
     <Compile Include="Assets\Scripts\SwordPlay\DragRigidbody.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Shared\Math Helpers\Math\FVectorMethods.cs" />
@@ -174,6 +183,7 @@
     <Compile Include="Assets\Scripts\BeatSaber\Lighsaber.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Shared\Animating Help\SkeletonRecognize.cs" />
     <Compile Include="Assets\CBG\FPSMeshTool\Scripts\Helpers\GenericRigger.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\DitherByCameraDistance.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Hips Algorithms\LegsA.Hips.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Core\RagdollProcessor.References.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Extra Components\RagdollAnimatorStabilizer.cs" />
@@ -195,39 +205,57 @@
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Setup Settings\LegsA.Raycasting.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Setup Settings\LegsA.IK.cs" />
     <Compile Include="Assets\ShaderGraph_Dissolve\Utility\Scripts\DissolveChilds.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\Rotator.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\LegsA Control Modules\Bases\LAM_Variable.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Core\RagdollIndicatorHelper.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Forwarding\LegsA.Leg.Helpers.cs" />
+    <Compile Include="Assets\Scripts\SwordPlay\HitVfx.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Leg Algorithms\LegsA.Leg.BoneHelper.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Extra Settings\LegsA.StepHeatmap.cs" />
     <Compile Include="Assets\CBG\FPSMeshTool\Scripts\Runtime Components\FPSMaterialController.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Core\Extra Settings\LegsA.ExtraControls.cs" />
     <Compile Include="Assets\FImpossible Creations\Plugins - Shared\Math Helpers\Math\FLogicMethods.cs" />
     <Compile Include="Assets\Scripts\BeatSaber\Spawner2.cs" />
+    <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\PingPongMove.cs" />
     <Compile Include="Assets\ShaderGraph_Dissolve\Utility\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Scripts\SwordPlay\HitVfx.cs" />
-    <Compile Include="Assets\Scripts\SwordPlay\EnemyHitVfx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CBG\FPSMeshTool\Shaders\InvisibleNoShadow.shader" />
+    <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\5 Stylized Character UnityChan\license.txt" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Textures\MaCrea\MaCrea.txt" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain_Additive.shader" />
     <None Include="Assets\IdiaSoftware\Blades&amp;Bludgeonings-Free\Documentation-Free.txt" />
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Ragdoll Animator\Readme and quick Manual - Ragdoll Animator.txt" />
     <None Include="Assets\CBG\FPSMeshTool\Integrations\INTEGRATION README.txt" />
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Legs Animator - Readme.txt" />
+    <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Shaders\GradientSkybox.shader" />
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Presets Directory\Leg Motion Presets\dummy.txt" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureMult.shader" />
     <None Include="Assets\Hovl Studio\Magic hits\Shaders\Distortion.shader" />
     <None Include="Assets\OnehandShieldAnimations\Readme.txt" />
     <None Include="Assets\Hovl Studio\Magic hits\Shaders\Blend_CenterGlow.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain_AdditiveZ.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Textures\BenSimonds\_Textures Readme.txt" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain_Bumped.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Lit.shader" />
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Presets Directory\Leg Custom Module Presets\dummy.txt" />
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Presets Directory\Leg Impulses Presets\dummy.txt" />
     <None Include="Assets\XWeaponTrail\Shader\xft_displacement_screen.shader" />
     <None Include="Assets\DissolveEmissionShader\DissolveEmission.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureMult_Bumped.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_Plain.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd.shader" />
+    <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\license.txt" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
     <None Include="Assets\XWeaponTrail\readme.txt" />
+    <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\license.txt" />
     <None Include="Assets\CBG\FPSMeshTool\Shaders\InvisibleShadowCaster.shader" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\_MatCap Shaders Readme.txt" />
     <None Include="Assets\CBG\FPSMeshTool\Shaders\URPInvisibleShadowCaster.shader" />
     <None Include="Assets\Hovl Studio\Magic hits\Shaders\Add_CenterGlow.shader" />
     <None Include="Assets\FImpossible Creations\Plugins - Animating\Legs Animator\Presets Directory\dummy.txt" />
     <None Include="Assets\FImpossible Creations\Plugins - Shared\Math Helpers\MathHelpers - ReadMe.txt" />
+    <None Include="Assets\JMO Assets\MatCap Shaders\Textures\Creator\_Creator.txt" />
     <None Include="Assets\FImpossible Creations\Directories Description.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -843,9 +871,6 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -854,6 +879,9 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging">
       <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
@@ -893,6 +921,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="OtoonEditor.csproj">
+      <Project>{C4E225F0-D9A8-C1C3-3C33-7CC36A62BD11}</Project>
+      <Name>OtoonEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="OtoonShader.csproj">
+      <Project>{4FDD3A45-259E-E816-554A-DB10A4610CF5}</Project>
+      <Name>OtoonShader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
