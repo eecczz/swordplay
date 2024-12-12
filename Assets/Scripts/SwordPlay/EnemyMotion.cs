@@ -28,7 +28,7 @@ public class EnemyMotion : MonoBehaviour
     Rigidbody rigid;
     public MultiAimConstraint ma, hips1, hips2;
     public static Rigidbody rigid1;
-    int health = 2;
+    public int health = 2;
     RigBuilder rb;
 
     // Start is called before the first frame update
@@ -259,15 +259,27 @@ public class EnemyMotion : MonoBehaviour
         if (health > -1)
         {
             anim.GetBoneTransform(HumanBodyBones.Hips).position = new Vector3(transform.position.x, anim.GetBoneTransform(HumanBodyBones.Hips).position.y, transform.position.z);
+            float anx = transform.rotation.eulerAngles.x;
+            float anz = transform.rotation.eulerAngles.z;
+            if (anx >= 180)
+                anx -= 360;
+            if (anz >= 180)
+                anz -= 360;
             if (!anim.GetBool("leftHit"))
             {
                 anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
                 anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
+
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -anz/2);
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, anx/2);
             }
             else
             {
                 anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
                 anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
+
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -anz/2);
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, anx/2);
             }
             //Head IK fix
             if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))

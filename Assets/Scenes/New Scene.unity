@@ -3875,7 +3875,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -4158,7 +4158,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -4170,9 +4170,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
-  _EditorSetupCategory: 2
-  _EditorMotionCategory: 0
+  _EditorCategory: 1
+  _EditorSetupCategory: 1
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 1
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
@@ -4338,9 +4338,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5190f4718055acd4b88ef8400938004f, type: 3}
   hitVFX: {fileID: 1092808340257719351, guid: 6fc32fac418bfae46906a4dc2841fb4c, type: 3}
   shieldVFX: {fileID: 1092808340257719351, guid: 639dc3c1f2b5d6b46a91a79477f699dd, type: 3}
-  ma: {fileID: 0}
+  ma: {fileID: 1519115591}
   hips1: {fileID: 1195691642}
   hips2: {fileID: 427984229}
+  health: 2
   dissolve: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!114 &409242207
 MonoBehaviour:
@@ -4408,6 +4409,7 @@ Transform:
   - {fileID: 239707266}
   - {fileID: 37623622}
   - {fileID: 218664260}
+  - {fileID: 1668367339}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -6581,7 +6583,13 @@ MonoBehaviour:
   GlueOnlyOnIdle: 0
   LocalWorldUp: 1
   DisableCustomModules: 0
-  CustomModules: []
+  CustomModules:
+  - Enabled: 1
+    Parent: {fileID: 629582697}
+    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
+    customStringList: []
+    customObjectList: []
+    variables: []
   ImpulsesPowerMultiplier: 1
   ImpulsesDurationMultiplier: 1
   ImpulsesDampUpPushes: 0
@@ -6980,7 +6988,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -6992,9 +7000,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 1
+  _EditorMotionCategory: 0
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -7163,6 +7171,7 @@ MonoBehaviour:
   ma: {fileID: 1835821891}
   hips1: {fileID: 1893952979}
   hips2: {fileID: 1320596570}
+  health: 2
   dissolve: {fileID: 2100000, guid: 1a50a9ace93fd614db63694d201e262b, type: 2}
 --- !u!114 &629582701
 MonoBehaviour:
@@ -8477,7 +8486,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -8489,9 +8498,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 1
+  _EditorMotionCategory: 3
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -8660,6 +8669,7 @@ MonoBehaviour:
   ma: {fileID: 1865010548}
   hips1: {fileID: 675778606}
   hips2: {fileID: 924782041}
+  health: 2
   dissolve: {fileID: 2100000, guid: 1a50a9ace93fd614db63694d201e262b, type: 2}
 --- !u!114 &694934472
 MonoBehaviour:
@@ -10281,95 +10291,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: 60c2a1c01f2a6ad4d849ec5dd74b3297, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60c2a1c01f2a6ad4d849ec5dd74b3297, type: 3}
---- !u!1001 &828867035
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_Name
-      value: wuhu
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164078558771037576, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164078558771037576, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
 --- !u!1 &836242349
 GameObject:
   m_ObjectHideFlags: 0
@@ -11649,7 +11570,7 @@ MonoBehaviour:
   StabilityAlgorithm: 1
   UseHips: 1
   HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
+  HipsHeightStepSpeed: 0
   HipsAdjustStyle: 0
   StabilizeCenterOfMass: 0.45
   AnimationIsStablePose: 0.75
@@ -11932,7 +11853,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -11944,9 +11865,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
+  _EditorCategory: 1
   _EditorSetupCategory: 1
-  _EditorMotionCategory: 0
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -11976,7 +11897,7 @@ MonoBehaviour:
   ZeroStepsOnNoRaycast: 0
   BodyStepDown: 1
   MaxBodyStepUp: 1
-  UngroundFadeSpeed: 0.1
+  UngroundFadeSpeed: 0
   IsMovingFadeSpeed: 0.4
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
@@ -16980,7 +16901,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -16992,9 +16913,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
+  _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 1
+  _EditorMotionCategory: 3
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -17163,6 +17084,7 @@ MonoBehaviour:
   ma: {fileID: 468708835}
   hips1: {fileID: 125492461}
   hips2: {fileID: 929663605}
+  health: 2
   dissolve: {fileID: 2100000, guid: 1a50a9ace93fd614db63694d201e262b, type: 2}
 --- !u!114 &1296907496
 MonoBehaviour:
@@ -18929,6 +18851,88 @@ Transform:
   m_Father: {fileID: 375572808}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1447299702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_Name
+      value: wuhu
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+--- !u!4 &1447299703 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+  m_PrefabInstance: {fileID: 1447299702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1447888215
 GameObject:
   m_ObjectHideFlags: 0
@@ -19508,25 +19512,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498615280}
   m_Mesh: {fileID: -5020630398665441859, guid: 4ff6e2a8ab18f0348901c5d176cade7f, type: 3}
---- !u!1 &1510328881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-  m_PrefabInstance: {fileID: 828867035}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1510328883
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510328881}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
 --- !u!1 &1513552511
 GameObject:
   m_ObjectHideFlags: 0
@@ -19742,7 +19727,7 @@ MonoBehaviour:
     m_SourceObjects:
       m_Length: 1
       m_Item0:
-        transform: {fileID: 1905528094}
+        transform: {fileID: 4885046238649218267}
         weight: 1
       m_Item1:
         transform: {fileID: 0}
@@ -21611,6 +21596,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: adec051c070195c409e57d24bd56a760, type: 3}
   m_PrefabInstance: {fileID: 1667885642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1668367338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668367339}
+  m_Layer: 7
+  m_Name: Crosshead
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668367339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668367338}
+  m_LocalRotation: {x: 0.0000000065192607, y: -0, z: 0.0000000550697, w: 1}
+  m_LocalPosition: {x: -0.0019319853, y: 5.777435, z: 9.901225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 409242210}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1673635400
 GameObject:
   m_ObjectHideFlags: 0
@@ -23082,6 +23097,25 @@ MonoBehaviour:
       z: 0
   m_SourceObjectsGUIToggle: 1
   m_SettingsGUIToggle: 1
+--- !u!1 &1844870047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
+  m_PrefabInstance: {fileID: 1447299702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1844870049
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844870047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: c16cae87090950a4bb418ef2d331b845, type: 3}
 --- !u!1 &1856404874
 GameObject:
   m_ObjectHideFlags: 0
@@ -23144,11 +23178,6 @@ Transform:
   m_Father: {fileID: 777414518}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1859216273 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d58cda005d423d4799c1793c7b9327e, type: 3}
-  m_PrefabInstance: {fileID: 828867035}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1865010545
 GameObject:
   m_ObjectHideFlags: 0
@@ -23934,9 +23963,9 @@ Transform:
   m_GameObject: {fileID: 1940162434}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 1859216273}
+  m_Father: {fileID: 1447299703}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1949049297
@@ -25249,7 +25278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2043930275
 Transform:
   m_ObjectHideFlags: 0
@@ -33989,7 +34018,13 @@ MonoBehaviour:
   GlueOnlyOnIdle: 0
   LocalWorldUp: 1
   DisableCustomModules: 0
-  CustomModules: []
+  CustomModules:
+  - Enabled: 1
+    Parent: {fileID: 7909019664020661991}
+    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
+    customStringList: []
+    customObjectList: []
+    variables: []
   ImpulsesPowerMultiplier: 1
   ImpulsesDurationMultiplier: 1
   ImpulsesDampUpPushes: 0
@@ -34388,7 +34423,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -34400,9 +34435,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 2
-  _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
+  _EditorCategory: 1
+  _EditorSetupCategory: 0
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -35423,7 +35458,7 @@ MonoBehaviour:
   jointParent: {fileID: 1888979961}
   joint: {fileID: 343264039}
   body: {fileID: 1040446136552734593}
-  crosshead: {fileID: 1759647019}
+  crosshead: {fileID: 0}
   clips:
   - {fileID: 8300000, guid: 188f7dff145cb114f965ce6ce55ef1a2, type: 3}
   - {fileID: 8300000, guid: 5190f4718055acd4b88ef8400938004f, type: 3}
@@ -35432,6 +35467,7 @@ MonoBehaviour:
   ma: {fileID: 5529781645774484439}
   hips1: {fileID: 1387145851715182627}
   hips2: {fileID: 937297412356899908}
+  health: 2
   dissolve: {fileID: 2100000, guid: 1a50a9ace93fd614db63694d201e262b, type: 2}
 --- !u!114 &9084263549584348872
 MonoBehaviour:
@@ -35479,7 +35515,13 @@ MonoBehaviour:
   GlueOnlyOnIdle: 0
   LocalWorldUp: 1
   DisableCustomModules: 0
-  CustomModules: []
+  CustomModules:
+  - Enabled: 1
+    Parent: {fileID: 9084263549584348872}
+    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
+    customStringList: []
+    customObjectList: []
+    variables: []
   ImpulsesPowerMultiplier: 1
   ImpulsesDurationMultiplier: 1
   ImpulsesDampUpPushes: 0
@@ -35878,7 +35920,7 @@ MonoBehaviour:
   UnglueOn: 90
   AllowGlueDrag: 0.7
   GlueMode: 2
-  SmoothSuddenSteps: 0.85
+  SmoothSuddenSteps: 0
   LegElevateBlend: 0.7
   LegElevateHeightLimit: 0.6
   FootRotationBlend: 1
@@ -35892,7 +35934,7 @@ MonoBehaviour:
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 1
-  _EditorMotionCategory: 3
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99

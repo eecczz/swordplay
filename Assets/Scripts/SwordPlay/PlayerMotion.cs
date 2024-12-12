@@ -191,7 +191,7 @@ public class PlayerMotion : MonoBehaviour
             }
             if (guard == 0)
             {
-                tx = Mathf.Clamp(tx, -150, 150);
+                tx = Mathf.Clamp(tx, -180, 180);
                 ty = Mathf.Clamp(ty, -30, 150);
             }
             else
@@ -199,6 +199,10 @@ public class PlayerMotion : MonoBehaviour
                 tx = Mathf.Clamp(tx, -90, 90);
                 ty = Mathf.Clamp(ty, -30, 90);
             }
+            if (tx >= 180)
+                tx = -180;
+            else if (tx <= -180)
+                tx = 180;
         }
         if (!Input.GetMouseButton(1))
         {
@@ -208,8 +212,7 @@ public class PlayerMotion : MonoBehaviour
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             joint.localPosition = new Vector3(0, 1.5f, 0);
-            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
-            Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
+            Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 120 * Mathf.Clamp(ty, 60f, 120) / 60f, transform.forward) * transform.up;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
             joint.RotateAround(joint.position + transform.up * 1.5f, transform.right, -ty);
             sword.transform.localPosition = new Vector3(0, 0, 1.75f);
@@ -309,15 +312,27 @@ public class PlayerMotion : MonoBehaviour
         if (health > -1)
         {
             anim.GetBoneTransform(HumanBodyBones.Hips).position = new Vector3(transform.position.x, anim.GetBoneTransform(HumanBodyBones.Hips).position.y, transform.position.z);
+            float anx = transform.rotation.eulerAngles.x;
+            float anz = transform.rotation.eulerAngles.z;
+            if (anx >= 180)
+                anx -= 360;
+            if (anz >= 180)
+                anz -= 360;
             if (!anim.GetBool("leftHit"))
             {
                 anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -transform.rotation.eulerAngles.z);
                 anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, transform.rotation.eulerAngles.x);
+
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -anz / 2);
+                anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, anx / 2);
             }
             else
             {
                 anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).forward, -transform.rotation.eulerAngles.z);
                 anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.LeftUpperLeg).right, transform.rotation.eulerAngles.x);
+
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).forward, -anz / 2);
+                anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).RotateAround(anim.GetBoneTransform(HumanBodyBones.Hips).position, anim.GetBoneTransform(HumanBodyBones.RightUpperLeg).right, anx / 2);
             }
             //Head IK fix
             if (!anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted"))

@@ -28,6 +28,7 @@ public class Lighsaber : MonoBehaviour
     {
         if (other.gameObject.layer == 7)
         {
+            Debug.Log("d");
             _triggerEnterTipPosition = _tip.transform.position;
             _triggerEnterBasePosition = _base.transform.position;
         }
@@ -37,6 +38,7 @@ public class Lighsaber : MonoBehaviour
     {
         if (other.gameObject.layer == 7)
         {
+            Debug.Log("d");
             _triggerExitTipPosition = _tip.transform.position;
 
             //Create a triangle between the tip and base so that we can get the normal
