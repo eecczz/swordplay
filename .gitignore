@@ -20,3 +20,10 @@ Library/EditorInstance.json
 Temp/UnityLockfile
 Temp/workerlic
 Library/CurrentMaximizeLayout.dwlt
+# Unity build/cache 무시
+Library/
+PlayerDataCache/
+SwordPlay_Data/
+*.resS
+*.unity3d
+*.bc
