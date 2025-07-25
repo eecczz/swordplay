@@ -27,3 +27,8 @@ SwordPlay_Data/
 *.resS
 *.unity3d
 *.bc
+Library/
+*.resS
+*.unity3d
+*.bc
+SwordPlay_Data/
