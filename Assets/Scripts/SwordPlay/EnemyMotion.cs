@@ -45,7 +45,7 @@ public class EnemyMotion : MonoBehaviour
     void Update()
     {
         nav.Warp(transform.position);
-        if (player != null)
+        if (player != null && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && swing == 0)
             body.rotation = Quaternion.Euler(new Vector3(0, Quaternion.LookRotation(player.position - body.position).eulerAngles.y, 0));
         if (player == null && ma.data.sourceObjects[0].transform != crosshead)
         {
@@ -133,7 +133,7 @@ public class EnemyMotion : MonoBehaviour
         {
             if (cool > 0)
             {
-                cool--;
+                //cool--;
             }
             if (cool == 0 && health > -1)
             {
@@ -215,7 +215,7 @@ public class EnemyMotion : MonoBehaviour
             }
             if (guardTime > 0 && health > -1)
             {
-                guardTime--;
+                //guardTime--;
                 if (guard == 0)
                 {
                     tx = Mathf.Clamp(tx, -90, 90);
@@ -324,7 +324,7 @@ public class EnemyMotion : MonoBehaviour
                         anim.SetBool("leftHit", false);
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                    SoundManager.Instance.SFXPlay("Hit", clips[0]);
+                    SoundManager.Instance.SFXPlay("Armor Impact 1");
                     Physics.IgnoreLayerCollision(7, 8, true);
                 }
                 else
@@ -400,7 +400,7 @@ public class EnemyMotion : MonoBehaviour
                             }
                         }
                     }
-                    SoundManager.Instance.SFXPlay("Hit", clips[0]);
+                    SoundManager.Instance.SFXPlay("Armor Impact 1");
                     foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                         xw.MaxFrame = 0;
                     GetComponent<LegsAnimator>().enabled = false;
@@ -453,7 +453,7 @@ public class EnemyMotion : MonoBehaviour
                             anim.SetBool("leftHit", false);
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                        SoundManager.Instance.SFXPlay("Hit", clips[0]);
+                        SoundManager.Instance.SFXPlay("Shield Impact 2");
                         Physics.IgnoreLayerCollision(7, 8, true);
                     }
                     else
@@ -529,7 +529,7 @@ public class EnemyMotion : MonoBehaviour
                                 }
                             }
                         }
-                        SoundManager.Instance.SFXPlay("Hit", clips[0]);
+                        SoundManager.Instance.SFXPlay("Armor Impact 1");
                         foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
                             xw.MaxFrame = 0;
                         GetComponent<LegsAnimator>().enabled = false;
@@ -551,7 +551,7 @@ public class EnemyMotion : MonoBehaviour
                 {
                     GameObject shield = Instantiate(shieldVFX, collision.contacts[0].point, Quaternion.LookRotation(transform.forward));
                     Destroy(shield, 0.3f);
-                    SoundManager.Instance.SFXPlay("Shield", clips[1]);
+                    SoundManager.Instance.SFXPlay("Shield Impact 2");
                     player.position -= player.forward;
                     if (!player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
                         player.GetComponent<Animator>().CrossFade("Guarded", 0, 0);

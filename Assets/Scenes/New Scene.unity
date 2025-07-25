@@ -5403,7 +5403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &469828642
 Transform:
   m_ObjectHideFlags: 0
@@ -6536,7 +6536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &629582697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6998,11 +6998,11 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 0
+  _EditorMotionCategory: 1
   _EditorExtraCategory: 2
   IKHintMode: 3
   LimitLegStretch: 0.99
@@ -8034,7 +8034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &694934468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12587,7 +12587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &982831827
 Transform:
   m_ObjectHideFlags: 0
@@ -16449,7 +16449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1296907492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35467,7 +35467,7 @@ MonoBehaviour:
   ma: {fileID: 5529781645774484439}
   hips1: {fileID: 1387145851715182627}
   hips2: {fileID: 937297412356899908}
-  health: 2
+  health: 100
   dissolve: {fileID: 2100000, guid: 1a50a9ace93fd614db63694d201e262b, type: 2}
 --- !u!114 &9084263549584348872
 MonoBehaviour:

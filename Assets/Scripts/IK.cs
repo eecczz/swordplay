@@ -41,7 +41,7 @@ public class IK : MonoBehaviour
 
     void LateUpdate()
     {
-        leftHand1.position = leftHand.position;
-        rightHand1.position = rightHand.position;
+        //leftHand1.position = leftHand.position;
+        //rightHand1.position = rightHand.position;
     }
 }

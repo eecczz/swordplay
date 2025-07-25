@@ -1,20 +1,27 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Door
     - EnemyHitVfx
-    - EnemyMotion
+    - EnemyWorker
     - FIMSpace.FProceduralAnimation.LAM_InsectLegsHelper
     - FIMSpace.FProceduralAnimation.LAM_RotationStability
     - FIMSpace.FProceduralAnimation.LegsAnimator
+    - Fix_elevator_fall
     - HitVfx
-    - PlayerMotion
+    - PlayerWorker
+    - RestartUI
+    - SceneLoader
     - SoundManager
-    - XftWeapon.XWeaponTrail
+    - TargetMatching
+    - evelator_controll
+    - pass_on_parent
     Unity.Animation.Rigging.dll:
     - UnityEngine.Animations.Rigging.MultiAimConstraint
     - UnityEngine.Animations.Rigging.MultiParentConstraint
     - UnityEngine.Animations.Rigging.Rig
     - UnityEngine.Animations.Rigging.RigBuilder
+    - UnityEngine.Animations.Rigging.TwoBoneIKConstraint
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
     - UnityEngine.Rendering.PostProcessing.Bloom
@@ -55,7 +62,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
@@ -63,6 +69,7 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationBlendTree.Node
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
@@ -71,6 +78,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -85,7 +94,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/New Scene.unity:
+    Assets/Scenes/office building.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -97,6 +106,8 @@ ScriptsOnlyBuild:
     - Class: 23
       Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 29
       Script: {instanceID: 0}
     - Class: 33
       Script: {instanceID: 0}
@@ -118,20 +129,18 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
+    - Class: 96
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1798}
     - Class: 114
       Script: {instanceID: 1800}
     - Class: 114
@@ -139,113 +148,133 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1804}
     - Class: 114
-      Script: {instanceID: 1812}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 1866}
+      Script: {instanceID: 1808}
     - Class: 114
-      Script: {instanceID: 1872}
+      Script: {instanceID: 1810}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 1880}
     - Class: 114
-      Script: {instanceID: 2524}
+      Script: {instanceID: 1964}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2354}
     - Class: 114
-      Script: {instanceID: 3282}
+      Script: {instanceID: 2558}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3114}
     - Class: 114
-      Script: {instanceID: 3502}
+      Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3558}
+      Script: {instanceID: 3432}
     - Class: 114
-      Script: {instanceID: 3624}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3692}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 3734}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 4034}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 4416}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4644}
+      Script: {instanceID: 4158}
     - Class: 114
-      Script: {instanceID: 4954}
+      Script: {instanceID: 4192}
     - Class: 114
-      Script: {instanceID: 4972}
+      Script: {instanceID: 4224}
     - Class: 114
-      Script: {instanceID: 5198}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 5216}
+      Script: {instanceID: 4276}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 5302}
+      Script: {instanceID: 4580}
+    - Class: 114
+      Script: {instanceID: 4820}
+    - Class: 114
+      Script: {instanceID: 5146}
+    - Class: 114
+      Script: {instanceID: 5164}
     - Class: 114
       Script: {instanceID: 5398}
     - Class: 114
+      Script: {instanceID: 5416}
+    - Class: 114
       Script: {instanceID: 5490}
     - Class: 114
-      Script: {instanceID: 5496}
+      Script: {instanceID: 5506}
     - Class: 114
-      Script: {instanceID: 5498}
+      Script: {instanceID: 5604}
     - Class: 114
-      Script: {instanceID: 5516}
+      Script: {instanceID: 5622}
     - Class: 114
-      Script: {instanceID: 5706}
+      Script: {instanceID: 5716}
     - Class: 114
-      Script: {instanceID: 5770}
+      Script: {instanceID: 5720}
     - Class: 114
-      Script: {instanceID: 5776}
+      Script: {instanceID: 5738}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 5900}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 6012}
     - Class: 114
-      Script: {instanceID: 6094}
+      Script: {instanceID: 6132}
     - Class: 114
-      Script: {instanceID: 6100}
+      Script: {instanceID: 6138}
     - Class: 114
-      Script: {instanceID: 6196}
+      Script: {instanceID: 6272}
     - Class: 114
-      Script: {instanceID: 6238}
+      Script: {instanceID: 6304}
     - Class: 114
-      Script: {instanceID: 6276}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6356}
     - Class: 114
-      Script: {instanceID: 6462}
+      Script: {instanceID: 6458}
     - Class: 114
-      Script: {instanceID: 6596}
+      Script: {instanceID: 6504}
     - Class: 114
-      Script: {instanceID: 6706}
+      Script: {instanceID: 6544}
     - Class: 114
-      Script: {instanceID: 6776}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 7198}
+      Script: {instanceID: 6632}
     - Class: 114
-      Script: {instanceID: 7324}
+      Script: {instanceID: 6690}
     - Class: 114
-      Script: {instanceID: 7350}
+      Script: {instanceID: 6750}
     - Class: 114
-      Script: {instanceID: 7612}
+      Script: {instanceID: 6886}
     - Class: 114
-      Script: {instanceID: 7642}
+      Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 7648}
+      Script: {instanceID: 7068}
     - Class: 114
-      Script: {instanceID: 7884}
+      Script: {instanceID: 7522}
+    - Class: 114
+      Script: {instanceID: 7652}
+    - Class: 114
+      Script: {instanceID: 7948}
+    - Class: 114
+      Script: {instanceID: 7980}
+    - Class: 114
+      Script: {instanceID: 7986}
+    - Class: 114
+      Script: {instanceID: 8076}
+    - Class: 114
+      Script: {instanceID: 8236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -270,11 +299,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
+    - Class: 215
+      Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
     - Class: 238
       Script: {instanceID: 0}
@@ -284,7 +317,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 245
       Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 363
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
@@ -299,16 +344,22 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
+      Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
-    className: Image
+    className: ScrollRect
   - hash:
       serializedVersion: 2
       Hash: f69dfc6409fbbd89d3689368e99688a8
@@ -383,10 +434,22 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 91d133055e1871adeb6ec587be529f76
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: HorizontalCompass
+  - hash:
+      serializedVersion: 2
       Hash: c5bfd0f6f4664318b8b9f50d88408421
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: MenuItem
   - hash:
       serializedVersion: 2
       Hash: 9f0d2156cb2876cc856eb040bfe23e76
@@ -399,6 +462,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: WhiteBalance
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: EventHandler
   - hash:
       serializedVersion: 2
       Hash: 6da05449502c54a7bf3cc65b493806ee
@@ -461,6 +530,12 @@ ScriptsOnlyBuild:
     className: Spawner3
   - hash:
       serializedVersion: 2
+      Hash: 040690443f378e540c83217168d2d3dd
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: TimedDestroy
+  - hash:
+      serializedVersion: 2
       Hash: 95e6797232b7d5831c9feb55a8582905
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -489,6 +564,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: XRSystemData
+  - hash:
+      serializedVersion: 2
+      Hash: 6ba12ca5f89b00a9a7da516994f990c5
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Progressbar
   - hash:
       serializedVersion: 2
       Hash: a29ebabb603adc7df8558d97d4d53007
@@ -545,6 +626,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: 89504486bfe54979db45def0eebe3221
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: CameraEffects
+  - hash:
+      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -563,6 +650,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: e331a0233f1fc5e7d41a8ac3b188659d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: evelator_controll
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -573,6 +666,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Balance
+  - hash:
+      serializedVersion: 2
+      Hash: 90194ec0892515f85d83ba2b3fcbd83e
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: NotificationSlot
   - hash:
       serializedVersion: 2
       Hash: 2cfa0393b5123bd14aa7b550fd8912e4
@@ -587,6 +686,12 @@ ScriptsOnlyBuild:
     className: MC_AutoRotate
   - hash:
       serializedVersion: 2
+      Hash: 9023ac6c09f2726df812d1ff7da9905c
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: AudioEventListener
+  - hash:
+      serializedVersion: 2
       Hash: 87f8fc32f781d33a6b6782342a4b1b9a
     assemblyName: Unity.Animation.Rigging.dll
     namespaceName: UnityEngine.Animations.Rigging
@@ -599,12 +704,6 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 69415240821be7986b27e72bf9609a30
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: FIMSpace.FProceduralAnimation
@@ -615,6 +714,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Animation.Rigging.dll
     namespaceName: UnityEngine.Animations.Rigging
     className: TwoBoneIKConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 0320e7d942a77af8420ec10bd084e569
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: AnimateRawImage
+  - hash:
+      serializedVersion: 2
+      Hash: aa492e2de7f49c018baaf28d259fc268
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: 
+    className: Cooldown
   - hash:
       serializedVersion: 2
       Hash: ce66de8a2daf1f400e6c7f3516d2753e
@@ -639,6 +750,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerEnumField
+  - hash:
+      serializedVersion: 2
+      Hash: 958cc9b4a57f2e1f85b4330696456125
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: AudioVolume
+  - hash:
+      serializedVersion: 2
+      Hash: c369163c47b2800e3d1f5f75c4ec689c
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: TooltipTrigger
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -707,10 +830,22 @@ ScriptsOnlyBuild:
     className: MC_SwitchTexture
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: WidgetTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerVBox
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: QualityLevel
   - hash:
       serializedVersion: 2
       Hash: 0954c379c8055aaa25bbdc68d6f4f598
@@ -743,6 +878,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SingleInstance
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -755,10 +896,28 @@ ScriptsOnlyBuild:
     className: LAM_AutoGroundAlignBodyMatrix
   - hash:
       serializedVersion: 2
+      Hash: 5d84186fd7be9c40e529fa4eda56e746
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Spinner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: ScreenResolution
+  - hash:
+      serializedVersion: 2
       Hash: 6f29b049d6b6b18bee23aaf2fe273e02
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: ColorAdjustments
+  - hash:
+      serializedVersion: 2
+      Hash: 8a4aded7e6c68cb2f3aaeddb9aa72e21
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: AnimationEventSender
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -773,6 +932,12 @@ ScriptsOnlyBuild:
     className: SaberMotion
   - hash:
       serializedVersion: 2
+      Hash: cdfddc7584661699b40bf53db931093d
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SelectableObject
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -783,6 +948,30 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessEffectSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 51f8d470cac09a8e32d2d547963d8efc
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: ResizePanel
+  - hash:
+      serializedVersion: 2
+      Hash: 2935a6f6edadfc7468a3b32f0babcb90
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pass_on_parent
+  - hash:
+      serializedVersion: 2
+      Hash: 3210488db607a7ba1084813a2ce50b42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TargetMatching
+  - hash:
+      serializedVersion: 2
+      Hash: 8d98bdfa77eda314dc96505426346e28
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneLoader
   - hash:
       serializedVersion: 2
       Hash: 1044ace98a2a158d7b3c2af5a9bdab28
@@ -833,6 +1022,12 @@ ScriptsOnlyBuild:
     className: LAM_AnimationCurvesGlueCondition
   - hash:
       serializedVersion: 2
+      Hash: 6580a27e4fff466f1663e00bfefb31ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyWorker
+  - hash:
+      serializedVersion: 2
       Hash: 67a99c72bf51722a004979b57db87178
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -843,6 +1038,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorAction
   - hash:
       serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
@@ -869,6 +1070,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: cc1bc920a9594acbac9358d7cbe3a723
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: PlayAudioClip
+  - hash:
+      serializedVersion: 2
       Hash: 8fd5e4d4e6269dd17375ff2b327d2674
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -891,6 +1098,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: ChromaticAberration
+  - hash:
+      serializedVersion: 2
+      Hash: dfa227a72a90f76c23ff4c998ac54920
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SimpleMinimap
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -917,10 +1130,22 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 54a8ec8792d885a1bfae596a3d32574b
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SetCursorLockState
+  - hash:
+      serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerEnumHistory
+  - hash:
+      serializedVersion: 2
+      Hash: dd93f809393a9c634a3c2cb53ea100f0
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: FloatingTextManager
   - hash:
       serializedVersion: 2
       Hash: 9362363e5bc5b9c6a96e3d1521c98b2d
@@ -959,6 +1184,12 @@ ScriptsOnlyBuild:
     className: LAM_DirectionalMovement
   - hash:
       serializedVersion: 2
+      Hash: 01a6b6e64011dcd2ec96702d73c3cb74
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: AudioPlaylist
+  - hash:
+      serializedVersion: 2
       Hash: 63d7b9b64a11859f416d72ba9a3c3fec
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -977,6 +1208,12 @@ ScriptsOnlyBuild:
     className: RagdollAnimator
   - hash:
       serializedVersion: 2
+      Hash: 2422c9568f00ff05f46effc013ecc489
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: ContextMenu
+  - hash:
+      serializedVersion: 2
       Hash: 7d1a3e12579b7bd0f94909057ffba8d0
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
@@ -987,6 +1224,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalRenderPipelineEditorResources
+  - hash:
+      serializedVersion: 2
+      Hash: df5121accd06008601d328dceb8069b3
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Notification
   - hash:
       serializedVersion: 2
       Hash: d5630f96bd5a6a6eed7e1754c3fb8703
@@ -1043,6 +1286,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: c2bf35fcaa2a837a0a1cba4a012df8cc
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: RadialMenu
+  - hash:
+      serializedVersion: 2
       Hash: 4d51d5ccf37d2089bdfe827617b784ff
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
@@ -1065,6 +1314,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Experimental.Rendering.Universal
     className: Light2D
+  - hash:
+      serializedVersion: 2
+      Hash: c2dffdc41b982674705650e8fd388c7a
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SaveUIComponent
+  - hash:
+      serializedVersion: 2
+      Hash: b4799ceebb9755d6574a47339d6ec590
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SelectionHandler
   - hash:
       serializedVersion: 2
       Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
@@ -1139,6 +1400,12 @@ ScriptsOnlyBuild:
     className: EnemyHitVfx
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RestartUI
+  - hash:
+      serializedVersion: 2
       Hash: dbad32a64e755ab962b2be098723c281
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1205,6 +1472,24 @@ ScriptsOnlyBuild:
     className: OutlineObjectFeature
   - hash:
       serializedVersion: 2
+      Hash: b178b20b7f86431c5682426dc896a51c
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: UIWidget
+  - hash:
+      serializedVersion: 2
+      Hash: 8a4d26e733f612545e636edd31450204
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: MoveForward
+  - hash:
+      serializedVersion: 2
+      Hash: 3aa9ff43014087b317cca5e970c6b553
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: SelectableObjectName
+  - hash:
+      serializedVersion: 2
       Hash: 63bdc2cf3273aa9bf650350f19d2af61
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Experimental.Rendering.Universal
@@ -1265,6 +1550,12 @@ ScriptsOnlyBuild:
     className: RigBuilder
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: DontDestroyOnLoad
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1277,6 +1568,12 @@ ScriptsOnlyBuild:
     className: Spawner6
   - hash:
       serializedVersion: 2
+      Hash: 47ebbed8195db5052246fe69471b4d9e
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: 
+    className: DialogBoxTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -1287,6 +1584,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 42a2bcf17fc5a3ba18110151e1d96c52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fix_elevator_fall
+  - hash:
+      serializedVersion: 2
+      Hash: 3a5744f9449762ba3e0b6d8a766d730f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Tooltip
   - hash:
       serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
@@ -1307,16 +1616,46 @@ ScriptsOnlyBuild:
     className: DampedTransform
   - hash:
       serializedVersion: 2
+      Hash: 0756891e707214cb0629fdbc7b09a7bc
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: MoveTo
+  - hash:
+      serializedVersion: 2
       Hash: 36112b0a16753cab0931521e4de67ef6
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: LiftGammaGain
   - hash:
       serializedVersion: 2
+      Hash: 7e6ee6799a6f6e338d69f7d72d02ab1e
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: a5d1fdf84b10d90b0c3fc15b5c60304e
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Chat
+  - hash:
+      serializedVersion: 2
       Hash: bb6b9a25e695d7981ce2d853a697a828
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerVector4
+  - hash:
+      serializedVersion: 2
+      Hash: 1deb9d2c666ac52f7677e7645ca6bc54
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: 
+    className: ContextMenuTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: DragPanel
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1373,6 +1712,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 88ff54a5804a844e3540dfe7a941a61e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Door
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -1389,6 +1734,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
     className: DebugUpdater
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: WidgetInputHandler
   - hash:
       serializedVersion: 2
       Hash: 89229a620f85ef21de336ab85a13d351
@@ -1419,6 +1770,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerColor
+  - hash:
+      serializedVersion: 2
+      Hash: 2c90c724348dd0bced1a274dbfc24fe1
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Tab
   - hash:
       serializedVersion: 2
       Hash: dbeab19c836bd50c0a0e371615445b64
@@ -1461,6 +1818,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 09dda564137c004dfd8f0be4e08fc65f
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: PropertyBinding
   - hash:
       serializedVersion: 2
       Hash: ea5f09a865d4c8ab43739490f67db653
@@ -1511,10 +1874,28 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: 62fcfb7597748a401f9b18f9bece6586
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: StringPairSlot
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: UtilityBehavior
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: Fullscreen
   - hash:
       serializedVersion: 2
       Hash: 663ee71987357c2869b08012cec786c2
@@ -1541,10 +1922,28 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: UICursor
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: f7cd5ccfb3f9fdd1be3cfe3eb0583aab
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: Blackboard
+  - hash:
+      serializedVersion: 2
+      Hash: e391386f3a5d98945267a9eefc5e2626
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: DialogBox
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1559,7 +1958,7 @@ ScriptsOnlyBuild:
     className: LAM_ParamChanger_UnglueOnAngle
   - hash:
       serializedVersion: 2
-      Hash: 7de8dc8922ab8f1220ec3376654734fa
+      Hash: 1b828b59a53c2cf99daaefff982afb8a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundManager
@@ -1613,16 +2012,16 @@ ScriptsOnlyBuild:
     className: PostProcessDebug
   - hash:
       serializedVersion: 2
-      Hash: 040dd48e3a027d5424519a5fa2009df4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ScrollRect
-  - hash:
-      serializedVersion: 2
       Hash: 25987e51d15dc441dbfab12db3386638
     assemblyName: Assembly-CSharp.dll
     namespaceName: OToon
     className: Rotator
+  - hash:
+      serializedVersion: 2
+      Hash: cba7e9b6f9b92db2dd79a79ed487d922
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: 
+    className: RadialMenuTrigger
   - hash:
       serializedVersion: 2
       Hash: 134520f170644886bce038a4038a42c9
@@ -1635,6 +2034,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: FIMSpace.FProceduralAnimation
     className: RagdollIndicatorHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: DevionGames.UIWidgets
+    className: FloatingText
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1673,6 +2078,12 @@ ScriptsOnlyBuild:
     className: ForwardRendererData
   - hash:
       serializedVersion: 2
+      Hash: b31cf5cbe7b4367b9d2610c90a6f7737
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerWorker
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1709,10 +2120,22 @@ ScriptsOnlyBuild:
     className: MultiRotationConstraint
   - hash:
       serializedVersion: 2
+      Hash: 5bef3f159933c39b48d72cd66c34f1c4
+    assemblyName: DevionGames.UIWidgets.dll
+    namespaceName: 
+    className: NotificationTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 37082ed539f1aaa09b7ab6c79b183979
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: TimedEnable
   - hash:
       serializedVersion: 2
       Hash: dbad32a64e755ab962b2be098723c281
@@ -1721,10 +2144,22 @@ ScriptsOnlyBuild:
     className: Spawner2
   - hash:
       serializedVersion: 2
+      Hash: 50fbe59176f4e8ee91194fa9ce0e8a55
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: LookAtMainCamera
+  - hash:
+      serializedVersion: 2
       Hash: 6b0b802b92040a957f89163a7a491b6b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PingPongMove
+  - hash:
+      serializedVersion: 2
+      Hash: 5a8ca983d0a1243a6085e3865197e63d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlacementMatching
   - hash:
       serializedVersion: 2
       Hash: 177378ccefd514b3e290ba515d7e121b
@@ -1743,7 +2178,13 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: DissolveExample
     className: Rotator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DevionGames.Utilities.dll
+    namespaceName: DevionGames
+    className: CoroutineHandler
   platform: 19
   scenePathNames:
-  - Assets/Scenes/New Scene.unity
-  playerPath: C:/Users/Public/Documents/swordplay-clone/SwordPlay.exe
+  - Assets/Scenes/office building.unity
+  playerPath: "C:/Users/swh06/OneDrive/\uBC14\uD0D5 \uD654\uBA74/SwordPlay.exe"

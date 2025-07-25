@@ -958,7 +958,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
@@ -2094,8 +2094,8 @@ ModelImporter:
       name: AttackRM03
       takeName: AttackRM03
       internalID: 0
-      firstFrame: 0
-      lastFrame: 70
+      firstFrame: 36
+      lastFrame: 37
       wrapMode: 0
       orientationOffsetY: -5
       level: 0

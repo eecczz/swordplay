@@ -74,7 +74,7 @@ public class PlayerMotion : MonoBehaviour
     private void Update()
     {
         nav.Warp(transform.position);
-        if (onTarget)
+        if (onTarget && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && swing == 0)
             body.rotation = Quaternion.Euler(new Vector3(0, Quaternion.LookRotation(ent.transform.position - body.position).eulerAngles.y, 0));
         if (!onTarget && ma.data.sourceObjects[0].transform != crosshead)
         {
@@ -212,7 +212,8 @@ public class PlayerMotion : MonoBehaviour
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             joint.localPosition = new Vector3(0, 1.5f, 0);
-            Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 120 * Mathf.Clamp(ty, 60f, 120) / 60f, transform.forward) * transform.up;
+            sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f));
+            Vector3 v3 = Quaternion.AngleAxis(-ty * tx / 135 * Mathf.Clamp(ty, 52.5f, 150) / 52.5f, transform.forward) * transform.up;
             joint.RotateAround(joint.position + v3, sword.transform.up, tx);
             joint.RotateAround(joint.position + transform.up * 1.5f, transform.right, -ty);
             sword.transform.localPosition = new Vector3(0, 0, 1.75f);
@@ -222,7 +223,7 @@ public class PlayerMotion : MonoBehaviour
             if (guard == 0)
             {
                 guard = 1;
-                SoundManager.Instance.SFXPlay("Shield", clips[1]);
+                SoundManager.Instance.SFXPlay("Shield Impact1");
             }
             joint.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             joint.localPosition = new Vector3(0, 1.5f, 0);
@@ -244,14 +245,14 @@ public class PlayerMotion : MonoBehaviour
             anim.SetBool("leftStep", lr);
             anim.CrossFade("Attack", 0, 0);
             lr = false;
-            SoundManager.Instance.SFXPlay("Swing", clips[0]);
+            SoundManager.Instance.SFXPlay("Swing1");
         }
         else if (health > -1 && (new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"))).magnitude > canSwing && guard == 0 && swing == 0 && !lr && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded")) //������
         {
             anim.SetBool("leftStep", lr);
             anim.CrossFade("Attack", 0, 0);
             lr = true;
-            SoundManager.Instance.SFXPlay("Swing", clips[0]);
+            SoundManager.Instance.SFXPlay("Swing1");
         }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && ent != null && !ent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hurted") && health > -1)
         {
@@ -289,7 +290,9 @@ public class PlayerMotion : MonoBehaviour
                 if (nav.enabled && !anim.GetCurrentAnimatorStateInfo(1).IsName("Hurted") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Guarded") && swing == 0)
                     nav.SetDestination(ent.transform.position);
                 if (ent.tag == "Untagged")
+                {
                     onTarget = false;
+                }
             }
         }
     }
@@ -379,7 +382,7 @@ public class PlayerMotion : MonoBehaviour
                         anim.SetBool("leftHit", false);
                     knockBack = hit.transform.forward;
                     vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                    SoundManager.Instance.SFXPlay("Hit", clips[2]);
+                    SoundManager.Instance.SFXPlay("Shield Impact 1");
                     Physics.IgnoreLayerCollision(6, 9, true);
                 }
                 else
@@ -455,7 +458,7 @@ public class PlayerMotion : MonoBehaviour
                             }
                         }
                     }
-                    SoundManager.Instance.SFXPlay("Hit", clips[2]);
+                    SoundManager.Instance.SFXPlay("Shield Impact 1");
                     Physics.IgnoreLayerCollision(6, 9, true); //prevent natural collision forced until hurt is 0
                     Physics.IgnoreLayerCollision(7, 8, true);
                     foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
@@ -511,7 +514,7 @@ public class PlayerMotion : MonoBehaviour
                             anim.SetBool("leftHit", false);
                         knockBack = hit.transform.forward;
                         vec = new Vector3(hit.transform.right.x, 0, hit.transform.right.z).normalized;
-                        SoundManager.Instance.SFXPlay("Hit", clips[2]);
+                        SoundManager.Instance.SFXPlay("Shield Impact 1");
                         Physics.IgnoreLayerCollision(6, 9, true);
                     }
                     else
@@ -587,7 +590,7 @@ public class PlayerMotion : MonoBehaviour
                                 }
                             }
                         }
-                        SoundManager.Instance.SFXPlay("Hit", clips[2]);
+                        SoundManager.Instance.SFXPlay("Shield Impact 1");
                         Physics.IgnoreLayerCollision(6, 9, true); //prevent natural collision forced until hurt is 0
                         Physics.IgnoreLayerCollision(7, 8, true);
                         foreach (XWeaponTrail xw in jointParent.GetComponentsInChildren<XWeaponTrail>())
@@ -612,7 +615,7 @@ public class PlayerMotion : MonoBehaviour
                 {
                     GameObject shield = Instantiate(shieldVFX, collision.contacts[0].point, Quaternion.LookRotation(transform.forward));
                     Destroy(shield, 0.3f);
-                    SoundManager.Instance.SFXPlay("Shield", clips[3]);
+                    SoundManager.Instance.SFXPlay("Armor Impact 2");
                     ent.transform.position -= ent.transform.forward;
                     if (!ent.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Guarded"))
                         ent.GetComponent<Animator>().CrossFade("Guarded", 0, 0);

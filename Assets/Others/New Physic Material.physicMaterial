@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: New Physic Material
   dynamicFriction: 0
   staticFriction: Infinity
-  bounciness: 0
+  bounciness: 1
   frictionCombine: 3
   bounceCombine: 1
